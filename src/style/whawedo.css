@@ -1,0 +1,30 @@
+li {
+  list-style: none;
+}
+li a:hover {
+  text-decoration: none;
+}
+.about-wedo {
+  color: #41afce;
+}
+.navlink-list {
+  color: #616161;
+  font-size: 14px;
+}
+.navlink-list:hover {
+  color: #2d2b31;
+  font-weight: bold;
+}
+h5 {
+  color: #616161;
+  font-weight: bold;
+}
+p {
+  color: #616161;
+  line-height: 2;
+}
+.block {
+  border-bottom: 1px solid #e2e2e2;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}

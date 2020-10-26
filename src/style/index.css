@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* navbar */
+.link:hover, a:hover {
+  text-decoration: none;
+  color: #4386bf;
+}
+.link {
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 15px;
+}
+.anchor {
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 15px;
+}
+.support {
+  padding: 15px;
+  border-radius: 20px;
+  border: 2px solid white;
+}
+.support:hover {
+  color: black;
+  background-color: white;
+}
+/* slide */
+.carousel {
+  height:450px;
+  margin-bottom: 70px;
+}
+.photo-carousel {
+  display: block;
+  height: 450px;
+  max-width: 100%;
+}
+.anchor-t {
+  color: #00a0bc;
+}
+.anchor-t:hover {
+  text-decoration: none;
+  color: #00a0bc;
+}
+.title {
+  animation-duration: 1s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+/*home */
+.text-donate {
+  color: #616161;
+  font-size: 14px;
+  font-weight: bold;
+  padding-bottom: 14px;
+}
+.text-wedo {
+  line-height: 2;
+}
+.signup {
+  width: 160px;
+}
+
+
+/* footer */
+.social-media {
+  height: 100px;
+  color:#333333;
+}
+
+.bottom {
+  height: 450px;
+  background-color:#1f1f1f;
+  padding: 30px;
+}
+
+.white {
+  color: #a0a0a0;
+  font-size: 14px;
+}
+.gray {
+  color: #696969;
+  padding-top: 20px;  
+}
+.guidelogo {
+  margin-right: 0;
+  margin-left: 0;
+}

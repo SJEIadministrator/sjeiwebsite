@@ -1,0 +1,63 @@
+.youcanmake {
+  font-size: 25px;
+  font-weight: bold;
+}
+.title-h5 {
+  font-weight: bold;
+}
+.amazon-charity-banner {
+  background-image: url("https://m.media-amazon.com/images/G/01/x-locale/paladin/charitycentral/banner-background-image._CB309675353_.png");
+  background-repeat: no-repeat, repeat;
+  width: 300px;
+  height: 250px;
+  position: relative;
+  margin-top: 60px;
+  margin-bottom: 90px;
+  margin-left: 37%;
+}
+.support1 {
+  position: relative;
+  font-size: 25px;
+  line-height: 10px;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  padding-top: 20px;
+  padding-bottom:  5px;
+  font-weight: bold;
+  left: 12.5%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.charity-name1 {
+  position: relative;
+  font-size: 25px;
+  line-height: 28px;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  font-weight: bold;
+  left: 1.5%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.charity-name2 {
+  position: relative;
+  left: 0.5%;
+  font-size: 25px;
+  line-height: 28px;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.whenyou {
+  position: relative;
+  left: 0.5%;
+  margin-bottom: 0;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.amazon {
+  position: relative;
+  left: 11.5%;
+  width: 200px;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
