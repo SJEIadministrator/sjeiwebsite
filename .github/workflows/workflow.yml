@@ -6,7 +6,7 @@ jobs:
 
     - uses: actions/checkout@v2
     - name: Build website
-      run:
+      run: |
         npm install
         npm run build
     - uses: tibor19/static-website-deploy@v1
