@@ -15,6 +15,7 @@ jobs:
         enabled-static-website: 'true'
         folder: '$web'
         connection-string: ${{ secrets.CONNECTION_STRING }}
+        ErrorDocument404Path: '404.html'
 
 
 
