@@ -1,27 +1,18 @@
 # File: .github/workflows/workflow.yml
 
 
+
 on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
     steps: 
-    - uses: actions/checkout@v1
-    - uses: actions/setup-dotnet@v1
-      with:
-        dotnet-version: '3.0.100'
-    - uses: lauchacarro/Azure-Storage-Action@master
+    - uses: actions/checkout@v2
+    - uses: tibor19/static-website-deploy@v1
       with:
         enabled-static-website: 'true'
         folder: '$web'
         connection-string: ${{ secrets.CONNECTION_STRING }}
-        ErrorDocument404Path: '404.html'
-
-
-
-
-
-
 
 
 
@@ -32,9 +23,14 @@ jobs:
 #  build:
 #    runs-on: ubuntu-latest
 #    steps: 
-#    - uses: actions/checkout@v2
-#    - uses: tibor19/static-website-deploy@v1
+#    - uses: actions/checkout@v1
+#    - uses: actions/setup-dotnet@v1
+#      with:
+#        dotnet-version: '3.0.100'
+#    - uses: lauchacarro/Azure-Storage-Action@master
 #      with:
 #        enabled-static-website: 'true'
 #        folder: '$web'
 #        connection-string: ${{ secrets.CONNECTION_STRING }}
+#        ErrorDocument404Path: 404.html
+
