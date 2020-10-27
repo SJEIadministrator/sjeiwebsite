@@ -1,21 +1,22 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
 /* navbar */
-.link:hover, a:hover {
+.link:hover,
+a:hover {
   text-decoration: none;
-  color: #4386bf;
+  color: white;
 }
 .link {
   color: white;
@@ -23,7 +24,12 @@ code {
   font-weight: bold;
   padding: 15px;
 }
-.anchor {
+
+.about-toggle {
+  color: white;
+}
+.anchor,
+.anchor a {
   color: white;
   font-size: 13px;
   font-weight: bold;
@@ -31,7 +37,9 @@ code {
 }
 .support {
   padding: 15px;
-  border-radius: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 25px;
   border: 2px solid white;
 }
 .support:hover {
@@ -40,7 +48,7 @@ code {
 }
 /* slide */
 .carousel {
-  height:450px;
+  height: 450px;
   margin-bottom: 70px;
 }
 .photo-carousel {
@@ -56,14 +64,15 @@ code {
   color: #00a0bc;
 }
 .title {
-  animation-duration: 1s;
-  animation-name: slidein;
+  animation-duration: 0.7s;
+  font-size: 32px;
+  animation-name: fadein;
 }
 
-@keyframes slidein {
+@keyframes fadein {
   from {
     margin-left: 100%;
-    width: 300%; 
+    width: 300%;
   }
 
   to {
@@ -74,27 +83,20 @@ code {
 /*home */
 .text-donate {
   color: #616161;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: bold;
-  padding-bottom: 14px;
+  padding-bottom: 16px;
 }
-.text-wedo {
-  line-height: 2;
-}
-.signup {
-  width: 160px;
-}
-
 
 /* footer */
 .social-media {
   height: 100px;
-  color:#333333;
+  color: #333333;
 }
 
 .bottom {
   height: 450px;
-  background-color:#1f1f1f;
+  background-color: #1f1f1f;
   padding: 30px;
 }
 
@@ -103,10 +105,49 @@ code {
   font-size: 14px;
 }
 .gray {
-  color: #696969;
-  padding-top: 20px;  
+  color: darkgrey;
+  padding-top: 20px;
+  font-size: 14px;
 }
 .guidelogo {
   margin-right: 0;
   margin-left: 0;
+}
+.text-wedo {
+  line-height: 2;
+  font-size: 20px;
+  text-align: justify;
+}
+@media (max-width: 500px) {
+  .title {
+    animation-duration: 0.7s;
+    font-size: 20px;
+    animation-name: fadein;
+  }
+
+  .text-wedo {
+    line-height: 1.9;
+    font-size: 14px;
+    text-align: justify;
+  }
+  .about a {
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 12px;
+    padding-top: 8px;
+  }
+  .support:hover {
+    color: black;
+    background-color: white;
+  }
+  .carousel {
+    height: 400px;
+    margin-bottom: 70px;
+  }
+  .photo-carousel {
+    display: block;
+    height: 450px;
+    max-width: 100%;
+  }
 }

@@ -1,17 +1,19 @@
-import React from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import NavBar from './Navbar';
-import Home from './Home';
-import Whatwedo from './Whatwedo';
-import Contact from './Contact';
-import Corporate from './Corporate';
-import Board from './Board';
-import Volunteer from './Volunteer';
-import William from './William';
-import TakeAction from './TakeAction';
-import Donation from './Donation';
-import Footer from './Footer';
-import Slide from './Slide';
+import React from "react";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+import NavBar from "./Navbar";
+import Home from "./Home";
+import Whatwedo from "./Whatwedo";
+import Team from "./team";
+import Corporate from "./Corporate";
+import Board from "./Board";
+import Volunteer from "./Volunteer";
+import William from "./William";
+import TakeAction from "./TakeAction";
+import Donation from "./Donation";
+import Footer from "./Footer";
+import Slide from "./Slide";
+import CorporateTransparency from "./corporatetransparency";
+import Contact from "./Contact";
 
 function App() {
   return (
@@ -21,12 +23,17 @@ function App() {
         <Slide />
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route path="/what-we-do" component={Whatwedo} />
-          <Route path="/contact" component={Contact} />
-          <Route path="/corporate-transparency" component={Corporate} />
+          <Route path="/Whatwedo" component={Whatwedo} />
+          <Route path="/team" component={Team} />
+          <Route
+            path="/corporatetransparency"
+            component={CorporateTransparency}
+          />
+          <Route path="/Contact" component={Contact} />
+
           <Route path="/board" component={Board} />
           <Route path="/volunteer" component={Volunteer} />
-          <Route path="/williambentz" component={William} />
+          <Route path="/William-G-Bentz" component={William} />
           <Route path="/take-action" component={TakeAction} />
           <Route path="/donation" component={Donation} />
         </Switch>

@@ -1,44 +1,76 @@
-import React from 'react';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import About from './About';
+import React from "react";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import About from "./About";
 
 const Board = () => (
   <div className="container">
     <Row>
       <About />
-      <Col md={7} className="container">
-        <Row className="block">
-          <p>
-            <a href="https://www.linkedin.com/in/ryanwbentz/" target="blank" className="anchor-t">Ryan William Bentz - CEO, Executive Director & Founder </a>
-            | Project Engineer, 5x5 Technologies
+      <Col md={8} className="container">
+        <div>
+          <p className="text">
+            <a href="https://www.linkedin.com/in/ryanwbentz/" target="_blank">
+              Ryan William Bentz - CEO, Executive Director & Founder
+            </a>
+            &nbsp;| Project Engineer, 5x5 Technologies
           </p>
-          <p>
-            <a href="https://www.linkedin.com/in/josephayala/" target="blank" className="anchor-t">Joseph Ayala - Assistant Executive Director, Programming Director & Founder </a>
+          <br />
+          <p className="text">
+            <a href="https://www.linkedin.com/in/josephayala/" target="_blank">
+              Joseph Ayala - Assistant Executive Director, Programming Director
+              & Founder
+            </a>{" "}
             | T-Mobile
           </p>
-          <p>
-            <a href="https://www.linkedin.com/in/unavailable/" target="blank" className="anchor-t">Kerrine Bryan - Engineering & Development Director and Founder  </a>
-            | MEng MBA CEng FIET &  Electrical Engineer, WSP USA
+          <br />
+          <p className="text">
+            <a href="https://www.linkedin.com/in/unavailable/" target="_blank">
+              Kerrine Bryan - Engineering & Development Director and Founder
+            </a>
+            &nbsp; | MEng MBA CEng FIET & Electrical Engineer, WSP USA
           </p>
-          <p>
-            <a href="https://www.linkedin.com/in/kortnee-carmack-mpa-06bb373b/" target="blank" className="anchor-t">Kortnee Carmack - Fundraising & Grant Director </a>
+          <br />
+          <p className="text">
+            <a
+              href="https://www.linkedin.com/in/kortnee-carmack-mpa-06bb373b/"
+              target="_blank"
+            >
+              Kortnee Carmack - Fundraising & Grant Director
+            </a>{" "}
             | MPA - Manager, Grants & Planning, Cook Inlet Tribal Council, Inc.
           </p>
-          <p>
-            <a href="https://www.linkedin.com/in/ryanwbentz/" target="blank" className="anchor-t">Colleen Casey, P.E. - Engineering & Development Chair </a>
-            | Founder & CEO, Caseco Engrg Solutions, LLC
+          <br />
+          <p className="text">
+            <a href="https://www.linkedin.com/in/unavailable/" target="_blank">
+              Colleen Casey, P.E. - Engineering & Development Chair
+            </a>
+            &nbsp;| Founder & CEO, Caseco Engrg Solutions, LLC
           </p>
-          <p>
-            <a href="https://www.linkedin.com/in/dagnysignorelli/" target="blank" className="anchor-t">Dagny Signorelli - Environmental Justice Subcommittee Chair </a>
-            | M.Sc. Forest Ecology and Sustainable Management, Swedish University of
-            Agricultural Sciences (2022)
+          <br />
+          <p className="text">
+            <a
+              href="https://www.linkedin.com/in/dagnysignorelli/"
+              target="_blank"
+            >
+              Dagny Signorelli - Environmental Justice Subcommittee Chair
+            </a>
+            &nbsp; | M.Sc. Forest Ecology and Sustainable Management, Swedish
+            University of Agricultural Sciences (2022)
           </p>
-          <p>
-            <a href="https://www.linkedin.com/in/cindy-roberts-17ba3176/" target="blank" className="anchor-t">Cindy Roberts - Social Justice Subcommittee Chair </a>
-            | HQ PACAF, Force Support Inspections Chief, TS SCI at The United States Air Force
-          </p>
-        </Row>
+          <br />
+          <p className="text">
+            <a
+              href="https://www.linkedin.com/in/cindy-roberts-17ba3176/"
+              target="_blank"
+            >
+              Cindy Roberts - Social Justice Subcommittee Chair
+            </a>
+            &nbsp; | HQ PACAF, Force Support Inspections Chief, TS SCI at The
+            United States Air Force
+          </p>{" "}
+          <br />
+        </div>
       </Col>
     </Row>
   </div>
