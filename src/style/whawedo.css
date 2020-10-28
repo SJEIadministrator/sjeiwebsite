@@ -79,7 +79,8 @@ h5 {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-.btn-info {
+
+.btn-info:hover {
   padding: 4%;
   padding-left: 10%;
   padding-right: 10%;
@@ -91,15 +92,16 @@ h5 {
   border: 0;
   cursor: pointer;
 }
-.btn-info:hover {
-  padding: 8%;
+.btn-info {
+  padding: 4%;
   padding-left: 10%;
   padding-right: 10%;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 18px;
   color: white;
   background-color: #2fa99a;
   margin: 2%;
+
   border: 0;
   cursor: pointer;
 }
@@ -449,20 +451,7 @@ p.text {
     line-height: 16px;
     padding-bottom: 2px;
   }
-  .btn-info {
-    padding: 4%;
-    padding-left: 10%;
-    padding-right: 10%;
-    text-transform: uppercase;
-    font-size: 18px;
-    color: white;
-    background-color: #2fa99a;
-    margin: 2%;
-    margin-left: 25%;
 
-    border: 0;
-    cursor: pointer;
-  }
   .mt-5 {
     margin-top: 2rem;
   }

@@ -33,26 +33,26 @@ const NavBar = () => (
           className="mr-4 pt-2 about link "
           id="basic-nav-dropdown "
         >
-          <NavDropdown.Item a href="/Whatwedo">
-            what we do
+          <NavDropdown.Item a>
+            <NavLink to="/Whatwedo">What We Do</NavLink>
           </NavDropdown.Item>
-          <NavDropdown.Item a href="/corporatetransparency">
-            Corporate Transparency
+          <NavDropdown.Item a>
+            <NavLink to="/corporatetransparency">Corporate Transparency</NavLink>
           </NavDropdown.Item>
-          <NavDropdown.Item a href="/board">
-            Board
+          <NavDropdown.Item a>
+            <NavLink to="/board">Board</NavLink>
           </NavDropdown.Item>
-          <NavDropdown.Item a href="/volunteer">
-            Volunteer
+          <NavDropdown.Item a>
+            <NavLink to="/volunteer">Volunteer</NavLink>
           </NavDropdown.Item>
-          <NavDropdown.Item a href="/william-G-Bentz">
-            William G Bentz
+          <NavDropdown.Item a>
+            <NavLink to="/william-G-Bentz">William G Bentz</NavLink>
           </NavDropdown.Item>
-          <NavDropdown.Item a href="/team">
-            Our Team
+          <NavDropdown.Item a>
+            <NavLink to="/team">Our Team</NavLink>
           </NavDropdown.Item>
-          <NavDropdown.Item a href="/Contact">
-            Contact
+          <NavDropdown.Item a>
+            <NavLink to="/Contact">Contact</NavLink>
           </NavDropdown.Item>
         </NavDropdown>
         <NavLink to="/take-action" className="mr-2 link">

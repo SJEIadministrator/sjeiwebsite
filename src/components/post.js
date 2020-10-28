@@ -6,7 +6,7 @@ export const generalVolunteer = [
   },
 
   {
-    Img: "/images/CarolRambaldi.jpg",
+    Img: "/images/avatar.jpg",
     Name: "Carol Rambaldi",
     Post: "General Volunteer"
   },
