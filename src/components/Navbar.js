@@ -33,7 +33,12 @@ const NavBar = () => (
           className="mr-4 pt-2 about link "
           id="basic-nav-dropdown "
         >
-          <NavDropdown.Item href="/Whatwedo">What We Do</NavDropdown.Item>
+          <NavDropdown.Item>
+            <NavLink className="nav-link" to="/Whatwedo">
+              {" "}
+              What We Do
+            </NavLink>
+          </NavDropdown.Item>
           <NavDropdown.Item href="/corporatetransparency">
             Corporate Transparency
           </NavDropdown.Item>
