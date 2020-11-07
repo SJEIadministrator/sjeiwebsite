@@ -235,9 +235,6 @@ const Home = () => (
             src="https://sjeiwebsitemedia.blob.core.windows.net/photos/Staircase.jpg"
             alt="take-action"
           />{" "}
-        </Link>
-        <Link to="/take-action" className="blacklink">
-          {" "}
           <h4 className="text-center mt-3">TAKE ACTION</h4>
         </Link>
 
