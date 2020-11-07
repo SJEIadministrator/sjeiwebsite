@@ -15,6 +15,7 @@ export default class Team extends Component {
   render() {
     return (
       <div className="container">
+        <br /> <br />
         <Row>
           <About />
           <Col md={8} sm={12} className="container">

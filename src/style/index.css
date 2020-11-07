@@ -20,9 +20,11 @@ a:hover {
 }
 .link {
   color: white;
+  width: 130px;
   font-size: 13px;
+  text-align: center;
   font-weight: bold;
-  padding: 15px;
+  padding: 20px 5px 15px 0;
 }
 
 .about-toggle {
@@ -37,6 +39,7 @@ a:hover {
 }
 .support {
   padding: 15px;
+  margin-left: 15px;
   padding-top: 10px;
   padding-bottom: 10px;
   border-radius: 25px;

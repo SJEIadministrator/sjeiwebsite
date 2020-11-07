@@ -5,6 +5,7 @@ import About from "./About";
 
 const William = () => (
   <div className="container">
+    <br /> <br />
     <Row>
       <About />
       <Col md={8} className="container">

@@ -12,20 +12,21 @@ import William from "./William";
 import TakeAction from "./TakeAction";
 import Donation from "./Donation";
 import Footer from "./Footer";
-import Slide from "./Slide";
 import CorporateTransparency from "./corporatetransparency";
 import Contact from "./Contact";
+import PressRelease from "./pressrelease";
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
         <NavBar />
-        <Slide />
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/Whatwedo" component={Whatwedo} />
           <Route path="/team" component={Team} />
+          <Route path="/pressrelease" component={PressRelease} />
+
           <Route
             path="/corporatetransparency"
             component={CorporateTransparency}

@@ -6,6 +6,7 @@ import VolMatch from "../img/volunteermatch.png";
 
 const Volunteer = () => (
   <div className="container">
+    <br /> <br />
     <Row>
       <About />
       <Col md={8} className="container">

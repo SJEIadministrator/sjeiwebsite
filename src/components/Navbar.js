@@ -30,7 +30,7 @@ const NavBar = () => (
         </NavLink>
         <NavDropdown
           title="ABOUT"
-          className="mr-4 pt-2 about link "
+          className="mr-4 aboutlink  link "
           id="basic-nav-dropdown "
         >
           <NavDropdown.Item>
@@ -39,16 +39,36 @@ const NavBar = () => (
               What We Do
             </NavLink>
           </NavDropdown.Item>
-          <NavDropdown.Item href="/corporatetransparency">
-            Corporate Transparency
+          <NavDropdown.Item>
+            <NavLink className="nav-link" to="/corporatetransparency">
+              Corporate Transparency
+            </NavLink>
           </NavDropdown.Item>
-          <NavDropdown.Item href="/board">Board</NavDropdown.Item>
-          <NavDropdown.Item href="/volunteer">Volunteer </NavDropdown.Item>
-          <NavDropdown.Item href="/william-G-Bentz">
-            William G Bentz
+          <NavDropdown.Item>
+            <NavLink className="nav-link" to="/board">
+              Board
+            </NavLink>
           </NavDropdown.Item>
-          <NavDropdown.Item href="/team">Our Team</NavDropdown.Item>
-          <NavDropdown.Item href="/Contact">Contact</NavDropdown.Item>
+          <NavDropdown.Item>
+            <NavLink className="nav-link" to="/volunteer">
+              Volunteer
+            </NavLink>
+          </NavDropdown.Item>
+          <NavDropdown.Item>
+            <NavLink className="nav-link" to="/william-G-Bentz">
+              William G Bentz
+            </NavLink>
+          </NavDropdown.Item>
+          <NavDropdown.Item>
+            <NavLink className="nav-link" to="/team">
+              Our Team
+            </NavLink>
+          </NavDropdown.Item>
+          <NavDropdown.Item>
+            <NavLink className="nav-link" to="/Contact">
+              Contact
+            </NavLink>
+          </NavDropdown.Item>
         </NavDropdown>
         <NavLink to="/take-action" className="mr-2 link">
           TAKE ACTION
@@ -57,10 +77,13 @@ const NavBar = () => (
           href="https://medium.com/sjei"
           target="_blank"
           rel="noopener noreferrer"
-          className="anchor mr-3 link"
+          className="link"
         >
           BLOG
         </a>
+        <NavLink to="/pressrelease" className="mr-2 link ">
+          PRESS RELEASE{" "}
+        </NavLink>
         <div className="supportdiv">
           <NavLink to="/donation" className="mr-2 link support">
             SUPPORT
