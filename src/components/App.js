@@ -1,10 +1,11 @@
 import React from "react";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
+import { Switch, Route } from "react-router";
+
 import NavBar from "./Navbar";
 import Home from "./Home";
 import Whatwedo from "./Whatwedo";
 import Team from "./team";
-import Corporate from "./Corporate";
 import Board from "./Board";
 import Volunteer from "./Volunteer";
 import William from "./William";

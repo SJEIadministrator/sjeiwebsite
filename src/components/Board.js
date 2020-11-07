@@ -10,14 +10,22 @@ const Board = () => (
       <Col md={8} className="container">
         <div>
           <p className="text">
-            <a href="https://www.linkedin.com/in/ryanwbentz/" target="_blank">
+            <a
+              href="https://www.linkedin.com/in/ryanwbentz/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Ryan William Bentz - CEO, Executive Director & Founder
             </a>
             &nbsp;| Project Engineer, 5x5 Technologies
           </p>
           <br />
           <p className="text">
-            <a href="https://www.linkedin.com/in/josephayala/" target="_blank">
+            <a
+              href="https://www.linkedin.com/in/josephayala/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Joseph Ayala - Assistant Executive Director, Programming Director
               & Founder
             </a>{" "}
@@ -25,7 +33,11 @@ const Board = () => (
           </p>
           <br />
           <p className="text">
-            <a href="https://www.linkedin.com/in/unavailable/" target="_blank">
+            <a
+              href="https://www.linkedin.com/in/unavailable/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Kerrine Bryan - Engineering & Development Director and Founder
             </a>
             &nbsp; | MEng MBA CEng FIET & Electrical Engineer, WSP USA
@@ -35,6 +47,7 @@ const Board = () => (
             <a
               href="https://www.linkedin.com/in/kortnee-carmack-mpa-06bb373b/"
               target="_blank"
+              rel="noopener noreferrer"
             >
               Kortnee Carmack - Fundraising & Grant Director
             </a>{" "}
@@ -42,7 +55,11 @@ const Board = () => (
           </p>
           <br />
           <p className="text">
-            <a href="https://www.linkedin.com/in/unavailable/" target="_blank">
+            <a
+              href="https://www.linkedin.com/in/unavailable/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Colleen Casey, P.E. - Engineering & Development Chair
             </a>
             &nbsp;| Founder & CEO, Caseco Engrg Solutions, LLC
@@ -52,6 +69,7 @@ const Board = () => (
             <a
               href="https://www.linkedin.com/in/dagnysignorelli/"
               target="_blank"
+              rel="noopener noreferrer"
             >
               Dagny Signorelli - Environmental Justice Subcommittee Chair
             </a>
@@ -63,6 +81,7 @@ const Board = () => (
             <a
               href="https://www.linkedin.com/in/cindy-roberts-17ba3176/"
               target="_blank"
+              rel="noopener noreferrer"
             >
               Cindy Roberts - Social Justice Subcommittee Chair
             </a>

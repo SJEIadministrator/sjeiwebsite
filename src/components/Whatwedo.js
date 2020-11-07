@@ -10,6 +10,13 @@ const Whatwedo = () => (
       <About />
       <Col md={8} className="container">
         <div>
+          <div>
+            <img
+              src="https://sjeiwebsitemedia.blob.core.windows.net/photos/LIRR.jpg"
+              className="headersub"
+              alt="whatwedo"
+            />
+          </div>
           <div className="title2">Our mission</div>
           <p className="text">
             As champions for social and environmental justice, our mission is

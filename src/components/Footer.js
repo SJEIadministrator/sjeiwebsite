@@ -2,7 +2,6 @@ import React from "react";
 import { Col } from "react-bootstrap";
 import Row from "react-bootstrap/Row";
 import { SocialIcon } from "react-social-icons";
-import logoBottom from "../img/guidestart.svg";
 
 const Footer = () => (
   <footer className="bg-dark text-white">
@@ -87,7 +86,7 @@ const Footer = () => (
               target="blank"
             >
               <img
-                src={logoBottom}
+                src="https://sjeiwebsitemedia.blob.core.windows.net/photos/DigitalRGB_Platinum_135px.svg"
                 className="d-inline-block align-top responsiveimg"
                 alt="guide-start"
               />

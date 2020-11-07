@@ -1,15 +1,12 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
-import firstImg from "../img/one.jpg";
-import secondImg from "../img/two.jpg";
-import thirdImg from "../img/three.jpg";
 
 const Slide = () => (
   <Carousel className="carou">
     <Carousel.Item interval={8000}>
       <img
         className="d-block w-100 photo-carousel img-responsive"
-        src={firstImg}
+        src="https://sjeiwebsitemedia.blob.core.windows.net/photos/train.jpg"
         alt="First slide"
       />
       <Carousel.Caption>
@@ -19,7 +16,7 @@ const Slide = () => (
     <Carousel.Item interval={8000}>
       <img
         className="d-block w-100 photo-carousel img-responsive"
-        src={secondImg}
+        src="https://sjeiwebsitemedia.blob.core.windows.net/photos/FullSizeRenderBenFranklinBridge.jpg"
         alt="Third slide"
       />
       <Carousel.Caption>
@@ -29,7 +26,7 @@ const Slide = () => (
     <Carousel.Item>
       <img
         className="d-block w-100 photo-carousel img-responsive"
-        src={thirdImg}
+        src="https://sjeiwebsitemedia.blob.core.windows.net/photos/riverfoliage.jpg"
         alt="Third slide"
       />
       <Carousel.Caption>

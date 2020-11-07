@@ -28,7 +28,6 @@ const useStyles = makeStyles({
 
 export default function ProjectsVolunteer() {
   const classes = useStyles();
-  const bull = <span className={classes.bullet}>•</span>;
 
   return (
     <div className="rowflex">

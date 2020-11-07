@@ -432,7 +432,7 @@ const Volunteer = () => (
               rel="noopener noreferrer"
               target="_blank"
             >
-              Volunteer Graohic Designer{" "}
+              Volunteer Graphic Designer{" "}
             </a>
           </span>
           <br />
@@ -579,7 +579,7 @@ const Volunteer = () => (
             our non-profit organization by ...
           </p>
           <br />
-          <img src={VolMatch} className="responsiveimg"></img>
+          <img src={VolMatch} className="responsiveimg" alt=""></img>
           <br />
           <br />
         </div>

@@ -134,7 +134,7 @@ export const communicationmarketing = [
   },
 
   {
-    Img: "/images/avatar.jpg",
+    Img: "/images/profile-photo_Angela Yuan.jpg",
     Name: "Angela Lair",
     Post: "Graphic Designer"
   },
@@ -204,7 +204,7 @@ export const communicationmarketing = [
     Post: "   Blogger / Writer"
   },
   {
-    Img: "/images/Surer.jpg",
+    Img: "/images/avatar.jpg",
     Name: "Temeika Beasley Spruiells",
     Post: "   Blogger / Writer"
   }

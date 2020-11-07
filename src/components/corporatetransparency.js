@@ -10,6 +10,13 @@ export default class CorporateTransparency extends Component {
         <Row>
           <About />
           <Col md={8} className="container">
+            <div>
+              <img
+                src="https://sjeiwebsitemedia.blob.core.windows.net/photos/Window.jpg"
+                className="headersub"
+                alt="corporate transparency"
+              />
+            </div>
             <div className="title2">Our Corporate Documents</div>
             <p className="text">
               As a new Non-Profit Organization, we are currently working on
@@ -39,8 +46,9 @@ export default class CorporateTransparency extends Component {
             <div className="titlenext">By laws</div>
             <p className="text">
               <a
-                href="https://static1.squarespace.com/static/5938c91cbe65945cac32a872/t/5c5d036d4785d33a4f14f447/1549599598516/Bylaws+of+SJEI+Draft+V6.1.PUB_07FEB2019_PUBLIC_Redacted.pdf"
+                href="https://sjeiwebsitemedia.blob.core.windows.net/photos/Bylaws+of+SJEI+Draft+V6.1.PUB_07FEB2019_PUBLIC_Redacted.pdf"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 FEBRUARY 2019 DRAFT BYLAWS V6.1.PUB
               </a>
@@ -49,34 +57,30 @@ export default class CorporateTransparency extends Component {
             <div className="titlenext">By laws</div>
             <p className="text">
               <a
-                href="https://static1.squarespace.com/static/5938c91cbe65945cac32a872/t/5c5d0b5153450a33cdf728b4/1549601618709/Articles+of+Incorporation_HIST_PUB_07FEB2019_PUBLIC.pdf"
+                href="https://sjeiwebsitemedia.blob.core.windows.net/photos/Articles+of+Incorporation_HIST_PUB_07FEB2019_PUBLIC.pdf"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 Articles of incorporation{" "}
-              </a>
-              <br />
-              <a
-                href="https://ecorp.azcc.gov/EntitySearch/Index"
-                target="_blank"
-              >
-                State of Arizona Corporation COmmission
               </a>
             </p>
             <br />
             <div className="titlenext">FINANCIAL STATEMENTS</div>
             <p className="text">
               <a
-                href="https://static1.squarespace.com/static/5938c91cbe65945cac32a872/t/5c5cfc594785d3eceb63ab99/1549597785204/%27filing.pdf%27.pdf"
+                href="https://sjeiwebsitemedia.blob.core.windows.net/photos/filing2017.pdf"
                 target="_blank"
+                rel="noopener noreferrer"
               >
-                Articles of incorporation{" "}
+                2017 Tax Document
               </a>
               <br />
               <a
-                href="https://static1.squarespace.com/static/5938c91cbe65945cac32a872/t/5c5cfc9ceef1a1750a20ea59/1549597852950/%27filing.pdf%27-1.pdf"
+                href="https://sjeiwebsitemedia.blob.core.windows.net/photos/filing2018.pdf"
                 target="_blank"
+                rel="noopener noreferrer"
               >
-                2018 990N Tax Document
+                2018 Tax Document
               </a>
             </p>
             <br />

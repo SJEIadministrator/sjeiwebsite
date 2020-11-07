@@ -6,9 +6,6 @@ import CardContent from "@material-ui/core/CardContent";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import { communicationmarketing } from "./post";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import About from "./About";
 
 const useStyles = makeStyles({
   root: {
@@ -31,7 +28,6 @@ const useStyles = makeStyles({
 
 export default function CommunicationMarketingVol() {
   const classes = useStyles();
-  const bull = <span className={classes.bullet}>•</span>;
 
   return (
     <div className="rowflex">

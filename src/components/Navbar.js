@@ -14,7 +14,7 @@ const NavBar = () => (
     <Navbar.Brand className="ml-1">
       <NavLink to="/" className="link">
         <img
-          src="https://images.squarespace-cdn.com/content/5938c91cbe65945cac32a872/1519251724393-SSWG00WSO8NY676L8UNP/SJEI_primary_full-name.png?format=1000w"
+          src="https://sjeiwebsitemedia.blob.core.windows.net/photos/SJEI_primary_full-name.png"
           width="160"
           height="70"
           className="d-inline-block align-top logo "
@@ -33,27 +33,17 @@ const NavBar = () => (
           className="mr-4 pt-2 about link "
           id="basic-nav-dropdown "
         >
-          <NavDropdown.Item a>
-            <NavLink to="/Whatwedo">What We Do</NavLink>
+          <NavDropdown.Item href="/Whatwedo">What We Do</NavDropdown.Item>
+          <NavDropdown.Item href="/corporatetransparency">
+            Corporate Transparency
           </NavDropdown.Item>
-          <NavDropdown.Item a>
-            <NavLink to="/corporatetransparency">Corporate Transparency</NavLink>
+          <NavDropdown.Item href="/board">Board</NavDropdown.Item>
+          <NavDropdown.Item href="/volunteer">Volunteer </NavDropdown.Item>
+          <NavDropdown.Item href="/william-G-Bentz">
+            William G Bentz
           </NavDropdown.Item>
-          <NavDropdown.Item a>
-            <NavLink to="/board">Board</NavLink>
-          </NavDropdown.Item>
-          <NavDropdown.Item a>
-            <NavLink to="/volunteer">Volunteer</NavLink>
-          </NavDropdown.Item>
-          <NavDropdown.Item a>
-            <NavLink to="/william-G-Bentz">William G Bentz</NavLink>
-          </NavDropdown.Item>
-          <NavDropdown.Item a>
-            <NavLink to="/team">Our Team</NavLink>
-          </NavDropdown.Item>
-          <NavDropdown.Item a>
-            <NavLink to="/Contact">Contact</NavLink>
-          </NavDropdown.Item>
+          <NavDropdown.Item href="/team">Our Team</NavDropdown.Item>
+          <NavDropdown.Item href="/Contact">Contact</NavDropdown.Item>
         </NavDropdown>
         <NavLink to="/take-action" className="mr-2 link">
           TAKE ACTION
@@ -61,6 +51,7 @@ const NavBar = () => (
         <a
           href="https://medium.com/sjei"
           target="_blank"
+          rel="noopener noreferrer"
           className="anchor mr-3 link"
         >
           BLOG

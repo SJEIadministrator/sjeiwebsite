@@ -29,7 +29,6 @@ const useStyles = makeStyles({
 
 export default function FundraisingGrant() {
   const classes = useStyles();
-  const bull = <span className={classes.bullet}>•</span>;
 
   return (
     <div className="rowflex">

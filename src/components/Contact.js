@@ -29,8 +29,15 @@ const Contact = () => {
         <Col md={7} className="container">
           <Col>
             <div id="App">
+              <div>
+                <img
+                  src="https://sjeiwebsitemedia.blob.core.windows.net/photos/UnderBridge.jpg"
+                  className="headersub"
+                  alt="bridge"
+                />
+              </div>
               <div className="title2 mt-8">Subscribe, call, mail </div>
-              <div className={classes.root} className="container">
+              <div className={classes.root}>
                 <div>
                   <Form id="contact-form">
                     <TextField
@@ -169,7 +176,11 @@ const Contact = () => {
                   Founder | Executive Chair
                   <br />
                   Email:{" "}
-                  <a href="mailto:ryan.bentz@sjei.org" target="_blank">
+                  <a
+                    href="mailto:ryan.bentz@sjei.org"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     ryan.bentz@sjei.org
                   </a>{" "}
                   | Phone: 856.405.1895
@@ -180,7 +191,11 @@ const Contact = () => {
                   of Engineering & Development
                   <br />
                   Email:{" "}
-                  <a href="mailto:kerrine.bryan@sjei.org" target="_blank">
+                  <a
+                    href="mailto:kerrine.bryan@sjei.org"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     kerrine.bryan@sjei.org
                   </a>{" "}
                   | Phone: 385.630.0555{" "}
@@ -196,7 +211,11 @@ const Contact = () => {
                   Programming Director | Founder
                   <br />
                   Email:{" "}
-                  <a href="mailto:joseph.ayala@sjei.org" target="_blank">
+                  <a
+                    href="mailto:joseph.ayala@sjei.org"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     joseph.ayala@sjei.org{" "}
                   </a>{" "}
                   | Phone: 609.357.8925

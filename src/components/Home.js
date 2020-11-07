@@ -3,9 +3,8 @@ import Form from "react-bootstrap/Form";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
-import about from "../img/stanislav-kondratiev-6pO3QFkk7hQ-unsplash.jpg";
-import action from "../img/jakob-owens-CiUR8zISX60-unsplash.jpg";
 import Mailchimp from "react-mailchimp-form";
+import { Link } from "react-router-dom";
 
 const Home = () => (
   <div className="container">
@@ -140,7 +139,7 @@ const Home = () => (
         </ul>
       </Col>
       <Col sm={{ span: 12 }} lg={{ span: 4 }} className="pl-3 pr-3">
-        <h3 className="mt-3">Ethical Engineering</h3>
+        <h3>Ethical Engineering</h3>
         <ul>
           <li>
             <p className="main-content mt-3">
@@ -179,7 +178,7 @@ const Home = () => (
         </ul>
       </Col>
       <Col sm={{ span: 12 }} lg={{ span: 4 }} className="pl-3 pr-3">
-        <h3 className="mt-3">Social Justice</h3>
+        <h3>Social Justice</h3>
         <ul>
           <li>
             <p className="main-content">
@@ -216,20 +215,32 @@ const Home = () => (
     </Row>
     <Row className="mt-5 mb-8">
       <Col lg={{ span: 4, offset: 2 }}>
-        <img className="d-block w-100 photo-at" src={about} alt="about" />
-        <h4 className="text-center mt-3">ABOUT</h4>
+        <Link to="/Whatwedo" className="blacklink">
+          <img
+            className="d-block w-100 photo-at"
+            src="https://sjeiwebsitemedia.blob.core.windows.net/photos/Library.jpg"
+            alt="about"
+          />
+          <h4 className="text-center mt-3">ABOUT</h4>
+        </Link>
         <p className="text-center">
           Find out about our organization, mission, our methods, and our
           advocacy.
         </p>
       </Col>
       <Col lg={4}>
-        <img
-          className="d-block w-100 photo-at"
-          src={action}
-          alt="take-action"
-        />
-        <h4 className="text-center mt-3">TAKE ACTION</h4>
+        <Link to="/take-action" className="blacklink">
+          <img
+            className="d-block w-100 photo-at"
+            src="https://sjeiwebsitemedia.blob.core.windows.net/photos/Staircase.jpg"
+            alt="take-action"
+          />{" "}
+        </Link>
+        <Link to="/take-action" className="blacklink">
+          {" "}
+          <h4 className="text-center mt-3">TAKE ACTION</h4>
+        </Link>
+
         <p className="text-center">
           Ready to take the next step? You can become a contributor to our
           cause, or participate yourself.
