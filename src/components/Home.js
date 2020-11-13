@@ -6,27 +6,48 @@ import Button from "react-bootstrap/Button";
 import Mailchimp from "react-mailchimp-form";
 import { Link } from "react-router-dom";
 import Slide from "./Slide";
+import { loadStripe } from '@stripe/stripe-js';
 
-const Home = () => (
-  <div>
+const stripePromise = loadStripe('pk_test_TYooMQauvdEDq54NiTphI7jx');
+const Home = () => {
+  const handleClick = async (event) => {
+    // Get Stripe.js instance
+    const stripe = await stripePromise;
+
+    // Call your backend to create the Checkout Session
+    const response = await fetch("https://create-stripe-session.azurewebsites.net/api/stripe-checkout-function");
+    
+    const session = await response.text();
+    console.log(session)
+    // When the customer clicks on the button, redirect them to Checkout.
+    const result = await stripe.redirectToCheckout({
+      sessionId: session,
+    });
+
+    if (result.error) {
+      // If `redirectToCheckout` fails due to a browser or network
+      // error, display the localized error message to your customer
+      // using `result.error.message`.
+    }
+  };
+
+
+  return (
+    <div>
     <Slide />
     <div className="container">
       <Row className="marginb">
         <Col>
-          <a
-            href="https://secure.squarespace.com/checkout/donate?donatePageId=5939bc3c6b8f5b104ec81d05&ss_cid=2ea6d8f1-68d4-4e98-bb79-41a3aa154623&ss_cvisit=1603147929481&ss_cvr=70c8a24a-78b2-412a-9e20-ded2c0bc7d21%7C1602109525332%7C1603131768961%7C1603147929308%7C24"
-            target="blank"
-          >
             <Form.Group as={Col} md={{ span: 3, offset: 5 }}>
               <Button
                 type="submit"
                 variant="info"
                 className=" btn-info text-center "
+                onClick={handleClick}
               >
                 Donate
               </Button>
             </Form.Group>
-          </a>
           <p className="text-center text-donate first-p mt-2">
             We need diverse individuals with backgrounds in engineering,
             environmental justice, and social justice to volunteer.
@@ -253,4 +274,8 @@ const Home = () => (
     </div>
   </div>
 );
+
+
+}
+  
 export default Home;
