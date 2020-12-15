@@ -39,72 +39,19 @@ const Contact = () => {
               <div id="App">
                 <br />
                 <div className="title2 mt-8">Subscribe, call, mail </div>
-                <div className={classes.root}>
-                  <div>
-                    <Form id="contact-form">
-                      <TextField
-                        id="filled-full-width"
-                        label=" Name*"
-                        margin="normal"
-                        style={{
-                          marginBottom: 8,
-                          marginRight: 8,
-                          width: "100%"
-                        }}
-                        variant="outlined"
-                        size="small"
-                        helperText="First Name"
-                      />
-                      <TextField
-                        id="filled-full-width"
-                        label="Last Name"
-                        margin="normal"
-                        style={{ marginBottom: 0, width: "100%" }}
-                        variant="outlined"
-                        size="small"
-                        helperText="Last Name"
-                      />
-                      <TextField
-                        id="filled-full-width"
-                        label="Email Address*"
-                        fullWidth
-                        margin="normal"
-                        style={{ marginBottom: 0 }}
-                        variant="outlined"
-                        size="small"
-                        helperText="Email"
-                      />
-                      <TextField
-                        id="filled-full-width"
-                        label="Subject*"
-                        margin="normal"
-                        fullWidth
-                        style={{ marginBottom: 12 }}
-                        variant="outlined"
-                        size="small"
-                      />
-                      <TextField
-                        id="outlined-textarea"
-                        label="Message*"
-                        fullWidth
-                        style={{ marginBottom: 8 }}
-                        placeholder="Message"
-                        multiline
-                        variant="outlined"
-                      />
-                      <br />
-                      <small>Subcribe to email list? (We dont spam)!</small>
-                      <div>
-                        <Checkbox />
-                        <span className="smalltxt">
-                          Yes, I want to stay up to date
-                        </span>
-                      </div>
-                      <Button type="submit" className="submit">
-                        SUBMIT
-                      </Button>
-                    </Form>
-                  </div>
+                <div>
+                  <iframe
+                    src="https://us16.list-manage.com/contact-form?u=19a446bd18d53c058ccc12686&form_id=110158f4b9ffba567e5fd7c8e01c272f"
+                    width="600"
+                    height="850"
+                    frameborder="0"
+                    style={{ border: 0 }}
+                    allowfullscreen=""
+                    id="ifram"
+                    aria-hidden="false"
+                    // className="new"
+                    tabindex="0"
+                  ></iframe>
                 </div>
                 <h1 className="mt-5">Locations</h1>
                 <iframe

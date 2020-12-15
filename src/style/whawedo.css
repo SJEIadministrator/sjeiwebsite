@@ -209,6 +209,9 @@ hr {
 .navbar-nav {
   color: white;
 }
+.nav-link {
+  padding: 0;
+}
 .navbar-light .navbar-nav .nav-link:focus,
 .navbar-light .navbar-nav .nav-link:hover {
   color: white;

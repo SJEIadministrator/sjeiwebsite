@@ -25,12 +25,12 @@ const NavBar = () => (
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="ml-auto">
-        <NavLink to="/" className="mr-4 link">
+        <NavLink to="/" className="link">
           SJEI
         </NavLink>
         <NavDropdown
           title="ABOUT"
-          className="mr-4 aboutlink  link "
+          className="mr-0 aboutlink  link "
           id="basic-nav-dropdown "
         >
           <NavDropdown.Item>
