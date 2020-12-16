@@ -20,7 +20,9 @@ ul {
 .headingtxt {
   position: absolute;
   top: 350px;
-  left: 550px;
+  left: 50%;
+  margin-right: -50%;
+    transform: translate(-50%, -50%) ;
   color: white;
   text-transform: uppercase;
   font-weight: bold;
@@ -32,15 +34,9 @@ li {
   list-style: none;
 }
 .headersub {
-  width: 1425px;
+  width: 100%;
   margin-bottom: 10px;
   height: 550px;
-}
-.heading-corpo {
-  left: 400px;
-  top: 300px;
-  width: 50%;
-  letter-spacing: 3px;
 }
 .signup {
   font-size: 16px;

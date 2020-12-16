@@ -12,7 +12,7 @@ export default class CorporateTransparency extends Component {
           className="headersub img-responsive"
           alt="Corporate Transparency"
         />
-        <h1 className="headingtxt heading-corpo">Corporate Transparency </h1>
+        <h1 className="headingtxt">Corporate Transparency </h1>
         <div className="container">
           <Row>
             <About />
