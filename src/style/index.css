@@ -9,19 +9,49 @@ body {
 .new {
   background-color: #cccccc;
 }
-nav-link {
+.nav-link {
   padding: 0;
 }
+.nav-link:hover {
+  padding: 0;
+  color: aquamarine;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+/* .title {
+  /* animation-duration: 3.7s; */
+/* animation-delay: 1s;
+  line-height: 18px;
+  font-size: 26px;
 
+  animation-iteration-count: 5;
+  animation-direction: alternate; /* or: normal */
+/* animation-timing-function: ease-out; */
+/* animation-name: fadein;
+} */
+
+/* @keyframes fadein {
+  from {
+    opacity: 0%;
+  }
+
+  to {
+    opacity: 100%;
+  }
+} */
 /* navbar */
 .link:hover,
+.link:focus {
+  color: aquamarine;
+  /* border: 1px solid lightgrey;
+  border-radius: 25px; */
+}
+
 a:hover {
   text-decoration: none;
-  color: white;
 }
 .link {
   color: white;
@@ -29,11 +59,21 @@ a:hover {
   font-size: 13px;
   text-align: center;
   font-weight: bold;
-  padding: 20px 5px 15px 0;
+  padding: 10px 5px 5px 0;
+  transition-property: color, border, background-color;
+  transition-duration: 3s;
+  transition-timing-function: ease-out;
+}
+.photo-at {
+  opacity: 50%;
+}
+.photo-at:hover,
+.photo-at:focus {
+  opacity: 100%;
 }
 
 .about-toggle {
-  color: white;
+  color: grey;
 }
 .anchor,
 .anchor a {
@@ -63,6 +103,21 @@ a:hover {
   display: block;
   height: 450px;
   max-width: 100%;
+
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    opacity: 0%;
+    width: 300%;
+  }
+
+  to {
+    opacity: 100%;
+    width: 100%;
+  }
 }
 .anchor-t {
   color: #00a0bc;
@@ -71,23 +126,21 @@ a:hover {
   text-decoration: none;
   color: #00a0bc;
 }
-.title {
+/* .title2 {
   animation-duration: 0.7s;
-  font-size: 32px;
+  font-size: 20px;
   animation-name: fadein;
 }
 
 @keyframes fadein {
   from {
-    margin-left: 100%;
     width: 300%;
   }
 
   to {
-    margin-left: 0%;
     width: 100%;
   }
-}
+} */
 /*home */
 .text-donate {
   color: #616161;
@@ -100,6 +153,19 @@ a:hover {
 .social-media {
   height: 100px;
   color: #333333;
+}
+
+.social-media a {
+  height: 100px;
+  color: #333333;
+  opacity: 70%;
+  margin-right: 12px;
+  transition-property: color, background-color;
+  transition-duration: 5s;
+  transition-timing-function: ease-out;
+}
+.social-media a:hover {
+  opacity: 100%;
 }
 
 .bottom {
@@ -126,13 +192,39 @@ a:hover {
   font-size: 20px;
   text-align: justify;
 }
-@media (max-width: 500px) {
-  .title {
-    animation-duration: 0.7s;
-    font-size: 20px;
-    animation-name: fadein;
-  }
 
+@media (max-width: 500px) {
+  .link:hover,
+  link:focus {
+    color: aquamarine;
+    border: 0px solid grey;
+    /* border-radius: 25px; */
+  }
+  .carousel {
+    height: 200px;
+  }
+  .carousel-indicators {
+    bottom: -45px;
+  }
+  .photo-carousel {
+    display: block;
+    height: 250px;
+    max-width: 100%;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  .link {
+    color: white;
+    width: 130px;
+    font-size: 13px;
+    text-align: center;
+    font-weight: bold;
+    /* padding: 10px 5px 5px 0; */
+    transition-property: color, background-color;
+    transition-duration: 5s;
+    transition-timing-function: ease-out;
+  }
   .text-wedo {
     line-height: 1.9;
     font-size: 14px;
@@ -145,17 +237,28 @@ a:hover {
     padding: 12px;
     padding-top: 8px;
   }
+  .title {
+    font-size: 18px;
+    line-height: 18px;
+  }
   .support:hover {
     color: black;
     background-color: white;
   }
-  .carousel {
-    height: 400px;
-    margin-bottom: 70px;
-  }
+}
+
+@media only screen and (min-width: 1800px) {
   .photo-carousel {
     display: block;
-    height: 450px;
+    height: 580px;
     max-width: 100%;
+  }
+  .btn-info {
+    margin-top: 100px;
+  }
+  .headersub {
+    width: 100%;
+    margin-bottom: 10px;
+    height: 550px;
   }
 }

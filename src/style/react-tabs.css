@@ -16,6 +16,7 @@
   border-bottom: none;
   bottom: -1px;
   font-size: 14px;
+  text-align: center;
   position: relative;
   text-transform: uppercase;
   list-style: none;
@@ -27,6 +28,17 @@
   background: #fff;
   border-color: #aaa;
   color: black;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 5px 5px 0 0;
+}
+.react-tabs__tab--selected:hover {
+  background: #fff;
+  border-color: #aaa;
+  border-bottom: 0px;
+  color: black;
+  text-align: center;
+  font-weight: bold;
   border-radius: 5px 5px 0 0;
 }
 

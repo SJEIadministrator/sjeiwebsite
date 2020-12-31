@@ -3,10 +3,10 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
 const TakeAction = () => (
-  <div>
+  <div style={{ position: "relative" }}>
     <img
       src="https://sjeiwebsitemedia.blob.core.windows.net/photos/UnderBridge.jpg"
-      className="headersub img-responsive"
+      className="headersub img-responsive w3-animate-opacity"
       alt="whatwedo"
     />
     <h1 className="headingtxt">TAKE ACTION</h1>

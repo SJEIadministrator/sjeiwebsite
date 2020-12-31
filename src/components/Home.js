@@ -10,7 +10,7 @@ import Slide from "./Slide";
 const Home = () => (
   <div>
     <Slide />
-    <div className="container">
+    <div className="container ">
       <Row className="marginb">
         <Col>
           <a
@@ -21,13 +21,13 @@ const Home = () => (
               <Button
                 type="submit"
                 variant="info"
-                className=" btn-info text-center "
+                className=" btn-info text-center  "
               >
                 Donate
               </Button>
             </Form.Group>
           </a>
-          <p className="text-center text-donate first-p mt-2">
+          <p className="text-center text-donate first-p mt-2  ">
             We need diverse individuals with backgrounds in engineering,
             environmental justice, and social justice to volunteer.
           </p>

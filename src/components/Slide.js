@@ -2,20 +2,22 @@ import React from "react";
 import Carousel from "react-bootstrap/Carousel";
 
 const Slide = () => (
-  <Carousel className="carou">
+  <Carousel className="carou  ">
     <Carousel.Item interval={8000}>
       <img
-        className="d-block w-100 photo-carousel img-responsive"
+        className="d-block w-100 photo-carousel img-responsive "
         src="https://sjeiwebsitemedia.blob.core.windows.net/photos/train.jpg"
         alt="First slide"
       />
       <Carousel.Caption>
-        <h3 className="title">Social + Environmental Justice in Engineering</h3>
+        <h3 className="title  ">
+          Social + Environmental Justice in Engineering
+        </h3>
       </Carousel.Caption>
     </Carousel.Item>
     <Carousel.Item interval={8000}>
       <img
-        className="d-block w-100 photo-carousel img-responsive"
+        className="d-block w-100 photo-carousel img-responsive  "
         src="https://sjeiwebsitemedia.blob.core.windows.net/photos/FullSizeRenderBenFranklinBridge.jpg"
         alt="Third slide"
       />

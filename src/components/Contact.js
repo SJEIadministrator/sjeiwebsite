@@ -23,10 +23,10 @@ const useStyles = makeStyles(theme => ({
 const Contact = () => {
   const classes = useStyles();
   return (
-    <div>
+    <div style={{ position: "relative" }}>
       <img
         src="https://sjeiwebsitemedia.blob.core.windows.net/photos/UnderBridge.jpg"
-        className="headersub img-responsive"
+        className="headersub img-responsive  w3-animate-opacity"
         alt="whatwedo"
       />
       <h1 className="headingtxt">CONTACT </h1>

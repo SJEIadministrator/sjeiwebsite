@@ -8,16 +8,16 @@ const NavBar = () => (
   <Navbar
     sticky="top"
     bg="dark"
-    className=" justify-content-between"
+    className=" justify-content-between w3-animate-opacity"
     expand="lg"
   >
     <Navbar.Brand className="ml-1">
-      <NavLink to="/" className="link">
+      <NavLink to="/">
         <img
           src="https://sjeiwebsitemedia.blob.core.windows.net/photos/SJEI_primary_full-name.png"
           width="160"
           height="70"
-          className="d-inline-block align-top logo "
+          className="d-inline-block align-top logo w3-animate-opacity "
           alt="logo-sjei"
         />
       </NavLink>

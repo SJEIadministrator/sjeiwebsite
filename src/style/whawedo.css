@@ -2,7 +2,7 @@
   max-width: 230px;
 }
 .aboutlink {
-  padding-top: 5px;
+  padding-top: 0px;
 }
 .imgpress {
   width: 350px;
@@ -22,7 +22,7 @@ ul {
   top: 350px;
   left: 50%;
   margin-right: -50%;
-    transform: translate(-50%, -50%) ;
+  transform: translate(-50%, -50%);
   color: white;
   text-transform: uppercase;
   font-weight: bold;
@@ -36,7 +36,7 @@ li {
 .headersub {
   width: 100%;
   margin-bottom: 10px;
-  height: 550px;
+  height: 450px;
 }
 .signup {
   font-size: 16px;
@@ -109,6 +109,7 @@ h3 {
 .dropdown-menu {
   background-color: #343a40;
   color: white;
+  width: 230px;
 }
 .toggle-d {
   color: white;
@@ -172,6 +173,14 @@ hr {
   margin-bottom: 10%;
   margin-bottom: 5%;
   margin-right: 5%;
+  opacity: 0.7;
+}
+.carddetail:hover {
+  margin: 1%;
+  margin-bottom: 10%;
+  margin-bottom: 5%;
+  margin-right: 5%;
+  opacity: 1;
 }
 .mailchimpclass {
   margin: 0;
@@ -203,20 +212,29 @@ hr {
 .nav-item,
 .show > .nav-link,
 .navbar-nav {
-  color: white;
+  color: grey;
 }
 .nav-link {
   padding: 0;
+  transition-property: color, background-color;
+  transition-duration: 5s;
+  transition-timing-function: ease-out;
 }
 .navbar-light .navbar-nav .nav-link:focus,
 .navbar-light .navbar-nav .nav-link:hover {
-  color: white;
+  color: aquamarine;
 }
 .navbar-light .navbar-nav .active > .nav-link,
 .navbar-light .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .nav-link.show,
 .navbar-light .navbar-nav .show > .nav-link {
   color: white;
+}
+.navbar-light .navbar-nav .active > .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show > .nav-link:hover {
+  color: aquamarine;
 }
 .nav-link .navbar-light .navbar-nav a {
   color: white;
@@ -229,9 +247,14 @@ hr {
 }
 .dropdown-menu .dropdown-item {
   background-color: #343a40;
-  color: white;
+  color: lightgrey;
 }
 
+.dropdown-menu .dropdown-item:hover {
+  background-color: #343a40;
+  color: aquamarine;
+  font-weight: bold;
+}
 .imagewidth {
   width: 200px;
   height: auto;
@@ -412,7 +435,7 @@ p.text {
 }
 .supportdiv {
   width: 20%;
-  padding-top: 2%;
+  padding-top: 1%;
 }
 .smalltxt {
   font-size: 12px;
@@ -422,6 +445,22 @@ p.text {
   .img-responsive {
     max-width: 100%;
     height: 200px;
+  }
+  .youcanmake {
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .headingtxt {
+    top: 60px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 28px;
+    text-align: center;
   }
   .dropdown-menu {
     background-color: #343a40;
@@ -581,7 +620,7 @@ p.text {
   }
   .btn-info {
     font-size: 12px;
-    margin-left: 28%;
+    margin-left: 30%;
   }
 
   .text a,

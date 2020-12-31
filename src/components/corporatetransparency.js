@@ -6,10 +6,10 @@ import Col from "react-bootstrap/Col";
 export default class CorporateTransparency extends Component {
   render() {
     return (
-      <div>
+      <div style={{ position: "relative" }}>
         <img
           src="https://sjeiwebsitemedia.blob.core.windows.net/photos/Window.jpg"
-          className="headersub img-responsive"
+          className="headersub img-responsive  w3-animate-opacity"
           alt="Corporate Transparency"
         />
         <h1 className="headingtxt">Corporate Transparency </h1>

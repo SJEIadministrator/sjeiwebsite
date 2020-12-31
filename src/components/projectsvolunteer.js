@@ -42,7 +42,7 @@ export default function ProjectsVolunteer() {
                   gutterBottom
                 >
                   <img
-                    className="imagewidth"
+                    className="imagewidth w3-container w3-center w3-animate-opacity"
                     src={postdetail.Img}
                     Alt="volunteer"
                   />

@@ -6,12 +6,15 @@ import Mailchimp from "react-mailchimp-form";
 
 const Whatwedo = () => (
   <div>
-    <img
-      src="https://sjeiwebsitemedia.blob.core.windows.net/photos/LIRR.jpg"
-      className="headersub img-responsive"
-      alt="whatwedo"
-    />
-    <h1 className="headingtxt">What We Do </h1>
+    <div style={{ position: "relative" }}>
+      <img
+        src="https://sjeiwebsitemedia.blob.core.windows.net/photos/LIRR.jpg"
+        className="headersub img-responsive w3-animate-opacity"
+        alt="whatwedo"
+      />
+
+      <h1 className="headingtxt">What We Do </h1>
+    </div>
     <div className="container">
       <Row>
         <About />
