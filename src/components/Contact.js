@@ -3,10 +3,6 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import About from "./About";
 import { makeStyles } from "@material-ui/core/styles";
-import TextField from "@material-ui/core/TextField";
-import Checkbox from "@material-ui/core/Checkbox";
-import Button from "@material-ui/core/Button";
-import { Form } from "semantic-ui-react";
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -51,6 +47,7 @@ const Contact = () => {
                     aria-hidden="false"
                     // className="new"
                     tabindex="0"
+                    title="contact"
                   ></iframe>
                 </div>
                 <h1 className="mt-5">Locations</h1>

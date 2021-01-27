@@ -18,6 +18,7 @@ const PressRelease = () => (
           <img
             className="imgpress"
             src=" https://sjeiwebsitemedia.blob.core.windows.net/photos/GuardianPicture1.jpg"
+            alt="guardian1"
           />
           <h6>Source:The guardian</h6>
         </p>
@@ -28,6 +29,7 @@ const PressRelease = () => (
           <img
             className="imgpress"
             src="https://sjeiwebsitemedia.blob.core.windows.net/photos/GuardianPicture2.jpg"
+            alt="guardian2"
           />
           <h6>Source:The guardian</h6>
         </p>
