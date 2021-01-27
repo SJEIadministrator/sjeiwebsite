@@ -2,7 +2,6 @@ import React from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import About from "./About";
-import VolMatch from "../img/volunteermatch.png";
 
 const Volunteer = () => (
   <div className="container">
@@ -580,7 +579,7 @@ const Volunteer = () => (
             our non-profit organization by ...
           </p>
           <br />
-          <img src={VolMatch} className="responsiveimg" alt=""></img>
+          <img src="https://sjeiwebsitemedia.blob.core.windows.net/photos/volunteermatch.png" className="responsiveimg" alt=""></img>
           <br />
           <br />
         </div>
