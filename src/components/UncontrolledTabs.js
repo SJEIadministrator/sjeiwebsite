@@ -1,32 +1,32 @@
-import PropTypes from "prop-types";
-import React, { cloneElement, Component } from "react";
-import cx from "clsx";
-import uuid from "../helpers/uuid";
-import { childrenPropType } from "../helpers/propTypes";
-import { getPanelsCount, getTabsCount } from "../helpers/count";
-import { deepMap } from "../helpers/childrenDeepMap";
-import { isTabList, isTabPanel, isTab } from "../helpers/elementTypes";
+import PropTypes from 'prop-types';
+import React, { cloneElement, Component } from 'react';
+import cx from 'clsx';
+import uuid from '../helpers/uuid';
+import { childrenPropType } from '../helpers/propTypes';
+import { getPanelsCount, getTabsCount } from '../helpers/count';
+import { deepMap } from '../helpers/childrenDeepMap';
+import { isTabList, isTabPanel, isTab } from '../helpers/elementTypes';
 
 function isNode(node) {
-  return node && "getAttribute" in node;
+  return node && 'getAttribute' in node;
 }
 
 // Determine if a node from event.target is a Tab element
 function isTabNode(node) {
-  return isNode(node) && node.getAttribute("role") === "tab";
+  return isNode(node) && node.getAttribute('role') === 'tab';
 }
 
 // Determine if a tab node is disabled
 function isTabDisabled(node) {
-  return isNode(node) && node.getAttribute("aria-disabled") === "true";
+  return isNode(node) && node.getAttribute('aria-disabled') === 'true';
 }
 
 let canUseActiveElement;
 try {
   canUseActiveElement = !!(
-    typeof window !== "undefined" &&
-    window.document &&
-    window.document.activeElement
+    typeof window !== 'undefined'
+    && window.document
+    && window.document.activeElement
   );
 } catch (e) {
   // Work around for IE bug when accessing document.activeElement in an iframe
@@ -35,30 +35,7 @@ try {
   // https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/12733599
   canUseActiveElement = false;
 }
-export default class UncontrolledTabs extends Component {
-  static defaultProps = {
-    className: "react-tabs",
-    focus: false
-  };
-
-  static propTypes = {
-    children: childrenPropType,
-    direction: PropTypes.oneOf(["rtl", "ltr"]),
-    className: PropTypes.oneOfType([
-      PropTypes.string,
-      PropTypes.array,
-      PropTypes.object
-    ]),
-    disabledTabClassName: PropTypes.string,
-    domRef: PropTypes.func,
-    focus: PropTypes.bool,
-    forceRenderTabPanel: PropTypes.bool,
-    onSelect: PropTypes.func.isRequired,
-    selectedIndex: PropTypes.number.isRequired,
-    selectedTabClassName: PropTypes.string,
-    selectedTabPanelClassName: PropTypes.string
-  };
-
+class UncontrolledTabs extends Component {
   tabNodes = [];
 
   setSelected(index, event) {
@@ -75,14 +52,14 @@ export default class UncontrolledTabs extends Component {
     const count = this.getTabsCount();
 
     // Look for non-disabled tab from index to the last tab on the right
-    for (let i = index + 1; i < count; i++) {
+    for (let i = index + 1; i < count; i += 1) {
       if (!isTabDisabled(this.getTab(i))) {
         return i;
       }
     }
 
     // If no tab found, continue searching from first on left to index
-    for (let i = 0; i < index; i++) {
+    for (let i = 0; i < index; i += 1) {
       if (!isTabDisabled(this.getTab(i))) {
         return i;
       }
@@ -118,7 +95,7 @@ export default class UncontrolledTabs extends Component {
     const count = this.getTabsCount();
 
     // Look for non disabled tab from the first tab
-    for (let i = 0; i < count; i++) {
+    for (let i = 0; i < count; i += 1) {
       if (!isTabDisabled(this.getTab(i))) {
         return i;
       }
@@ -211,28 +188,31 @@ export default class UncontrolledTabs extends Component {
               focus: selected && (focus || wasTabFocused)
             };
 
-            if (selectedTabClassName)
+            if (selectedTabClassName) {
               props.selectedClassName = selectedTabClassName;
-            if (disabledTabClassName)
+            }
+            if (disabledTabClassName) {
               props.disabledClassName = disabledTabClassName;
+            }
 
-            listIndex++;
+            listIndex += 1;
 
             return cloneElement(tab, props);
-          })
+          }),
         });
       } else if (isTabPanel(child)) {
         const props = {
           id: this.panelIds[index],
           tabId: this.tabIds[index],
-          selected: selectedIndex === index
+          selected: selectedIndex === index,
         };
 
         if (forceRenderTabPanel) props.forceRender = forceRenderTabPanel;
-        if (selectedTabPanelClassName)
+        if (selectedTabPanelClassName) {
           props.selectedClassName = selectedTabPanelClassName;
+        }
 
-        index++;
+        index += 1;
 
         result = cloneElement(child, props);
       }
@@ -256,7 +236,7 @@ export default class UncontrolledTabs extends Component {
 
       if (e.keyCode === 37 || e.keyCode === 38) {
         // Select next tab to the left
-        if (direction === "rtl") {
+        if (direction === 'rtl') {
           index = this.getNextTab(index);
         } else {
           index = this.getPrevTab(index);
@@ -265,7 +245,7 @@ export default class UncontrolledTabs extends Component {
         useSelectedIndex = true;
       } else if (e.keyCode === 39 || e.keyCode === 40) {
         // Select next tab to the right
-        if (direction === "rtl") {
+        if (direction === 'rtl') {
           index = this.getPrevTab(index);
         } else {
           index = this.getNextTab(index);
@@ -330,7 +310,7 @@ export default class UncontrolledTabs extends Component {
     let nodeAncestor = node.parentElement;
     do {
       if (nodeAncestor === this.node) return true;
-      if (nodeAncestor.getAttribute("data-tabs")) break;
+      if (nodeAncestor.getAttribute('data-tabs')) break;
 
       nodeAncestor = nodeAncestor.parentElement;
     } while (nodeAncestor);
@@ -371,3 +351,28 @@ export default class UncontrolledTabs extends Component {
     );
   }
 }
+
+UncontrolledTabs.defaultProps = {
+  className: 'react-tabs',
+  focus: false,
+};
+
+UncontrolledTabs.propTypes = {
+  children: childrenPropType.isRequired,
+  direction: PropTypes.oneOf(['rtl', 'ltr']).isRequired,
+  className: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.array,
+    PropTypes.object,
+  ]),
+  disabledTabClassName: PropTypes.string.isRequired,
+  domRef: PropTypes.func.isRequired,
+  focus: PropTypes.bool,
+  forceRenderTabPanel: PropTypes.bool.isRequired,
+  onSelect: PropTypes.func.isRequired,
+  selectedIndex: PropTypes.number.isRequired,
+  selectedTabClassName: PropTypes.string.isRequired,
+  selectedTabPanelClassName: PropTypes.string.isRequired,
+};
+
+export default UncontrolledTabs;
