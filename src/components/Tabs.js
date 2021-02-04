@@ -4,9 +4,9 @@ import {
   childrenPropType,
   onSelectPropType,
   selectedIndexPropType
-} from "./helpers/propTypes";
+} from "../helpers/propTypes";
 import UncontrolledTabs from "./UncontrolledTabs";
-import { getTabsCount } from "./helpers/count";
+import { getTabsCount } from "../helpers/count";
 
 const MODE_CONTROLLED = 0;
 const MODE_UNCONTROLLED = 1;

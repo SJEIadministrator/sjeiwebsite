@@ -1,11 +1,11 @@
 import PropTypes from "prop-types";
 import React, { cloneElement, Component } from "react";
 import cx from "clsx";
-import uuid from "./helpers/uuid";
-import { childrenPropType } from "./helpers/propTypes";
-import { getPanelsCount, getTabsCount } from "./helpers/count";
-import { deepMap } from "./helpers/childrenDeepMap";
-import { isTabList, isTabPanel, isTab } from "./helpers/elementTypes";
+import uuid from "../helpers/uuid";
+import { childrenPropType } from "../helpers/propTypes";
+import { getPanelsCount, getTabsCount } from "../helpers/count";
+import { deepMap } from "../helpers/childrenDeepMap";
+import { isTabList, isTabPanel, isTab } from "../helpers/elementTypes";
 
 function isNode(node) {
   return node && "getAttribute" in node;
