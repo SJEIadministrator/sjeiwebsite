@@ -1,11 +1,13 @@
-import React from "react";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import About from "./About";
+import React from 'react';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import About from './About';
 
 const Board = () => (
   <div className="container">
-    <br /> <br />
+    <br />
+    {' '}
+    <br />
     <Row>
       <About />
       <Col md={8} className="container">
@@ -29,7 +31,8 @@ const Board = () => (
             >
               Joseph Ayala - Assistant Executive Director, Programming Director
               & Founder
-            </a>{" "}
+            </a>
+            {' '}
             | T-Mobile
           </p>
           <br />
@@ -51,7 +54,8 @@ const Board = () => (
               rel="noopener noreferrer"
             >
               Kortnee Carmack - Fundraising & Grant Director
-            </a>{" "}
+            </a>
+            {' '}
             | MPA - Manager, Grants & Planning, Cook Inlet Tribal Council, Inc.
           </p>
           <br />
@@ -88,7 +92,8 @@ const Board = () => (
             </a>
             &nbsp; | HQ PACAF, Force Support Inspections Chief, TS SCI at The
             United States Air Force
-          </p>{" "}
+          </p>
+          {' '}
           <br />
         </div>
       </Col>

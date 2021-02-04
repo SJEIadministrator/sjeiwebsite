@@ -16,7 +16,7 @@ class Tabs extends Component {
     defaultFocus: false,
     forceRenderTabPanel: false,
     selectedIndex: null,
-    defaultIndex: null
+    defaultIndex: null,
   };
 
   static propTypes = {
@@ -25,7 +25,7 @@ class Tabs extends Component {
     className: PropTypes.oneOfType([
       PropTypes.string,
       PropTypes.array,
-      PropTypes.object
+      PropTypes.object,
     ]),
     defaultFocus: PropTypes.bool,
     defaultIndex: PropTypes.number,
@@ -35,7 +35,7 @@ class Tabs extends Component {
     onSelect: onSelectPropType,
     selectedIndex: selectedIndexPropType,
     selectedTabClassName: PropTypes.string,
-    selectedTabPanelClassName: PropTypes.string
+    selectedTabPanelClassName: PropTypes.string,
   };
 
   constructor(props) {
@@ -64,7 +64,7 @@ class Tabs extends Component {
 
     const state = {
       // Set focus if the change was triggered from the keyboard
-      focus: event.type === 'keydown'
+      focus: event.type === 'keydown',
     };
 
     if (mode === MODE_UNCONTROLLED) {
@@ -79,19 +79,19 @@ class Tabs extends Component {
   // If the state has not selectedIndex, default to the defaultIndex or 0
   static copyPropsToState(props, state, focus = false) {
     if (
-      process.env.NODE_ENV !== 'production' &&
-      state.mode !== undefined &&
-      state.mode !== Tabs.getModeFromProps(props)
+      process.env.NODE_ENV !== 'production'
+      && state.mode !== undefined
+      && state.mode !== Tabs.getModeFromProps(props)
     ) {
       throw new Error(
         `Switching between controlled mode (by using \`selectedIndex\`) and uncontrolled mode is not supported in \`Tabs\`.
-For more information about controlled and uncontrolled mode of react-tabs see the README.`
+For more information about controlled and uncontrolled mode of react-tabs see the README.`,
       );
     }
 
     const newState = {
       focus,
-      mode: Tabs.getModeFromProps(props)
+      mode: Tabs.getModeFromProps(props),
     };
 
     if (newState.mode === MODE_UNCONTROLLED) {
@@ -110,7 +110,9 @@ For more information about controlled and uncontrolled mode of react-tabs see th
   }
 
   render() {
-    const { children, defaultIndex, defaultFocus, ...props } = this.props;
+    const {
+      children, defaultIndex, defaultFocus, ...props
+    } = this.props;
     const { focus, selectedIndex } = this.state;
 
     props.focus = focus;

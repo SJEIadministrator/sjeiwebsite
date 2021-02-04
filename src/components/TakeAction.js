@@ -1,9 +1,9 @@
-import React from "react";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import React from 'react';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 const TakeAction = () => (
-  <div style={{ position: "relative" }}>
+  <div style={{ position: 'relative' }}>
     <img
       src="https://sjeiwebsitemedia.blob.core.windows.net/photos/UnderBridge.jpg"
       className="headersub img-responsive w3-animate-opacity"
@@ -48,7 +48,7 @@ const TakeAction = () => (
           <div className="text-center">
             <br />
             <p>
-              {" "}
+              {' '}
               <a href="/volunteer" className=" anchor-t">
                 Join the Initiative
               </a>

@@ -1,12 +1,12 @@
-import React from "react";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import About from "./About";
-import Mailchimp from "react-mailchimp-form";
+import React from 'react';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Mailchimp from 'react-mailchimp-form';
+import About from './About';
 
 const Whatwedo = () => (
   <div>
-    <div style={{ position: "relative" }}>
+    <div style={{ position: 'relative' }}>
       <img
         src="https://sjeiwebsitemedia.blob.core.windows.net/photos/LIRR.jpg"
         className="headersub img-responsive w3-animate-opacity"
@@ -20,7 +20,9 @@ const Whatwedo = () => (
         <About />
         <Col md={8} className="container">
           <div>
-            <br /> <div className="title2">Our mission</div>
+            <br />
+            {' '}
+            <div className="title2">Our mission</div>
             <p className="text">
               As champions for social and environmental justice, our mission is
               straightforward: to bridge resources with innovation and to
@@ -70,7 +72,8 @@ const Whatwedo = () => (
               creating LESS black water. Greywater systems use the water that
               comes out of your bathroom sink and shower, and any other used
               water in your household that does not have fecal or food matter.
-            </p>{" "}
+            </p>
+            {' '}
             <br />
             <p className="text">
               Our goal for this year will be to complete a low cost household
@@ -94,44 +97,44 @@ const Whatwedo = () => (
               information at advocacy@sjei.org.
             </p>
             <hr />
-            <div style={{ textAlign: "center" }}>
-              <h3 style={{ color: "black " }}>SUBSCRIBE</h3>
+            <div style={{ textAlign: 'center' }}>
+              <h3 style={{ color: 'black ' }}>SUBSCRIBE</h3>
               <p className="text-center signup">
                 Sign up to receive news and updates from us!.
               </p>
               {/* <!-- Begin Mailchimp Signup Form --> */}
               <Mailchimp
                 action="https://sjei.us2.list-manage.com/subscribe/post?u=21b5cf5568c94d68192141b71&amp;id=9fc47fc227"
-                //Adding multiple fields:
+                // Adding multiple fields:
                 fields={[
                   {
-                    name: "EMAIL",
-                    placeholder: "Email",
-                    type: "email",
-                    required: true
+                    name: 'EMAIL',
+                    placeholder: 'Email',
+                    type: 'email',
+                    required: true,
                   },
                   {
-                    name: "FNAME",
-                    placeholder: "first name",
-                    type: "text",
-                    required: true
+                    name: 'FNAME',
+                    placeholder: 'first name',
+                    type: 'text',
+                    required: true,
                   },
                   {
-                    name: "LNAME",
-                    placeholder: "last name",
-                    type: "text",
-                    required: true
-                  }
+                    name: 'LNAME',
+                    placeholder: 'last name',
+                    type: 'text',
+                    required: true,
+                  },
                 ]}
                 // Change predetermined language
                 messages={{
-                  sending: "Sending...",
-                  success: "Thank you for subscribing!",
-                  error: "An unexpected internal error has occurred.",
-                  empty: "You must write an e-mail.",
+                  sending: 'Sending...',
+                  success: 'Thank you for subscribing!',
+                  error: 'An unexpected internal error has occurred.',
+                  empty: 'You must write an e-mail.',
                   duplicate:
-                    "Too many subscribe attempts for this email address",
-                  button: "Subscribe!"
+                    'Too many subscribe attempts for this email address',
+                  button: 'Subscribe!',
                 }}
                 // Add a personalized class
                 className="mailchimpclass"

@@ -140,7 +140,7 @@ class UncontrolledTabs extends Component {
       forceRenderTabPanel,
       selectedIndex,
       selectedTabClassName,
-      selectedTabPanelClassName
+      selectedTabPanelClassName,
     } = this.props;
 
     this.tabIds = this.tabIds || [];
@@ -185,7 +185,7 @@ class UncontrolledTabs extends Component {
               id: this.tabIds[listIndex],
               panelId: this.panelIds[listIndex],
               selected,
-              focus: selected && (focus || wasTabFocused)
+              focus: selected && (focus || wasTabFocused),
             };
 
             if (selectedTabClassName) {

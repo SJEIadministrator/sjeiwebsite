@@ -1,11 +1,11 @@
-import React from "react";
-import Form from "react-bootstrap/Form";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import Button from "react-bootstrap/Button";
-import Mailchimp from "react-mailchimp-form";
-import { Link } from "react-router-dom";
-import Slide from "./Slide";
+import React from 'react';
+import Form from 'react-bootstrap/Form';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Button from 'react-bootstrap/Button';
+import Mailchimp from 'react-mailchimp-form';
+import { Link } from 'react-router-dom';
+import Slide from './Slide';
 
 const Home = () => (
   <div>
@@ -35,7 +35,8 @@ const Home = () => (
             Help lay the foundation of this organization!
           </p>
           <p className="text-center text-donate last  mt-1">
-            Find out more{" "}
+            Find out more
+            {' '}
             <a
               href="https://www.volunteermatch.org/search/org1044828.jsp"
               target="blank"
@@ -64,13 +65,13 @@ const Home = () => (
         </Col>
       </Row>
       <Row className="mt-3">
-        <Col></Col>
+        <Col />
       </Row>
       <Row className="mt-3">
         <Col>
           <div
             style={{
-              textAlign: "center"
+              textAlign: 'center',
             }}
           >
             <h3 className="text-center">SUBSCRIBE</h3>
@@ -80,35 +81,35 @@ const Home = () => (
             {/* <!-- Begin Mailchimp Signup Form --> */}
             <Mailchimp
               action="https://sjei.us2.list-manage.com/subscribe/post?u=21b5cf5568c94d68192141b71&amp;id=9fc47fc227"
-              //Adding multiple fields:
+              // Adding multiple fields:
               fields={[
                 {
-                  name: "EMAIL",
-                  placeholder: "Email",
-                  type: "email",
-                  required: true
+                  name: 'EMAIL',
+                  placeholder: 'Email',
+                  type: 'email',
+                  required: true,
                 },
                 {
-                  name: "FNAME",
-                  placeholder: "first name",
-                  type: "text",
-                  required: true
+                  name: 'FNAME',
+                  placeholder: 'first name',
+                  type: 'text',
+                  required: true,
                 },
                 {
-                  name: "LNAME",
-                  placeholder: "last name",
-                  type: "text",
-                  required: true
-                }
+                  name: 'LNAME',
+                  placeholder: 'last name',
+                  type: 'text',
+                  required: true,
+                },
               ]}
               // Change predetermined language
               messages={{
-                sending: "Sending...",
-                success: "Thank you for subscribing!",
-                error: "An unexpected internal error has occurred.",
-                empty: "You must write an e-mail.",
-                duplicate: "Too many subscribe attempts for this email address",
-                button: "Subscribe!"
+                sending: 'Sending...',
+                success: 'Thank you for subscribing!',
+                error: 'An unexpected internal error has occurred.',
+                empty: 'You must write an e-mail.',
+                duplicate: 'Too many subscribe attempts for this email address',
+                button: 'Subscribe!',
               }}
               // Add a personalized class
               className="mailchimpclass"
@@ -170,7 +171,8 @@ const Home = () => (
             <li>
               <p className="main-content">
                 Each of these cannons completely compliments social and
-                environmental justice.{" "}
+                environmental justice.
+                {' '}
               </p>
             </li>
             <li>
@@ -240,7 +242,8 @@ const Home = () => (
               className="d-block w-100 photo-at"
               src="https://sjeiwebsitemedia.blob.core.windows.net/photos/Staircase.jpg"
               alt="take-action"
-            />{" "}
+            />
+            {' '}
             <h4 className="text-center mt-3">TAKE ACTION</h4>
           </Link>
 

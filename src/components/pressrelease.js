@@ -1,12 +1,13 @@
-import React from "react";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import React from 'react';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 const PressRelease = () => (
   <div className="container">
     <Row>
       <Col md={{ span: 10, offset: 1 }} className="mb-5">
-        <br />{" "}
+        <br />
+        {' '}
         <p className=" text-center">
           <h2>Support For The Clean Power Program: CPP</h2>
         </p>
@@ -35,7 +36,7 @@ const PressRelease = () => (
         </p>
         <div className="text-center">
           <br />
-          <p></p>
+          <p />
         </div>
       </Col>
     </Row>

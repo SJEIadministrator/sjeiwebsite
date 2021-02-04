@@ -1,11 +1,13 @@
-import React from "react";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import About from "./About";
+import React from 'react';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import About from './About';
 
 const Volunteer = () => (
   <div className="container">
-    <br /> <br />
+    <br />
+    {' '}
+    <br />
     <Row>
       <About />
       <Col md={8} className="container">
@@ -16,14 +18,18 @@ const Volunteer = () => (
               rel="noopener noreferrer"
               target="_blank"
             >
-              Administrative Assistant Volunteer{" "}
-            </a>{" "}
+              Administrative Assistant Volunteer
+              {' '}
+            </a>
+            {' '}
           </span>
 
           <br />
           <p className="text">
             Virtual Opportunity
-            <br /> Grow with our non-profit organization by providing much
+            <br />
+            {' '}
+            Grow with our non-profit organization by providing much
             needed support to our all volunteer organization. Help us lay the
             foundation of this new organization and work to provide ...
           </p>
@@ -33,13 +39,16 @@ const Volunteer = () => (
               rel="noopener noreferrer"
               target="_blank"
             >
-              Administrative Assistant-Executive{" "}
+              Administrative Assistant-Executive
+              {' '}
             </a>
           </span>
           <br />
           <p className="text">
             Virtual Opportunity
-            <br /> Grow with our non-profit organization by providing much
+            <br />
+            {' '}
+            Grow with our non-profit organization by providing much
             needed support to our all volunteer organization. Help us lay the
             foundation of this new organization and work to provide ...
           </p>
@@ -49,12 +58,15 @@ const Volunteer = () => (
               rel="noopener noreferrer"
               target="_blank"
             >
-              Assistant Director Volunteer{" "}
+              Assistant Director Volunteer
+              {' '}
             </a>
           </span>
           <br />
           <p className="text">
-            Virtual Opportunity <br />
+            Virtual Opportunity
+            {' '}
+            <br />
             Assistant Research Director Volunteer Primary: The Research
             Assistant Director volunteer, at the direction of and in
             collaboration with the Research Director and relevant Board Members
@@ -66,13 +78,16 @@ const Volunteer = () => (
               rel="noopener noreferrer"
               target="_blank"
             >
-              Civil Engineer Volunteer{" "}
+              Civil Engineer Volunteer
+              {' '}
             </a>
           </span>
           <br />
           <p className="text">
-            {" "}
-            Virtual Opportunity <br />
+            {' '}
+            Virtual Opportunity
+            {' '}
+            <br />
             Civil Engineer Volunteer We are looking for industry experts, recent
             college graduates, or those that will be completing their degree
             within 12 to 18 months, who want ...
@@ -83,13 +98,16 @@ const Volunteer = () => (
               rel="noopener noreferrer"
               target="_blank"
             >
-              Digital Marketing Coordinator{" "}
+              Digital Marketing Coordinator
+              {' '}
             </a>
           </span>
           <br />
           <p className="text">
-            {" "}
-            Virtual Opportunity <br />
+            {' '}
+            Virtual Opportunity
+            {' '}
+            <br />
             Civil Engineer Volunteer We are looking for industry experts, recent
             college graduates, or those that will be completing their degree
             within 12 to 18 months, who want ...
@@ -100,13 +118,16 @@ const Volunteer = () => (
               rel="noopener noreferrer"
               target="_blank"
             >
-              Director of Projects{" "}
+              Director of Projects
+              {' '}
             </a>
           </span>
           <br />
           <p className="text">
-            {" "}
-            Virtual Opportunity <br />
+            {' '}
+            Virtual Opportunity
+            {' '}
+            <br />
             We are looking for industry experts who want to give back to their
             community in an executive capacity by volunteering to be among the
             first board members of The ...
@@ -117,13 +138,16 @@ const Volunteer = () => (
               rel="noopener noreferrer"
               target="_blank"
             >
-              Electrical Engineer Volunteer{" "}
+              Electrical Engineer Volunteer
+              {' '}
             </a>
           </span>
           <br />
           <p className="text">
-            {" "}
-            Virtual Opportunity <br />
+            {' '}
+            Virtual Opportunity
+            {' '}
+            <br />
             Electrical Engineer Volunteer We are looking for industry experts
             who want to give back to their community in a professional capacity
             by volunteering to be among the first ...
@@ -134,13 +158,16 @@ const Volunteer = () => (
               rel="noopener noreferrer"
               target="_blank"
             >
-              Full Stack Engineer{" "}
+              Full Stack Engineer
+              {' '}
             </a>
           </span>
           <br />
           <p className="text">
-            {" "}
-            Virtual Opportunity <br />
+            {' '}
+            Virtual Opportunity
+            {' '}
+            <br />
             Grow with our non-profit organization by providing much needed
             support to our organization. Help us lay the foundation of this new
             organization and work to provide positive technical, ...
@@ -151,12 +178,15 @@ const Volunteer = () => (
               rel="noopener noreferrer"
               target="_blank"
             >
-              Full Stack Engineer{" "}
+              Full Stack Engineer
+              {' '}
             </a>
           </span>
           <br />
           <p className="text">
-            Virtual Opportunity <br />
+            Virtual Opportunity
+            {' '}
+            <br />
             Grow with our non-profit organization by providing much needed
             support to our organization. Help us lay the foundation of this new
             organization and work to provide positive technical, ...
@@ -167,12 +197,15 @@ const Volunteer = () => (
               rel="noopener noreferrer"
               target="_blank"
             >
-              Full Stack Engineer{" "}
+              Full Stack Engineer
+              {' '}
             </a>
           </span>
           <br />
           <p className="text">
-            Virtual Opportunity <br />
+            Virtual Opportunity
+            {' '}
+            <br />
             Grow with our non-profit organization by providing much needed
             support to our organization. Help us lay the foundation of this new
             organization and work to provide positive technical, ...
@@ -188,8 +221,10 @@ const Volunteer = () => (
           </span>
           <br />
           <p className="text">
-            {" "}
-            Virtual Opportunity <br />
+            {' '}
+            Virtual Opportunity
+            {' '}
+            <br />
             Grow with our non-profit organization by providing much needed
             support to our organization. Help us lay the foundation of this new
             organization and work to provide positive technical, ...
@@ -200,12 +235,15 @@ const Volunteer = () => (
               rel="noopener noreferrer"
               target="_blank"
             >
-              Fundraising & Donor Relations Coordinator{" "}
+              Fundraising & Donor Relations Coordinator
+              {' '}
             </a>
           </span>
           <br />
           <p className="text">
-            Virtual Opportunity <br />
+            Virtual Opportunity
+            {' '}
+            <br />
             Grow with our non-profit organization by providing much needed
             support to our organization. Help us lay the foundation of this new
             organization and work to provide positive technical, ...
@@ -216,13 +254,16 @@ const Volunteer = () => (
               rel="noopener noreferrer"
               target="_blank"
             >
-              Mechanical Engineer Volunteer{" "}
+              Mechanical Engineer Volunteer
+              {' '}
             </a>
           </span>
           <br />
           <p className="text">
-            {" "}
-            Virtual Opportunity <br />
+            {' '}
+            Virtual Opportunity
+            {' '}
+            <br />
             Mechanical Engineer Volunteer We are looking for industry experts,
             recent college graduates, or those that will be completing their
             degree within 12 to 18 months, who want to ...
@@ -233,12 +274,15 @@ const Volunteer = () => (
               rel="noopener noreferrer"
               target="_blank"
             >
-              Multimedia Designer{" "}
+              Multimedia Designer
+              {' '}
             </a>
           </span>
           <br />
           <p className="text">
-            Virtual Opportunity <br />
+            Virtual Opportunity
+            {' '}
+            <br />
             Are you a multimedia designer with a passion for designing and
             producing video, graphical and interactive content that inspires
             audiences to engage and take action? Are you a storyteller ...
@@ -249,13 +293,16 @@ const Volunteer = () => (
               rel="noopener noreferrer"
               target="_blank"
             >
-              Program Director Volunteer{" "}
+              Program Director Volunteer
+              {' '}
             </a>
           </span>
           <br />
           <p className="text">
-            {" "}
-            Virtual Opportunity <br />
+            {' '}
+            Virtual Opportunity
+            {' '}
+            <br />
             Program Director Volunteer Primary: The Program Manager volunteer at
             the direction of and in collaboration with relevant Board Members
             will oversee all organizational day to day functions, provide ...
@@ -266,13 +313,16 @@ const Volunteer = () => (
               rel="noopener noreferrer"
               target="_blank"
             >
-              Program Manager Volunteer{" "}
+              Program Manager Volunteer
+              {' '}
             </a>
           </span>
           <br />
           <p className="text">
-            {" "}
-            Virtual Opportunity <br />
+            {' '}
+            Virtual Opportunity
+            {' '}
+            <br />
             Program Manager Volunteer Primary: The Program Manager volunteer at
             the direction of and in collaboration with the Projects Director and
             relevant Board Members will oversee all organizational day ...
@@ -283,12 +333,15 @@ const Volunteer = () => (
               rel="noopener noreferrer"
               target="_blank"
             >
-              Project Manager Volunteer{" "}
+              Project Manager Volunteer
+              {' '}
             </a>
           </span>
           <br />
           <p className="text">
-            Virtual Opportunity <br />
+            Virtual Opportunity
+            {' '}
+            <br />
             Project Manager Volunteer Primary: The Project Manager volunteer at
             the direction of and in collaboration with the Projects Director and
             relevant Board Members will oversee all organizational ...
@@ -299,13 +352,16 @@ const Volunteer = () => (
               rel="noopener noreferrer"
               target="_blank"
             >
-              Project Director Volunteer{" "}
+              Project Director Volunteer
+              {' '}
             </a>
           </span>
           <br />
           <p className="text">
-            {" "}
-            Virtual Opportunity <br />
+            {' '}
+            Virtual Opportunity
+            {' '}
+            <br />
             Projects Director Volunteer Primary: The Project Director volunteer
             at the direction of and in collaboration with the Board of
             Directors, and Board Members will oversee all organizational day ...
@@ -316,12 +372,15 @@ const Volunteer = () => (
               rel="noopener noreferrer"
               target="_blank"
             >
-              Research Director Volunteer{" "}
+              Research Director Volunteer
+              {' '}
             </a>
           </span>
           <br />
           <p className="text">
-            Virtual Opportunity <br />
+            Virtual Opportunity
+            {' '}
+            <br />
             Assistant Research Director Volunteer Primary: The Research Director
             volunteer, at the direction of and in collaboration with the Board
             of Directors and relevant Board Members will oversee ...
@@ -332,13 +391,16 @@ const Volunteer = () => (
               rel="noopener noreferrer"
               target="_blank"
             >
-              Social Justice Program Manager{" "}
+              Social Justice Program Manager
+              {' '}
             </a>
           </span>
           <br />
           <p className="text">
-            {" "}
-            Virtual Opportunity <br />
+            {' '}
+            Virtual Opportunity
+            {' '}
+            <br />
             Grow with our non-profit organization by providing much needed
             support to our organization. Help us lay the foundation of this new
             organization and work to provide positive technical, ...
@@ -349,12 +411,15 @@ const Volunteer = () => (
               rel="noopener noreferrer"
               target="_blank"
             >
-              Social Media + Marketing Manager{" "}
+              Social Media + Marketing Manager
+              {' '}
             </a>
           </span>
           <br />
           <p className="text">
-            Virtual Opportunity <br />
+            Virtual Opportunity
+            {' '}
+            <br />
             Grow with our non-profit organization by providing much needed
             support to our organization. Help us lay the foundation of this new
             organization and work to provide positive technical, ...
@@ -365,12 +430,15 @@ const Volunteer = () => (
               rel="noopener noreferrer"
               target="_blank"
             >
-              Volunteer Civil Engineering Subcommittee Chair{" "}
+              Volunteer Civil Engineering Subcommittee Chair
+              {' '}
             </a>
           </span>
           <br />
           <p className="text">
-            Virtual Opportunity <br />
+            Virtual Opportunity
+            {' '}
+            <br />
             Civil Engineering Subcommittee Chair We are looking for industry
             experts who want to give back to their community in an executive
             capacity by volunteering to be ...
@@ -381,13 +449,16 @@ const Volunteer = () => (
               rel="noopener noreferrer"
               target="_blank"
             >
-              Volunteer Communications & Marketing Coordinator{" "}
+              Volunteer Communications & Marketing Coordinator
+              {' '}
             </a>
           </span>
           <br />
           <p className="text">
-            {" "}
-            Virtual Opportunity <br />
+            {' '}
+            Virtual Opportunity
+            {' '}
+            <br />
             Grow with our non-profit organization by providing much needed
             support to our all volunteer organization. Help us lay the
             foundation of this new organization and work to provide ...
@@ -398,13 +469,16 @@ const Volunteer = () => (
               rel="noopener noreferrer"
               target="_blank"
             >
-              Volunteer Fundraising & Grants Committee Chair{" "}
+              Volunteer Fundraising & Grants Committee Chair
+              {' '}
             </a>
           </span>
           <br />
           <p className="text">
-            {" "}
-            Virtual Opportunity <br />
+            {' '}
+            Virtual Opportunity
+            {' '}
+            <br />
             We are looking for industry experts who want to give back to their
             community in an executive capacity by volunteering to be among the
             first board members of The ...
@@ -415,13 +489,16 @@ const Volunteer = () => (
               rel="noopener noreferrer"
               target="_blank"
             >
-              Volunteer General Counsel{" "}
+              Volunteer General Counsel
+              {' '}
             </a>
           </span>
           <br />
           <p className="text">
-            {" "}
-            Virtual Opportunity <br />
+            {' '}
+            Virtual Opportunity
+            {' '}
+            <br />
             We are looking for industry experts who want to give back to their
             community in an executive capacity by volunteering to be among the
             first board members of The ...
@@ -432,12 +509,15 @@ const Volunteer = () => (
               rel="noopener noreferrer"
               target="_blank"
             >
-              Volunteer Graphic Designer{" "}
+              Volunteer Graphic Designer
+              {' '}
             </a>
           </span>
           <br />
           <p className="text">
-            Virtual Opportunity <br />
+            Virtual Opportunity
+            {' '}
+            <br />
             Grow with our non-profit organization by providing much needed
             support to our all volunteer organization. Help us lay the
             foundation of this new organization and work to provide ...
@@ -448,13 +528,16 @@ const Volunteer = () => (
               rel="noopener noreferrer"
               target="_blank"
             >
-              Volunteer Mechanical/Structures Engineering Subcommittee Chair{" "}
+              Volunteer Mechanical/Structures Engineering Subcommittee Chair
+              {' '}
             </a>
           </span>
           <br />
           <p className="text">
-            {" "}
-            Virtual Opportunity <br />
+            {' '}
+            Virtual Opportunity
+            {' '}
+            <br />
             Volunteer Mechanical/Structures Engineering Subcommittee Chair We
             are looking for industry experts who want to give back to their
             community in an executive capacity by volunteering to ...
@@ -465,12 +548,15 @@ const Volunteer = () => (
               rel="noopener noreferrer"
               target="_blank"
             >
-              Volunteer Operations Manager{" "}
+              Volunteer Operations Manager
+              {' '}
             </a>
           </span>
           <br />
           <p className="text">
-            Virtual Opportunity <br />
+            Virtual Opportunity
+            {' '}
+            <br />
             Grow with our non-profit organization by providing much needed
             support to our organization. Help us lay the foundation of this new
             organization and work to provide positive technical, ...
@@ -481,13 +567,16 @@ const Volunteer = () => (
               rel="noopener noreferrer"
               target="_blank"
             >
-              Volunteer Project Coordinator{" "}
+              Volunteer Project Coordinator
+              {' '}
             </a>
           </span>
           <br />
           <p className="text">
-            {" "}
-            Virtual Opportunity <br />
+            {' '}
+            Virtual Opportunity
+            {' '}
+            <br />
             Volunteer Project Coordinator Description Primary: The Volunteer
             Project Coordinator at the direction of and in collaboration with
             the Board of Directors and Organization Coordinator will oversee
@@ -499,12 +588,15 @@ const Volunteer = () => (
               rel="noopener noreferrer"
               target="_blank"
             >
-              Volunteer Project Coordinator{" "}
+              Volunteer Project Coordinator
+              {' '}
             </a>
           </span>
           <br />
           <p className="text">
-            Virtual Opportunity <br />
+            Virtual Opportunity
+            {' '}
+            <br />
             Volunteer Project Coordinator Description Primary: The Volunteer
             Project Coordinator at the direction of and in collaboration with
             the Board of Directors and Organization Coordinator will oversee
@@ -516,13 +608,16 @@ const Volunteer = () => (
               rel="noopener noreferrer"
               target="_blank"
             >
-              Volunteer Project Grant Writer and Researcher{" "}
+              Volunteer Project Grant Writer and Researcher
+              {' '}
             </a>
           </span>
           <br />
           <p className="text">
-            {" "}
-            Virtual Opportunity <br />
+            {' '}
+            Virtual Opportunity
+            {' '}
+            <br />
             Volunteer Project Grant Writer and Researcher: We are looking for
             volunteer grant writing and grant research experts who want to give
             back to their community in a project centered ...
@@ -533,13 +628,16 @@ const Volunteer = () => (
               rel="noopener noreferrer"
               target="_blank"
             >
-              Volunteer Projects Committee Chair{" "}
+              Volunteer Projects Committee Chair
+              {' '}
             </a>
           </span>
           <br />
           <p className="text">
-            {" "}
-            Virtual Opportunity <br />
+            {' '}
+            Virtual Opportunity
+            {' '}
+            <br />
             We are looking for industry experts who want to give back to their
             community in an executive capacity by volunteering to be among the
             first board members of The ...
@@ -550,13 +648,16 @@ const Volunteer = () => (
               rel="noopener noreferrer"
               target="_blank"
             >
-              Volunteer Social Media & Marketing Director{" "}
+              Volunteer Social Media & Marketing Director
+              {' '}
             </a>
           </span>
           <br />
           <p className="text">
-            {" "}
-            Virtual Opportunity <br />
+            {' '}
+            Virtual Opportunity
+            {' '}
+            <br />
             We are looking for industry experts who want to give back to their
             community in an executive capacity by volunteering to be among the
             first board members of The ...
@@ -567,19 +668,22 @@ const Volunteer = () => (
               rel="noopener noreferrer"
               target="_blank"
             >
-              Website Developer Volunteer{" "}
+              Website Developer Volunteer
+              {' '}
             </a>
           </span>
           <br />
           <p className="text">
-            {" "}
-            Virtual Opportunity <br />
+            {' '}
+            Virtual Opportunity
+            {' '}
+            <br />
             We are looking for industry experts who want to give back to their
             community by laying the groundwork for something special. Grow with
             our non-profit organization by ...
           </p>
           <br />
-          <img src="https://sjeiwebsitemedia.blob.core.windows.net/photos/volunteermatch.png" className="responsiveimg" alt=""></img>
+          <img src="https://sjeiwebsitemedia.blob.core.windows.net/photos/volunteermatch.png" className="responsiveimg" alt="" />
           <br />
           <br />
         </div>

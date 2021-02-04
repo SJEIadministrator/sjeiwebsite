@@ -1,12 +1,12 @@
-import React, { Component } from "react";
-import About from "./About";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import React, { Component } from 'react';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import About from './About';
 
 export default class CorporateTransparency extends Component {
   render() {
     return (
-      <div style={{ position: "relative" }}>
+      <div style={{ position: 'relative' }}>
         <img
           src="https://sjeiwebsitemedia.blob.core.windows.net/photos/Window.jpg"
           className="headersub img-responsive  w3-animate-opacity"
@@ -17,7 +17,9 @@ export default class CorporateTransparency extends Component {
           <Row>
             <About />
             <Col md={8} className="container">
-              <br /> <div className="title2">Our Corporate Documents</div>
+              <br />
+              {' '}
+              <div className="title2">Our Corporate Documents</div>
               <p className="text">
                 As a new Non-Profit Organization, we are currently working on
                 finalizing all of our corporate documents which include our
@@ -35,13 +37,19 @@ export default class CorporateTransparency extends Component {
               <p className="text">
                 Ryan William Bentz, Executive Director The Late William Gordon
                 Bentz,
-                <br /> <br />
+                <br />
+                {' '}
+                <br />
                 Honorary Director Jose Antonio Ayala, Assistant Executive
                 Director,
-                <br /> <br />
+                <br />
+                {' '}
+                <br />
                 Founder Kerrine Bryan, Engineering & Development Director,
                 Founder
-                <br /> <br />
+                <br />
+                {' '}
+                <br />
               </p>
               <br />
               <div className="titlenext">By laws</div>
@@ -62,7 +70,8 @@ export default class CorporateTransparency extends Component {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Articles of incorporation{" "}
+                  Articles of incorporation
+                  {' '}
                 </a>
               </p>
               <br />

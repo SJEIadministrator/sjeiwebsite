@@ -6,7 +6,7 @@ function isTabChild(child) {
 }
 
 export function deepMap(children, callback) {
-  return Children.map(children, (child) => {
+  return Children.map(children, child => {
     // null happens when conditionally rendering TabPanel/Tab
     // see https://github.com/reactjs/react-tabs/issues/37
     if (child === null) return null;
@@ -16,9 +16,9 @@ export function deepMap(children, callback) {
     }
 
     if (
-      child.props &&
-      child.props.children &&
-      typeof child.props.children === 'object'
+      child.props
+      && child.props.children
+      && typeof child.props.children === 'object'
     ) {
       // Clone the child that has children and map them too
       return cloneElement(child, {
@@ -32,7 +32,7 @@ export function deepMap(children, callback) {
 }
 
 export function deepForEach(children, callback) {
-  return Children.forEach(children, (child) => {
+  return Children.forEach(children, child => {
     // null happens when conditionally rendering TabPanel/Tab
     // see https://github.com/reactjs/react-tabs/issues/37
     if (child === null) return;
@@ -40,9 +40,9 @@ export function deepForEach(children, callback) {
     if (isTab(child) || isTabPanel(child)) {
       callback(child);
     } else if (
-      child.props &&
-      child.props.children &&
-      typeof child.props.children === 'object'
+      child.props
+      && child.props.children
+      && typeof child.props.children === 'object'
     ) {
       if (isTabList(child)) callback(child);
       deepForEach(child.props.children, callback);

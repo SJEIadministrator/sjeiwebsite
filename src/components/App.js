@@ -1,20 +1,20 @@
-import React from "react";
-import { BrowserRouter } from "react-router-dom";
-import { Switch, Route } from "react-router";
+import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
+import { Switch, Route } from 'react-router';
 
-import NavBar from "./Navbar";
-import Home from "./Home";
-import Whatwedo from "./Whatwedo";
-import Team from "./team";
-import Board from "./Board";
-import Volunteer from "./Volunteer";
-import William from "./William";
-import TakeAction from "./TakeAction";
-import Donation from "./Donation";
-import Footer from "./Footer";
-import CorporateTransparency from "./corporatetransparency";
-import Contact from "./Contact";
-import PressRelease from "./pressrelease";
+import NavBar from './Navbar';
+import Home from './Home';
+import Whatwedo from './Whatwedo';
+import Team from './team';
+import Board from './Board';
+import Volunteer from './Volunteer';
+import William from './William';
+import TakeAction from './TakeAction';
+import Donation from './Donation';
+import Footer from './Footer';
+import CorporateTransparency from './corporatetransparency';
+import Contact from './Contact';
+import PressRelease from './pressrelease';
 
 function App() {
   return (

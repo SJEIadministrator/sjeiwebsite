@@ -1,8 +1,8 @@
-import React from "react";
-import Navbar from "react-bootstrap/Navbar";
-import Nav from "react-bootstrap/Nav";
-import { NavLink } from "react-router-dom";
-import NavDropdown from "react-bootstrap/NavDropdown";
+import React from 'react';
+import Navbar from 'react-bootstrap/Navbar';
+import Nav from 'react-bootstrap/Nav';
+import { NavLink } from 'react-router-dom';
+import NavDropdown from 'react-bootstrap/NavDropdown';
 
 const NavBar = () => (
   <Navbar
@@ -35,7 +35,7 @@ const NavBar = () => (
         >
           <NavDropdown.Item>
             <NavLink className="nav-link" to="/Whatwedo">
-              {" "}
+              {' '}
               What We Do
             </NavLink>
           </NavDropdown.Item>
@@ -82,7 +82,8 @@ const NavBar = () => (
           BLOG
         </a>
         <NavLink to="/pressrelease" className="mr-2 link ">
-          PRESS RELEASE{" "}
+          PRESS RELEASE
+          {' '}
         </NavLink>
         <div className="supportdiv">
           <NavLink to="/donation" className="mr-2 link support">

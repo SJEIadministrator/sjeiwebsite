@@ -1,7 +1,7 @@
-import React from "react";
-import { Col } from "react-bootstrap";
-import Row from "react-bootstrap/Row";
-import { SocialIcon } from "react-social-icons";
+import React from 'react';
+import { Col } from 'react-bootstrap';
+import Row from 'react-bootstrap/Row';
+import { SocialIcon } from 'react-social-icons';
 
 const Footer = () => (
   <footer className="bg-dark text-white">
