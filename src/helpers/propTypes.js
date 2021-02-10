@@ -33,9 +33,9 @@ function childrenPropType(props, propName, componentName) {
             + "have to be inside the 'TabList' component.",
         );
       }
-      tabsCount++;
+      tabsCount += 1;
     } else if (isTabPanel(child)) {
-      panelsCount++;
+      panelsCount += 1;
     }
   });
 

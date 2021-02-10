@@ -66,7 +66,7 @@ const Whatwedo = () => (
             <br />
             <p className="text">
               One of the easiest, cheapest, and common-sense solutions to this
-              issue is to use less clean drinking water for uses that don't
+              issue is to use less clean drinking water for uses that don&apos;t
               require it. Since it seems far less likely that the grass, palm
               trees, and gardens will be a thing of the past, we can do this by
               creating LESS black water. Greywater systems use the water that
@@ -140,7 +140,7 @@ const Whatwedo = () => (
                 className="mailchimpclass"
               />
               <div className="smalltxt">
-                We respect your privacy. We won't spam!
+                We respect your privacy. We won&apos;t spam!
               </div>
               {/* mailchimp ends */}
               <br />

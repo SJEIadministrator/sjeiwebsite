@@ -15,7 +15,7 @@ const William = () => (
           <div className="note">A special note</div>
           <p className="text">
             I started The Social Justice + Engineering Initiative in June of
-            2017 to honor my father William "Bill" Gordon Bentz. He later lost
+            2017 to honor my father William &quot;Bill&quot; Gordon Bentz. He later lost
             his incredible battle to incurable cancer and other complications on
             September 9th, 2017.
             <br />

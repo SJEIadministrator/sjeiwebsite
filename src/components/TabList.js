@@ -17,7 +17,7 @@ TabList.defaultProps = {
 };
 
 TabList.propTypes = {
-  children: PropTypes.oneOfType([PropTypes.object, PropTypes.array]),
+  children: PropTypes.oneOfType([PropTypes.object, PropTypes.array]).isRequired,
   className: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.array,

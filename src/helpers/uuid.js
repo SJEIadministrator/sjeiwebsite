@@ -1,6 +1,7 @@
 // Get a universally unique identifier
 let count = 0;
 export default function uuid() {
+  // eslint-disable-next-line no-plusplus
   return `react-tabs-${count++}`;
 }
 
