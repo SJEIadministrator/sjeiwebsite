@@ -5,7 +5,7 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import { informationtechnology } from './post';
+import { informationtechnology } from '../img/post';
 
 const useStyles = makeStyles({
   root: {
@@ -29,8 +29,6 @@ const useStyles = makeStyles({
 
 export default function InformationTechnologyVol() {
   const classes = useStyles();
-  // const bull = <span className={classes.bullet}>•</span>;
-
   return (
     <div className="rowflex">
       {informationtechnology.map(postdetail => (

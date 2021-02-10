@@ -1,35 +1,56 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    "Roboto",
+    "Oxygen",
+    "Ubuntu",
+    "Cantarell",
+    "Fira Sans",
+    "Droid Sans",
+    "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 .new {
-  background-color: #cccccc;
+  background-color: #ccc;
 }
+
 .nav-link {
   padding: 0;
 }
+
 .nav-link:hover {
   padding: 0;
   color: aquamarine;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+  font-family:
+    source-code-pro,
+    Menlo,
+    Monaco,
+    Consolas,
+    "Courier New",
     monospace;
 }
+
 /* .title {
   /* animation-duration: 3.7s; */
+
 /* animation-delay: 1s;
   line-height: 18px;
   font-size: 26px;
 
   animation-iteration-count: 5;
   animation-direction: alternate; /* or: normal */
+
 /* animation-timing-function: ease-out; */
+
 /* animation-name: fadein;
 } */
 
@@ -42,10 +63,12 @@ code {
     opacity: 100%;
   }
 } */
+
 /* navbar */
 .link:hover,
 .link:focus {
   color: aquamarine;
+
   /* border: 1px solid lightgrey;
   border-radius: 25px; */
 }
@@ -53,6 +76,7 @@ code {
 a:hover {
   text-decoration: none;
 }
+
 .link {
   color: white;
   width: 130px;
@@ -64,9 +88,11 @@ a:hover {
   transition-duration: 3s;
   transition-timing-function: ease-out;
 }
+
 .photo-at {
   opacity: 50%;
 }
+
 .photo-at:hover,
 .photo-at:focus {
   opacity: 100%;
@@ -75,6 +101,7 @@ a:hover {
 .about-toggle {
   color: grey;
 }
+
 .anchor,
 .anchor a {
   color: white;
@@ -82,6 +109,7 @@ a:hover {
   font-weight: bold;
   padding: 15px;
 }
+
 .support {
   padding: 15px;
   margin-left: 15px;
@@ -90,20 +118,22 @@ a:hover {
   border-radius: 25px;
   border: 2px solid white;
 }
+
 .support:hover {
   color: black;
   background-color: white;
 }
+
 /* slide */
 .carousel {
   height: 450px;
   margin-bottom: 70px;
 }
+
 .photo-carousel {
   display: block;
   height: 450px;
   max-width: 100%;
-
   animation-duration: 3s;
   animation-name: slidein;
 }
@@ -119,13 +149,16 @@ a:hover {
     width: 100%;
   }
 }
+
 .anchor-t {
   color: #00a0bc;
 }
+
 .anchor-t:hover {
   text-decoration: none;
   color: #00a0bc;
 }
+
 /* .title2 {
   animation-duration: 0.7s;
   font-size: 20px;
@@ -141,7 +174,8 @@ a:hover {
     width: 100%;
   }
 } */
-/*home */
+
+/* home */
 .text-donate {
   color: #616161;
   font-size: 16px;
@@ -152,18 +186,19 @@ a:hover {
 /* footer */
 .social-media {
   height: 100px;
-  color: #333333;
+  color: #333;
 }
 
 .social-media a {
   height: 100px;
-  color: #333333;
+  color: #333;
   opacity: 70%;
   margin-right: 12px;
   transition-property: color, background-color;
   transition-duration: 5s;
   transition-timing-function: ease-out;
 }
+
 .social-media a:hover {
   opacity: 100%;
 }
@@ -178,15 +213,18 @@ a:hover {
   color: #a0a0a0;
   font-size: 14px;
 }
+
 .gray {
   color: darkgrey;
   padding-top: 20px;
   font-size: 14px;
 }
+
 .guidelogo {
   margin-right: 0;
   margin-left: 0;
 }
+
 .text-wedo {
   line-height: 2;
   font-size: 20px;
@@ -197,39 +235,48 @@ a:hover {
   .link:hover,
   link:focus {
     color: aquamarine;
-    border: 0px solid grey;
+    border: 0 solid grey;
+
     /* border-radius: 25px; */
   }
+
   .carousel {
     height: 200px;
   }
+
   .carousel-indicators {
     bottom: -45px;
   }
+
   .photo-carousel {
     display: block;
     height: 250px;
     max-width: 100%;
   }
+
   a:hover {
     text-decoration: none;
   }
+
   .link {
     color: white;
     width: 130px;
     font-size: 13px;
     text-align: center;
     font-weight: bold;
+
     /* padding: 10px 5px 5px 0; */
     transition-property: color, background-color;
     transition-duration: 5s;
     transition-timing-function: ease-out;
   }
+
   .text-wedo {
     line-height: 1.9;
     font-size: 14px;
     text-align: justify;
   }
+
   .about a {
     color: white;
     font-size: 13px;
@@ -237,10 +284,12 @@ a:hover {
     padding: 12px;
     padding-top: 8px;
   }
+
   .title {
     font-size: 18px;
     line-height: 18px;
   }
+
   .support:hover {
     color: black;
     background-color: white;
@@ -253,9 +302,11 @@ a:hover {
     height: 580px;
     max-width: 100%;
   }
+
   .btn-info {
     margin-top: 100px;
   }
+
   .headersub {
     width: 100%;
     margin-bottom: 10px;
