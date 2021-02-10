@@ -31,8 +31,8 @@ export default function ProjectsVolunteer() {
 
   return (
     <div className="rowflex">
-      {projectsVolunteer.map((postdetail, index) => (
-        <div className="carddetail">
+      {projectsVolunteer.map(postdetail => (
+        <div key={postdetail.id} className="carddetail">
           <Card className={classes.root}>
             <CardContent>
               <Typography

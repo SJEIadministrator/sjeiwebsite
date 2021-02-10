@@ -115,7 +115,7 @@ const Home = () => (
               className="mailchimpclass"
             />
             <div className="smalltxt">
-              We respect your privacy. We won't spam!
+              We respect your privacy. We won`&apos;`t spam!
             </div>
             {/* mailchimp ends */}
           </div>

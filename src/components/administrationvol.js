@@ -32,8 +32,8 @@ export default function Administration() {
 
   return (
     <div className="rowflex">
-      {administrationVolunteer.map((postdetail, index) => (
-        <div className="carddetail card1">
+      {administrationVolunteer.map(postdetail => (
+        <div key={postdetail.id} className="carddetail card1">
           <Card className={classes.root}>
             <CardContent>
               <Typography

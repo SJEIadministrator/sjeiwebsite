@@ -31,8 +31,9 @@ export default function CommunicationMarketingVol() {
 
   return (
     <div className="rowflex">
-      {communicationmarketing.map((postdetail, index) => (
-        <div className="carddetail card1">
+      {
+      communicationmarketing.map(postdetail => (
+        <div key={postdetail.id} className="carddetail card1">
           <Card className={classes.root}>
             <CardContent>
               <Typography
@@ -58,7 +59,8 @@ export default function CommunicationMarketingVol() {
             </CardActions>
           </Card>
         </div>
-      ))}
+      ))
+    }
     </div>
   );
 }

@@ -33,8 +33,8 @@ export default function InformationTechnologyVol() {
 
   return (
     <div className="rowflex">
-      {informationtechnology.map((postdetail, index) => (
-        <div className="carddetail">
+      {informationtechnology.map(postdetail => (
+        <div key={postdetail.id} className="carddetail">
           <Card className={classes.root}>
             <CardContent>
               <Typography

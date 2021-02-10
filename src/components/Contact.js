@@ -31,7 +31,6 @@ const Contact = () => (
                   id="ifram"
                   aria-hidden="false"
                   // className="new"
-                  tabIndex="0"
                   title="contact"
                 />
               </div>
@@ -45,7 +44,7 @@ const Contact = () => (
                 style={{ border: 0 }}
                 allowFullScreen=""
                 aria-hidden="false"
-                tabIndex="0"
+                // tabIndex="0"
                 className="img-responsive"
               />
               <div className="email-contact">
@@ -69,7 +68,7 @@ const Contact = () => (
                 style={{ border: 0 }}
                 allowFullScreen=""
                 aria-hidden="false"
-                tabIndex="0"
+                // tabIndex="0"
                 className="img-responsive"
               />
               <div className="email-contact">
@@ -93,7 +92,7 @@ const Contact = () => (
                 style={{ border: 0 }}
                 allowFullScreen=""
                 aria-hidden="false"
-                tabIndex="0"
+                // tabIndex="0"
                 className="img-responsive"
               />
               <div className="email-contact">
@@ -139,8 +138,8 @@ const Contact = () => (
                 <br />
                 <span className="nobold">
                   <b>Kerrine Bryan</b>
-                  , Chartered Electrical Engineer -
-                  Director of Engineering & Development
+                  , Chartered Electrical Engineer - Director of Engineering &
+                  Development
                   <br />
                   Email:
                   {' '}

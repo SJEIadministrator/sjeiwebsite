@@ -32,8 +32,8 @@ export default function FundraisingGrant() {
 
   return (
     <div className="rowflex">
-      {fundraisinggrantVolunteer.map((postdetail, index) => (
-        <div className="carddetail card1">
+      {fundraisinggrantVolunteer.map(postdetail => (
+        <div key={postdetail.id} className="carddetail card1">
           <Card className={classes.root}>
             <CardContent>
               <Typography

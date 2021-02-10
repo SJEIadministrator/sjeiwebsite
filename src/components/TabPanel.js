@@ -5,26 +5,7 @@ import cx from 'clsx';
 const DEFAULT_CLASS = 'react-tabs__tab-panel';
 
 export default class TabPanel extends Component {
-  static defaultProps = {
-    className: DEFAULT_CLASS,
-    forceRender: false,
-    selectedClassName: `${DEFAULT_CLASS}--selected`,
-  };
-
-  static propTypes = {
-    children: PropTypes.node,
-    className: PropTypes.oneOfType([
-      PropTypes.string,
-      PropTypes.array,
-      PropTypes.object,
-    ]),
-    forceRender: PropTypes.bool,
-    id: PropTypes.string, // private
-    selected: PropTypes.bool, // private
-    selectedClassName: PropTypes.string,
-    tabId: PropTypes.string, // private
-  };
-
+  
   render() {
     const {
       children,
@@ -52,5 +33,25 @@ export default class TabPanel extends Component {
     );
   }
 }
+
+TabPanel.defaultProps = {
+  className: DEFAULT_CLASS,
+  forceRender: false,
+  selectedClassName: `${DEFAULT_CLASS}--selected`,
+};
+
+TabPanel.propTypes = {
+  children: PropTypes.node,
+  className: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.array,
+    PropTypes.object,
+  ]),
+  forceRender: PropTypes.bool,
+  id: PropTypes.string, // private
+  selected: PropTypes.bool, // private
+  selectedClassName: PropTypes.string,
+  tabId: PropTypes.string, // private
+};
 
 TabPanel.tabsRole = 'TabPanel';

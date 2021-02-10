@@ -34,8 +34,9 @@ export default function SimpleCard() {
 
   return (
     <div className="rowflex">
-      {generalVolunteer.map((postdetail, index) => (
-        <div className="carddetail card1">
+      {
+      generalVolunteer.map(postdetail => (
+        <div key={postdetail.id} className="carddetail card1">
           <Card className={classes.root}>
             <CardContent>
               <Typography
@@ -61,7 +62,8 @@ export default function SimpleCard() {
             </CardActions>
           </Card>
         </div>
-      ))}
+      ))
+      }
     </div>
   );
 }

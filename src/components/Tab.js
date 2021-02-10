@@ -5,38 +5,7 @@ import cx from 'clsx';
 const DEFAULT_CLASS = 'react-tabs__tab';
 
 export default class Tab extends Component {
-  static defaultProps = {
-    className: DEFAULT_CLASS,
-    disabledClassName: `${DEFAULT_CLASS}--disabled`,
-    focus: false,
-    id: null,
-    panelId: null,
-    selected: false,
-    selectedClassName: `${DEFAULT_CLASS}--selected`,
-  };
-
-  static propTypes = {
-    children: PropTypes.oneOfType([
-      PropTypes.array,
-      PropTypes.object,
-      PropTypes.string,
-    ]),
-    className: PropTypes.oneOfType([
-      PropTypes.string,
-      PropTypes.array,
-      PropTypes.object,
-    ]),
-    disabled: PropTypes.bool,
-    tabIndex: PropTypes.string,
-    disabledClassName: PropTypes.string,
-    focus: PropTypes.bool, // private
-    id: PropTypes.string, // private
-    panelId: PropTypes.string, // private
-    selected: PropTypes.bool, // private
-    selectedClassName: PropTypes.string,
-    tabRef: PropTypes.func, // private
-  };
-
+  
   componentDidMount() {
     this.checkFocus();
   }
@@ -51,6 +20,7 @@ export default class Tab extends Component {
       this.node.focus();
     }
   }
+ 
 
   render() {
     const {
@@ -91,5 +61,38 @@ export default class Tab extends Component {
     );
   }
 }
+
+Tab.defaultProps = {
+  children: 
+  className: DEFAULT_CLASS,
+  disabledClassName: `${DEFAULT_CLASS}--disabled`,
+  focus: false,
+  id: null,
+  panelId: null,
+  selected: false,
+  selectedClassName: `${DEFAULT_CLASS}--selected`,
+};
+
+Tab.propTypes = {
+  children: PropTypes.oneOfType([
+    PropTypes.array,
+    PropTypes.object,
+    PropTypes.string,
+  ]),
+  className: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.array,
+    PropTypes.object,
+  ]),
+  disabled: PropTypes.bool.isRequired,
+  tabIndex: PropTypes.string.isRequired,
+  disabledClassName: PropTypes.string,
+  focus: PropTypes.bool, // private
+  id: PropTypes.string, // private
+  panelId: PropTypes.string, // private
+  selected: PropTypes.bool, // private
+  selectedClassName: PropTypes.string,
+  tabRef: PropTypes.func.isRequired, // private
+};
 
 Tab.tabsRole = 'Tab';

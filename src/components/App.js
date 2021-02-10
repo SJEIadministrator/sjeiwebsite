@@ -5,6 +5,7 @@ import { Switch, Route } from 'react-router';
 import NavBar from './Navbar';
 import Home from './Home';
 import Whatwedo from './Whatwedo';
+// eslint-disable-next-line import/no-cycle
 import Team from './team';
 import Board from './Board';
 import Volunteer from './Volunteer';
