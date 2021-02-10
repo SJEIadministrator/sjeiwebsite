@@ -11,12 +11,6 @@ import './style/whawedo.css';
 import './style/react-tabs.css';
 import './style/index.css';
 
-export { default as Tabs } from './components/Tabs';
-export { default as TabList } from './components/TabList';
-export { default as Tab } from './components/Tab';
-export { default as TabPanel } from './components/TabPanel';
-export { reset as resetIdCounter } from './helpers/uuid';
-
 ReactDOM.render(
   <React.StrictMode>
     <App />

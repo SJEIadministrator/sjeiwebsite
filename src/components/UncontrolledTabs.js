@@ -73,6 +73,7 @@ class UncontrolledTabs extends Component {
     let i = index;
 
     // Look for non-disabled tab from index to first tab on the left
+    // eslint-disable-next-line no-plusplus
     while (i--) {
       if (!isTabDisabled(this.getTab(i))) {
         return i;
@@ -81,6 +82,7 @@ class UncontrolledTabs extends Component {
 
     // If no tab found, continue searching from last tab on right to index
     i = this.getTabsCount();
+    // eslint-disable-next-line no-plusplus
     while (i-- > index) {
       if (!isTabDisabled(this.getTab(i))) {
         return i;
@@ -108,6 +110,7 @@ class UncontrolledTabs extends Component {
     let i = this.getTabsCount();
 
     // Look for non disabled tab from the last tab
+    // eslint-disable-next-line no-plusplus
     while (i--) {
       if (!isTabDisabled(this.getTab(i))) {
         return i;
@@ -150,6 +153,7 @@ class UncontrolledTabs extends Component {
     // Add ids if new tabs have been added
     // Don't bother removing ids, just keep them in case they are added again
     // This is more efficient, and keeps the uuid counter under control
+    // eslint-disable-next-line no-plusplus
     while (diff++ < 0) {
       this.tabIds.push(uuid());
       this.panelIds.push(uuid());
@@ -319,7 +323,6 @@ class UncontrolledTabs extends Component {
   }
 
   render() {
-    // Delete all known props, so they don't get added to DOM
     const {
       children, // unused
       className,
@@ -333,9 +336,10 @@ class UncontrolledTabs extends Component {
       selectedTabPanelClassName, // unused
       ...attributes
     } = this.props;
-
     return (
+      // eslint-disable-next-line jsx-a11y/no-static-element-interactions
       <div
+        // eslint-disable-next-line react/jsx-props-no-spreading
         {...attributes}
         className={cx(className)}
         onClick={this.handleClick}

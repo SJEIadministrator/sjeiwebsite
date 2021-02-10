@@ -4,8 +4,7 @@ import cx from 'clsx';
 
 const DEFAULT_CLASS = 'react-tabs__tab';
 
-export default class Tab extends Component {
-  
+class Tab extends Component {
   componentDidMount() {
     this.checkFocus();
   }
@@ -20,7 +19,6 @@ export default class Tab extends Component {
       this.node.focus();
     }
   }
- 
 
   render() {
     const {
@@ -40,6 +38,7 @@ export default class Tab extends Component {
 
     return (
       <li
+        // eslint-disable-next-line react/jsx-props-no-spreading
         {...attributes}
         className={cx(className, {
           [selectedClassName]: selected,
@@ -63,7 +62,6 @@ export default class Tab extends Component {
 }
 
 Tab.defaultProps = {
-  children: 
   className: DEFAULT_CLASS,
   disabledClassName: `${DEFAULT_CLASS}--disabled`,
   focus: false,
@@ -78,7 +76,7 @@ Tab.propTypes = {
     PropTypes.array,
     PropTypes.object,
     PropTypes.string,
-  ]),
+  ]).isRequired,
   className: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.array,
@@ -96,3 +94,5 @@ Tab.propTypes = {
 };
 
 Tab.tabsRole = 'Tab';
+
+export default Tab;

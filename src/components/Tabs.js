@@ -45,11 +45,9 @@ For more information about controlled and uncontrolled mode of react-tabs see th
 
     return newState;
   }
-  
 
   constructor(props) {
     super(props);
-
     this.state = Tabs.copyPropsToState(this.props, {}, props.defaultFocus);
   }
 
@@ -83,34 +81,10 @@ For more information about controlled and uncontrolled mode of react-tabs see th
 
     this.setState(state);
   };
-  Tabs.defaultProps = {
-    defaultFocus: false,
-    forceRenderTabPanel: false,
-    selectedIndex: null,
-    defaultIndex: null,
-  };
 
-  Tabs.propTypes = {
-    children: childrenPropType,
-    direction: PropTypes.oneOf(['rtl', 'ltr']),
-    className: PropTypes.oneOfType([
-      PropTypes.string,
-      PropTypes.array,
-      PropTypes.object,
-    ]),
-    defaultFocus: PropTypes.bool,
-    defaultIndex: PropTypes.number,
-    disabledTabClassName: PropTypes.string,
-    domRef: PropTypes.func,
-    forceRenderTabPanel: PropTypes.bool,
-    onSelect: onSelectPropType,
-    selectedIndex: selectedIndexPropType,
-    selectedTabClassName: PropTypes.string,
-    selectedTabPanelClassName: PropTypes.string,
-  };
   render() {
     const {
-      children, defaultIndex, defaultFocus, ...props
+      children, ...props
     } = this.props;
     const { focus, selectedIndex } = this.state;
 
@@ -121,10 +95,36 @@ For more information about controlled and uncontrolled mode of react-tabs see th
       props.selectedIndex = selectedIndex;
     }
 
+    // eslint-disable-next-line react/jsx-props-no-spreading
     return <UncontrolledTabs {...props}>{children}</UncontrolledTabs>;
   }
 }
 
 Tabs.tabsRole = 'Tabs';
 
+Tabs.defaultProps = {
+  forceRenderTabPanel: false,
+  selectedIndex: null,
+  defaultFocus: false,
+  defaultIndex: null,
+};
+
+Tabs.propTypes = {
+  children: childrenPropType.isRequired,
+  forceRenderTabPanel: PropTypes.bool,
+  onSelect: onSelectPropType.isRequired,
+  selectedIndex: selectedIndexPropType,
+  defaultFocus: PropTypes.bool,
+  direction: PropTypes.oneOf(['rtl', 'ltr']).isRequired,
+  className: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.array,
+    PropTypes.object,
+  ]).isRequired,
+  defaultIndex: PropTypes.number,
+  disabledTabClassName: PropTypes.string.isRequired,
+  domRef: PropTypes.func.isRequired,
+  /*  selectedTabClassName: PropTypes.string,
+  selectedTabPanelClassName: PropTypes.string, */
+};
 export default Tabs;

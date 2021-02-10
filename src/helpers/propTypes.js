@@ -1,7 +1,7 @@
 import { deepForEach } from './childrenDeepMap';
 import { isTab, isTabList, isTabPanel } from './elementTypes';
 
-export function childrenPropType(props, propName, componentName) {
+function childrenPropType(props, propName, componentName) {
   let error;
   let tabsCount = 0;
   let panelsCount = 0;
@@ -49,7 +49,7 @@ export function childrenPropType(props, propName, componentName) {
   return error;
 }
 
-export function onSelectPropType(
+function onSelectPropType(
   props,
   propName,
   componentName,
@@ -79,7 +79,7 @@ export function onSelectPropType(
   return error;
 }
 
-export function selectedIndexPropType(
+function selectedIndexPropType(
   props,
   propName,
   componentName,
@@ -106,3 +106,9 @@ export function selectedIndexPropType(
 
   return error;
 }
+
+export {
+  childrenPropType,
+  onSelectPropType,
+  selectedIndexPropType,
+};
