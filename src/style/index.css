@@ -39,30 +39,17 @@ code {
     monospace;
 }
 
-/* .title {
-  /* animation-duration: 3.7s; */
-
-/* animation-delay: 1s;
-  line-height: 18px;
-  font-size: 26px;
-
-  animation-iteration-count: 5;
-  animation-direction: alternate; /* or: normal */
-
-/* animation-timing-function: ease-out; */
-
-/* animation-name: fadein;
-} */
-
-/* @keyframes fadein {
-  from {
-    opacity: 0%;
-  }
-
-  to {
-    opacity: 100%;
-  }
-} */
+.link {
+  color: white;
+  width: 130px;
+  font-size: 13px;
+  text-align: center;
+  font-weight: bold;
+  padding: 10px 5px 5px 0;
+  transition-property: color, border, background-color;
+  transition-duration: 3s;
+  transition-timing-function: ease-out;
+}
 
 /* navbar */
 .link:hover,
@@ -77,25 +64,13 @@ a:hover {
   text-decoration: none;
 }
 
-.link {
-  color: white;
-  width: 130px;
-  font-size: 13px;
-  text-align: center;
-  font-weight: bold;
-  padding: 10px 5px 5px 0;
-  transition-property: color, border, background-color;
-  transition-duration: 3s;
-  transition-timing-function: ease-out;
-}
-
 .photo-at {
-  opacity: 50%;
+  opacity: 0.5;
 }
 
 .photo-at:hover,
 .photo-at:focus {
-  opacity: 100%;
+  opacity: 1;
 }
 
 .about-toggle {
@@ -140,12 +115,12 @@ a:hover {
 
 @keyframes slidein {
   from {
-    opacity: 0%;
+    opacity: 0;
     width: 300%;
   }
 
   to {
-    opacity: 100%;
+    opacity: 1;
     width: 100%;
   }
 }
@@ -192,7 +167,7 @@ a:hover {
 .social-media a {
   height: 100px;
   color: #333;
-  opacity: 70%;
+  opacity: 0.7;
   margin-right: 12px;
   transition-property: color, background-color;
   transition-duration: 5s;
@@ -200,7 +175,7 @@ a:hover {
 }
 
 .social-media a:hover {
-  opacity: 100%;
+  opacity: 1;
 }
 
 .bottom {
@@ -232,7 +207,20 @@ a:hover {
 }
 
 @media (max-width: 500px) {
-  .link:hover,
+  .link {
+    color: white;
+    width: 130px;
+    font-size: 13px;
+    text-align: center;
+    font-weight: bold;
+
+    /* padding: 10px 5px 5px 0; */
+    transition-property: color, background-color;
+    transition-duration: 5s;
+    transition-timing-function: ease-out;
+  }
+
+  .link :hover,
   link:focus {
     color: aquamarine;
     border: 0 solid grey;
@@ -256,19 +244,6 @@ a:hover {
 
   a:hover {
     text-decoration: none;
-  }
-
-  .link {
-    color: white;
-    width: 130px;
-    font-size: 13px;
-    text-align: center;
-    font-weight: bold;
-
-    /* padding: 10px 5px 5px 0; */
-    transition-property: color, background-color;
-    transition-duration: 5s;
-    transition-timing-function: ease-out;
   }
 
   .text-wedo {
