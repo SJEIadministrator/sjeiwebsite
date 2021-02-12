@@ -97,8 +97,7 @@ p a {
   color: grey;
 }
 
-.text a,
-.text a:visited {
+.text a {
   color: #2fa99a;
   font-size: 16px;
   font-weight: bold;
@@ -106,6 +105,13 @@ p a {
 }
 
 li a:hover {
+  text-decoration: none;
+}
+
+.text a:visited {
+  color: #2fa99a;
+  font-size: 16px;
+  font-weight: bold;
   text-decoration: none;
 }
 
