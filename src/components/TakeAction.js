@@ -1,6 +1,7 @@
 import React from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import { NavLink } from 'react-router-dom';
 
 const TakeAction = () => (
   <div style={{ position: 'relative' }}>
@@ -22,7 +23,7 @@ const TakeAction = () => (
       </Row>
       <Row className="coltakeaction">
         <Col>
-          <h5 className="text-center title-h5">SUPPORT</h5>
+          <h4 className="text-center title-h5">SUPPORT</h4>
           <p className="text-center">
             Your donation allows us to perform research, ensure sustainable
             engineering practices and methods are being performed while ensuring
@@ -39,20 +40,15 @@ const TakeAction = () => (
         </Col>
         <br />
         <Col>
-          <h5 className="text-center title-h5">VOLUNTEER</h5>
+          <h4 className="text-center title-h5">VOLUNTEER</h4>
           <p className="text-center">
             Tell your friends and family. There&apos;s no better way to make an
-            impact than to become informed yourself. Join now and make an
-            impact!
+            impact than to become informed yourself. Join now and make an impact!
           </p>
           <div className="text-center">
-            <br />
-            <p>
-              {' '}
-              <a href="/volunteer" className=" anchor-t">
-                Join the Initiative
-              </a>
-            </p>
+            <NavLink to="/volunteer" className=" anchor-t">
+              <b>Join the Initiative</b>
+            </NavLink>
           </div>
         </Col>
       </Row>

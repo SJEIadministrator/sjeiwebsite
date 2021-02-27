@@ -1,17 +1,9 @@
 import React from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Tab from '../tabs_team_logic/Tab';
-import TabList from '../tabs_team_logic/TabList';
-import TabPanel from '../tabs_team_logic/TabPanel';
-import Tabs from '../tabs_team_logic/Tabs';
+
 import SimpleCard from './card';
 import About from './About';
-import Administration from './administrationvol';
-import FundraisingGrant from './fundraisinggrant';
-import ProjectsVolunteer from './projectsvolunteer';
-import CommunicationMarketingVol from './communicationmarketingvol';
-import InformationTechnologyVol from './informationtechnologyvol';
 
 const Team = () => (
   <div className="container">
@@ -20,59 +12,19 @@ const Team = () => (
     <br />
     <Row>
       <About />
-      <Col md={8} sm={12} className="container">
+      <br />
+      <br />
+      <br />
+      <Col md={8} sm={12} xs={12} lg={8} className="container">
         <div>
           <div className="title2">Our team</div>
 
-          <Tabs forceRenderTabPanel>
-            <TabList md={8} sm={12}>
-              <Tab>General volunteers</Tab>
-              <Tab>Administration</Tab>
-              <Tab>Fundraising & Grants</Tab>
-              <Tab>Projects</Tab>
-              <Tab>Communication & Marketing</Tab>
-              <Tab>Information Technology/ Legal</Tab>
-            </TabList>
+          <div className="col">
+            <div className="carddetail">
+              <SimpleCard />
+            </div>
+          </div>
 
-            <TabPanel>
-              <div>
-                <div className="carddetail">
-                  <SimpleCard />
-                </div>
-                {' '}
-              </div>
-            </TabPanel>
-            <TabPanel>
-              <div className="carddetail">
-                {' '}
-                <Administration />
-              </div>
-            </TabPanel>
-            <TabPanel>
-              <div className="carddetail">
-                {' '}
-                <FundraisingGrant />
-              </div>
-            </TabPanel>
-            <TabPanel>
-              <div className="carddetail">
-                {' '}
-                <ProjectsVolunteer />
-              </div>
-            </TabPanel>
-            <TabPanel>
-              <div className="carddetail">
-                {' '}
-                <CommunicationMarketingVol />
-              </div>
-            </TabPanel>
-            <TabPanel>
-              <div className="carddetail">
-                {' '}
-                <InformationTechnologyVol />
-              </div>
-            </TabPanel>
-          </Tabs>
         </div>
       </Col>
     </Row>

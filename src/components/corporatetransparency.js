@@ -1,13 +1,13 @@
-/* eslint-disable react/jsx-no-comment-textnodes */
 import React from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import About from './About';
+import CorpTransparency from '../img/corporate-transparency.jpg';
 
 const CorporateTransparency = () => (
   <div style={{ position: 'relative' }}>
     <img
-      src="https://sjeiwebsitemedia.blob.core.windows.net/photos/Window.jpg"
+      src={CorpTransparency}
       className="headersub img-responsive  w3-animate-opacity"
       alt="Corporate Transparency"
     />
@@ -19,14 +19,13 @@ const CorporateTransparency = () => (
           <br />
           {' '}
           <div className="title2">Our Corporate Documents</div>
-          // eslint-disable-next-line react/jsx-no-comment-textnodes
           <p className="text">
             As a new Non-Profit Organization, we are currently working on
             finalizing all of our corporate documents which include our
             Corporate Bylaws. Below is the latest approved draft of our
             bylaws. They are not complete. We strive for transparency to
-            // eslint-disable-next-line react/no-unescaped-entities
-            ensure the public`&apos;`s trust. We have been affirmed by the Internal
+
+            ensure the public&apos;s trust. We have been affirmed by the Internal
             Revenue Service as a 501(c)(3) Non-Profit Organization and
             further, we are classified under 509(a)(2) as a Public Charity.
             All donations are fully deductible under IRS Section 170 and we

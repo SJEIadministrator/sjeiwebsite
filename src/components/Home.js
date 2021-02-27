@@ -115,7 +115,7 @@ const Home = () => (
               className="mailchimpclass"
             />
             <div className="smalltxt">
-              We respect your privacy. We won`&apos;`t spam!
+              We respect your privacy. We won&apos;t spam !
             </div>
             {/* mailchimp ends */}
           </div>
@@ -124,7 +124,7 @@ const Home = () => (
       <br />
       <Row className="mt-2 ">
         <Col sm={{ span: 12 }} lg={{ span: 4 }} className="pl-3 pr-3">
-          <h3>Environmental Justice</h3>
+          <h3 className="title">Environmental Justice</h3>
           <ul>
             <li>
               <p className="main-content">
@@ -144,7 +144,7 @@ const Home = () => (
           </ul>
         </Col>
         <Col sm={{ span: 12 }} lg={{ span: 4 }} className="pl-3 pr-3">
-          <h3>Ethical Engineering</h3>
+          <h3 className="title">Ethical Engineering</h3>
           <ul>
             <li>
               <p className="main-content mt-3">
@@ -185,7 +185,7 @@ const Home = () => (
           </ul>
         </Col>
         <Col sm={{ span: 12 }} lg={{ span: 4 }} className="pl-3 pr-3">
-          <h3>Social Justice</h3>
+          <h3 className="title">Social Justice</h3>
           <ul>
             <li>
               <p className="main-content">
@@ -235,6 +235,7 @@ const Home = () => (
             Find out about our organization, mission, our methods, and our
             advocacy.
           </p>
+          <br />
         </Col>
         <Col lg={4}>
           <Link to="/take-action" className="blacklink">
@@ -251,6 +252,8 @@ const Home = () => (
             Ready to take the next step? You can become a contributor to our
             cause, or participate yourself.
           </p>
+          <br />
+
         </Col>
       </Row>
     </div>

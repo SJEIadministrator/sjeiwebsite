@@ -1,21 +1,518 @@
 body {
   margin: 0;
-  font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    "Roboto",
-    "Oxygen",
-    "Ubuntu",
-    "Cantarell",
-    "Fira Sans",
-    "Droid Sans",
-    "Helvetica Neue",
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.container {
+  max-width: 100%;
+}
 
+.card1 {
+  max-width: 230px;
+}
+
+.aboutlink {
+  padding-top: 0;
+}
+
+.imgpress {
+  width: 350px;
+  height: auto;
+  margin: 1px;
+}
+
+h6 {
+  color: grey;
+  font-size: 14px;
+  text-align: center;
+}
+
+ul {
+  padding-inline-start: 0;
+}
+
+.headingtxt {
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 3px;
+  font-size: 62px;
+  text-align: center;
+}
+
+li {
+  list-style: none;
+}
+
+.headersub {
+  width: 100%;
+  margin-bottom: 10px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.signup {
+  font-size: 16px;
+}
+
+.blacklink {
+  font-size: 22px;
+  color: #000;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.blacklink:hover {
+  font-size: 22px;
+  color: #000;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.coltabs {
+  display: flex;
+  flex-direction: column;
+}
+
+.gray {
+  font-size: 16px;
+}
+
+.white {
+  font-size: 18px;
+}
+
+.marginb {
+  margin-bottom: 2%;
+  justify-content: center;
+}
+
+p a {
+  color: #2fa99a;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.sidebar-font a {
+  font-style: normal;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: grey;
+}
+
+.text a {
+  color: #2fa99a;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+li a:hover {
+  text-decoration: none;
+}
+
+.text a:visited {
+  color: #2fa99a;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.socialicon2 {
+  width: 40%;
+  height: 40%;
+}
+
+.about-wedo {
+  color: #41afce;
+}
+
+h3 {
+  font-size: 2.5rem;
+  line-height: 1.2em;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.navlink-list {
+  color: #616161;
+  font-size: 16px;
+}
+
+.navlink-list:hover {
+  color: #2d2b31;
+  font-weight: bold;
+}
+
+.navlink-listactive {
+  color: #2d2b31;
+  font-weight: bold;
+}
+
+.dropdown {
+  padding-top: 12px;
+}
+
+.dropdown-menu {
+  background-color: #343a40;
+  color: white;
+  width: 230px;
+}
+
+.toggle-d {
+  color: white;
+}
+
+h5 {
+  color: #616161;
+  font-weight: bold;
+}
+
+.main-content {
+  color: #2d2b31;
+  font-size: 18px;
+  line-height: 26px;
+  margin-top: 10px;
+}
+
+.block {
+  border-bottom: 1px solid #e2e2e2;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.btn-info {
+  padding: 5%;
+  padding-left: 15%;
+  padding-right: 15%;
+  text-transform: uppercase;
+  font-size: 18px;
+  color: white;
+  background-color: #2fa99a;
+  margin: 2%;
+  border: 0;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.btn-info:hover {
+  padding: 4%;
+  padding-left: 10%;
+  padding-right: 10%;
+  text-transform: uppercase;
+  font-size: 18px;
+  color: white;
+  background-color: #2fa99a;
+  margin: 2%;
+  border: 0;
+  opacity: 1;
+  cursor: pointer;
+}
+
+/* ------------------------------------------------- */
+
+hr {
+  border: 0;
+  border-top: 1px solid #ccc;
+}
+
+.carddetail {
+  margin: 1%;
+  margin-bottom: 10%;
+  margin-bottom: 5%;
+  margin-right: 1%;
+  opacity: 0.7;
+}
+
+.carddetail:hover {
+  margin: 1%;
+  margin-bottom: 10%;
+  margin-bottom: 5%;
+  margin-right: 1%;
+  opacity: 1;
+}
+
+.mailchimpclass {
+  margin: 0;
+  text-align: center;
+  padding: 10px;
+}
+
+.mailchimpclass input {
+  padding: 1.5%;
+  margin-left: 0.7%;
+  margin-right: 0.7%;
+  border: 1px solid lightgrey;
+}
+
+.socialicon {
+  width: 40%;
+  height: 40%;
+}
+
+.mailchimpclass button {
+  padding: 1.8%;
+  padding-left: 3%;
+  padding-right: 3%;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: white;
+  background-color: #2fa99a;
+  margin: 2%;
+  border: 0;
+  cursor: pointer;
+}
+
+.nav-link {
+  padding: 0;
+  transition-property: color, background-color;
+  transition-duration: 5s;
+  transition-timing-function: ease-out;
+}
+
+.nav-item,
+.show > .nav-link,
+.navbar-nav {
+  color: grey;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+  color: aquamarine;
+}
+
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show > .nav-link {
+  color: white;
+}
+
+.navbar-light .navbar-nav .active > .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show > .nav-link:hover {
+  color: aquamarine;
+}
+
+.sidebar-font a:hover {
+  font-style: normal;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: black;
+}
+
+.nav-link .navbar-light .navbar-nav a {
+  color: white;
+}
+
+.navbar-nav {
+  color: white;
+}
+
+.dropdown-menu .dropdown-item {
+  background-color: #343a40;
+  color: lightgrey;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: #343a40;
+  color: aquamarine;
+  font-weight: bold;
+}
+
+.imagewidth {
+  width: 200px;
+  height: auto;
+}
+
+p {
+  margin-top: 0;
+}
+
+.note {
+  font-size: 30px;
+  color: black;
+  font-family: cursive;
+  font-style: italic;
+}
+
+#mc_embed_signup {
+  background-color: #fff;
+  clear: left;
+  font: 14px Helvetica, Arial, sans-serif;
+}
+
+#side {
+  flex-basis: 0;
+  margin-right: 5%;
+}
+
+#side .greenc {
+  color: #2fa99a;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+h1 {
+  color: #000;
+  text-align: center;
+  font-weight: bold;
+}
+
+.sidecol {
+  display: flex;
+  letter-spacing: 0.3pt;
+  text-align: left;
+  flex-direction: column;
+}
+
+.title2 {
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.8pt;
+  line-height: 18px;
+  font-size: 18px;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.titlenext {
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.9pt;
+  line-height: 24px;
+  font-size: 16px;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.nobold {
+  text-transform: uppercase;
+  font-weight: normal;
+  letter-spacing: 0.9pt;
+  font-size: 14px;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.verticalgap {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+#App .submit {
+  background-color: #2fa99a;
+  padding: 2%;
+  color: white;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+#whatwe .signup {
+  background-color: #2fa99a;
+  padding: 3%;
+  color: white;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+h2 {
+  color: black;
+  text-align: center;
+  letter-spacing: 0.8pt;
+}
+
+p.text {
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: 0.8pt;
+}
+
+.bodytext {
+  color: grey;
+  width: 900px;
+}
+
+.email-contact {
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 26px;
+  color: black;
+  font-weight: bold;
+  letter-spacing: 0.5pt;
+}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+.rowflex {
+  display: flex;
+  flex-direction: row;
+  margin: 1%;
+  padding: 0;
+  margin-bottom: 2%;
+  flex-wrap: wrap;
+}
+
+.supportdiv {
+  width: 20%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.smalltxt {
+  font-size: 12px;
+}
 .new {
   background-color: #ccc;
 }
@@ -30,12 +527,7 @@ body {
 }
 
 code {
-  font-family:
-    source-code-pro,
-    Menlo,
-    Monaco,
-    Consolas,
-    "Courier New",
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
@@ -55,9 +547,6 @@ code {
 .link:hover,
 .link:focus {
   color: aquamarine;
-
-  /* border: 1px solid lightgrey;
-  border-radius: 25px; */
 }
 
 a:hover {
@@ -102,7 +591,7 @@ a:hover {
 /* slide */
 .carousel {
   height: 450px;
-  margin-bottom: 70px;
+  margin-bottom: 30px;
 }
 
 .photo-carousel {
@@ -111,6 +600,8 @@ a:hover {
   max-width: 100%;
   animation-duration: 3s;
   animation-name: slidein;
+  object-fit: cover;
+  object-position: bottom;
 }
 
 @keyframes slidein {
@@ -179,7 +670,6 @@ a:hover {
 }
 
 .bottom {
-  height: 450px;
   background-color: #1f1f1f;
   padding: 30px;
 }
@@ -205,86 +695,324 @@ a:hover {
   font-size: 20px;
   text-align: justify;
 }
-
-@media (max-width: 500px) {
-  .link {
-    color: white;
-    width: 130px;
-    font-size: 13px;
-    text-align: center;
-    font-weight: bold;
-
-    /* padding: 10px 5px 5px 0; */
-    transition-property: color, background-color;
-    transition-duration: 5s;
-    transition-timing-function: ease-out;
-  }
-
-  .link :hover,
-  link:focus {
-    color: aquamarine;
-    border: 0 solid grey;
-
-    /* border-radius: 25px; */
-  }
-
-  .carousel {
-    height: 200px;
-  }
-
-  .carousel-indicators {
-    bottom: -45px;
-  }
-
-  .photo-carousel {
-    display: block;
-    height: 250px;
-    max-width: 100%;
-  }
-
-  a:hover {
-    text-decoration: none;
-  }
-
-  .text-wedo {
-    line-height: 1.9;
-    font-size: 14px;
-    text-align: justify;
-  }
-
-  .about a {
-    color: white;
-    font-size: 13px;
-    font-weight: bold;
-    padding: 12px;
-    padding-top: 8px;
-  }
-
-  .title {
-    font-size: 18px;
-    line-height: 18px;
-  }
-
-  .support:hover {
-    color: black;
-    background-color: white;
-  }
+.social-icon {
+  width: 50px;
+  color: black;
+  opacity: 0.5;
+  border-radius: 25px;
+  background-color: white;
+  padding: 20%;
+  height: 50px;
+}
+.centertext {
+  justify-content: center;
+}
+.marginicon {
+  margin-right: 2rem;
+}
+.title {
+  font-size: 2.2em;
+}
+.amazon-charity-banner {
+  background-image: url("https://m.media-amazon.com/images/G/01/x-locale/paladin/charitycentral/banner-background-image._CB309675353_.png");
+  background-repeat: no-repeat, repeat;
+  width: 200px;
+  height: 250px;
+  position: relative;
+  margin-top: 60px;
+  margin-bottom: 90px;
+  align-items: center;
 }
 
-@media only screen and (min-width: 1800px) {
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .container {
+    max-width: 99%;
+  }
+  .carousel {
+    height: 300px;
+    margin-bottom: 20px;
+  }
+  .social-icon {
+    width: 40px;
+    height: 40px;
+  }
+  .photo-at {
+    height: 400px;
+  }
+  .main-content {
+    font-size: 1.2em;
+  }
+  .text-wedo {
+    line-height: 1.7em;
+  }
   .photo-carousel {
     display: block;
-    height: 580px;
-    max-width: 100%;
+    height: 300px;
+    width: 100%;
+    animation-duration: 3s;
+    animation-name: slidein;
+    object-fit: cover;
+    object-position: bottom;
   }
-
-  .btn-info {
-    margin-top: 100px;
+  .amazon-charity-banner {
+    background-image: url("https://m.media-amazon.com/images/G/01/x-locale/paladin/charitycentral/banner-background-image._CB309675353_.png");
+    background-repeat: no-repeat, repeat;
+    width: 200px;
+    height: 250px;
+    position: relative;
+    margin-top: 60px;
+    margin-bottom: 90px;
+    align-items: center;
   }
-
   .headersub {
     width: 100%;
     margin-bottom: 10px;
-    height: 550px;
+    height: 300px;
+    object-fit: cover;
+  }
+  .headingtxt {
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 42px;
+    text-align: center;
+  }
+  .youcanmake {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .navbar-toggler {
+    padding: 1em 1em;
+    margin: 1%;
+  }
+  .navbar {
+    width: 100%;
+  }
+  .title {
+    font-size: 1.7em;
+  }
+
+  .btn-info {
+    padding: 5%;
+    padding-left: 15%;
+    padding-right: 15%;
+    opacity: 0.8;
+  }
+  .btn-info:hover {
+    text-transform: uppercase;
+    font-size: 18px;
+    color: white;
+    background-color: #2fa99a;
+
+    opacity: 1;
+    cursor: pointer;
+  }
+  .social-icon {
+    width: 40px;
+    color: black;
+    opacity: 0.5;
+    border-radius: 25px;
+    background-color: white;
+    padding: 20%;
+    height: 40px;
+  }
+  .centertext {
+    justify-content: center;
+  }
+  .marginicon {
+    margin-right: 1rem;
+  }
+  .carousel-control-next,
+  .carousel-control-prev {
+    top: -30px;
+  }
+  h3 {
+    font-size: 2.2em;
+  }
+  .carddetail {
+    margin: 1%;
+    margin-bottom: 5%;
+    margin-bottom: 3%;
+    margin-right: 2%;
+    opacity: 0.7;
+  }
+
+  .carddetail:hover {
+    margin: 1%;
+    margin-bottom: 5%;
+    margin-bottom: 3%;
+    margin-right: 2%;
+    opacity: 1;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .container {
+    max-width: 99%;
+  }
+  .photo-carousel {
+    display: block;
+    width: 100%;
+    height: 250px;
+    animation-duration: 3s;
+    animation-name: slidein;
+    object-fit: cover;
+    object-position: bottom;
+  }
+  .form-group {
+    text-align: center;
+  }
+  .btn-info {
+    padding: 2%;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .headingtxt {
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 32px;
+    text-align: center;
+  }
+  .social-icon {
+    width: 35px;
+    color: black;
+    opacity: 0.5;
+    border-radius: 20px;
+    background-color: white;
+    padding: 15%;
+    height: 35px;
+  }
+  .centertext {
+    justify-content: center;
+  }
+  .marginicon {
+    margin-right: 1rem;
+  }
+  .carousel-control-next,
+  .carousel-control-prev {
+    top: -30px;
+  }
+  .headersub {
+    width: 100%;
+    margin-bottom: 10px;
+    height: 400px;
+    object-fit: cover;
+  }
+  .title {
+    font-size: 1.5em;
+    line-height: 1em;
+  }
+  h3 {
+    font-size: 1.7em;
+  }
+  .text-wedo {
+    line-height: 0.8em;
+    line-height: 1.4em;
+  }
+  .carousel {
+    height: 230px;
+    margin-bottom: 20px;
+  }
+  .carousel-indicators {
+    bottom: -25px;
+  }
+  .amazon-charity-banner {
+    background-image: url("https://m.media-amazon.com/images/G/01/x-locale/paladin/charitycentral/banner-background-image._CB309675353_.png");
+    background-repeat: no-repeat, repeat;
+    width: 200px;
+    height: 250px;
+    position: relative;
+    margin-top: 60px;
+    margin-bottom: 90px;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 575.98px) {
+  .photo-carousel {
+    display: block;
+    width: 100%;
+    height: 250px;
+    animation-duration: 3s;
+    animation-name: slidein;
+    object-fit: cover;
+    object-position: bottom;
+  }
+  .form-group {
+    text-align: center;
+  }
+  .btn-info {
+    padding: 2%;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .headingtxt {
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 22px;
+    text-align: center;
+  }
+  .social-icon {
+    width: 25px;
+    color: black;
+    opacity: 0.5;
+    border-radius: 20px;
+    background-color: white;
+    padding: 10%;
+    height: 25px;
+  }
+  .centertext {
+    justify-content: center;
+  }
+  .marginicon {
+    margin-right: 1rem;
+  }
+  .carousel-control-next,
+  .carousel-control-prev {
+    top: -30px;
+  }
+  .headersub {
+    width: 100%;
+    margin-bottom: 10px;
+    height: 250px;
+    object-fit: cover;
+    object-position: bottom;
+  }
+  .title {
+    font-size: 1.5em;
+    line-height: 1em;
+  }
+  h3 {
+    font-size: 1.7em;
+  }
+  .text-wedo {
+    line-height: 0.8em;
+    line-height: 1.4em;
+  }
+  .carousel {
+    height: 230px;
+    margin-bottom: 20px;
+  }
+  .carousel-indicators {
+    bottom: -25px;
   }
 }

@@ -1,11 +1,9 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
-import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
-import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import { generalVolunteer } from '../img/post';
+import { VolunteerTeam } from '../helpers/post';
 
 const useStyles = makeStyles({
   root: {
@@ -35,7 +33,7 @@ export default function SimpleCard() {
   return (
     <div className="rowflex">
       {
-      generalVolunteer.map(postdetail => (
+      VolunteerTeam.map(postdetail => (
         <div key={postdetail.id} className="carddetail card1">
           <Card className={classes.root}>
             <CardContent>
@@ -57,9 +55,7 @@ export default function SimpleCard() {
                 {postdetail.Post}
               </Typography>
             </CardContent>
-            <CardActions>
-              <Button size="small">Learn More</Button>
-            </CardActions>
+
           </Card>
         </div>
       ))

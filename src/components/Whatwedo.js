@@ -3,12 +3,13 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Mailchimp from 'react-mailchimp-form';
 import About from './About';
+import WhatWeDo from '../img/whatwedo.jpg';
 
 const Whatwedo = () => (
   <div>
     <div style={{ position: 'relative' }}>
       <img
-        src="https://sjeiwebsitemedia.blob.core.windows.net/photos/LIRR.jpg"
+        src={WhatWeDo}
         className="headersub img-responsive w3-animate-opacity"
         alt="whatwedo"
       />

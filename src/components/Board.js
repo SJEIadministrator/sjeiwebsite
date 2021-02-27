@@ -93,6 +93,18 @@ const Board = () => (
             &nbsp; | HQ PACAF, Force Support Inspections Chief, TS SCI at The
             United States Air Force
           </p>
+          <br />
+          <p className="text">
+            <a
+              href="https://www.linkedin.com/in/cindy-roberts-17ba3176/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Rahul Saggar - Civil Engineering Subcommittee Chair
+            </a>
+            &nbsp; | HQ PACAF, Force Support Inspections Chief, TS SCI at The
+            United States Air Force
+          </p>
           {' '}
           <br />
         </div>

@@ -1,11 +1,12 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
+// import tower1 from '../img/tower1.jpg';
 
 const Slide = () => (
   <Carousel className="carou  ">
     <Carousel.Item interval={8000}>
       <img
-        className="d-block w-100 photo-carousel img-responsive "
+        className="d-block photo-carousel img-responsive "
         src="https://sjeiwebsitemedia.blob.core.windows.net/photos/train.jpg"
         alt="First slide"
       />

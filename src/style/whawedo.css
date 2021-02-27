@@ -1,503 +1,56 @@
-.card1 {
-  max-width: 230px;
-}
-
-.aboutlink {
-  padding-top: 0;
-}
-
-.imgpress {
-  width: 350px;
-  height: auto;
-  margin: 1px;
-}
-
-h6 {
-  color: grey;
-  font-size: 14px;
-  text-align: center;
-}
-
-ul {
-  padding-inline-start: 0;
-}
-
-.headingtxt {
-  position: absolute;
-  top: 350px;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  text-transform: uppercase;
-  font-weight: bold;
-  letter-spacing: 3px;
-  font-size: 62px;
-  text-align: center;
-}
-
-li {
-  list-style: none;
-}
-
-.headersub {
-  width: 100%;
-  margin-bottom: 10px;
-  height: 450px;
-}
-
-.signup {
-  font-size: 16px;
-}
-
-.blacklink {
-  font-size: 22px;
-  color: #000;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
-.blacklink:hover {
-  font-size: 22px;
-  color: #000;
-  text-decoration: underline;
-  font-weight: bold;
-}
-
-.coltabs {
-  display: flex;
-  flex-direction: column;
-}
-
-.gray {
-  font-size: 16px;
-}
-
-.white {
-  font-size: 18px;
-}
-
-.marginb {
-  margin-bottom: 2%;
-}
-
-p a {
-  color: #2fa99a;
-  font-size: 16px;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.sidebar-font a {
-  font-style: normal;
-  font-size: 14px;
-  text-decoration: none;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: grey;
-}
-
-.text a {
-  color: #2fa99a;
-  font-size: 16px;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-li a:hover {
-  text-decoration: none;
-}
-
-.text a:visited {
-  color: #2fa99a;
-  font-size: 16px;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.socialicon2 {
-  width: 40%;
-  height: 40%;
-}
-
-.about-wedo {
-  color: #41afce;
-}
-
-h3 {
-  font-size: 2rem;
-  line-height: 1.2em;
-  padding-bottom: 0;
-  margin-bottom: 0;
-}
-
-.navlink-list {
-  color: #616161;
-  font-size: 16px;
-}
-
-.navlink-list:hover {
-  color: #2d2b31;
-  font-weight: bold;
-}
-
-.navlink-listactive {
-  color: #2d2b31;
-  font-weight: bold;
-}
-
-.dropdown {
-  padding-top: 12px;
-}
-
-.dropdown-menu {
-  background-color: #343a40;
-  color: white;
-  width: 230px;
-}
-
-.toggle-d {
-  color: white;
-}
-
-h5 {
-  color: #616161;
-  font-weight: bold;
-}
-
-.main-content {
-  color: #2d2b31;
-  font-size: 18px;
-  line-height: 26px;
-  margin-top: 10px;
-}
-
-.block {
-  border-bottom: 1px solid #e2e2e2;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-.btn-info {
-  padding: 4%;
-  padding-left: 10%;
-  padding-right: 10%;
-  text-transform: uppercase;
-  font-size: 18px;
-  color: white;
-  background-color: #2fa99a;
-  margin: 2%;
-  border: 0;
-  cursor: pointer;
-}
-
-.btn-info:hover {
-  padding: 4%;
-  padding-left: 10%;
-  padding-right: 10%;
-  text-transform: uppercase;
-  font-size: 18px;
-  color: white;
-  background-color: #2fa99a;
-  margin: 2%;
-  border: 0;
-  cursor: pointer;
-}
-
-/* ------------------------------------------------- */
-
-hr {
-  border: 0;
-  border-top: 1px solid #ccc;
-}
-
-.carddetail {
-  margin: 1%;
-  margin-bottom: 10%;
-  margin-bottom: 5%;
-  margin-right: 5%;
-  opacity: 0.7;
-}
-
-.carddetail:hover {
-  margin: 1%;
-  margin-bottom: 10%;
-  margin-bottom: 5%;
-  margin-right: 5%;
-  opacity: 1;
-}
-
-.mailchimpclass {
-  margin: 0;
-  text-align: center;
-  padding: 10px;
-}
-
-.mailchimpclass input {
-  padding: 1.5%;
-  margin-left: 0.7%;
-  margin-right: 0.7%;
-  border: 1px solid lightgrey;
-}
-
-.socialicon {
-  width: 40%;
-  height: 40%;
-}
-
-.mailchimpclass button {
-  padding: 1.8%;
-  padding-left: 3%;
-  padding-right: 3%;
-  text-transform: uppercase;
-  font-size: 14px;
-  color: white;
-  background-color: #2fa99a;
-  margin: 2%;
-  border: 0;
-  cursor: pointer;
-}
-
-.nav-link {
-  padding: 0;
-  transition-property: color, background-color;
-  transition-duration: 5s;
-  transition-timing-function: ease-out;
-}
-
-.nav-item,
-.show > .nav-link,
-.navbar-nav {
-  color: grey;
-}
-
-.navbar-light .navbar-nav .nav-link {
-  color: white;
-}
-
-.navbar-light .navbar-nav .nav-link:focus,
-.navbar-light .navbar-nav .nav-link:hover {
-  color: aquamarine;
-}
-
-.navbar-light .navbar-nav .active > .nav-link,
-.navbar-light .navbar-nav .nav-link.active,
-.navbar-light .navbar-nav .nav-link.show,
-.navbar-light .navbar-nav .show > .nav-link {
-  color: white;
-}
-
-.navbar-light .navbar-nav .active > .nav-link:hover,
-.navbar-light .navbar-nav .nav-link.active,
-.navbar-light .navbar-nav .nav-link.show,
-.navbar-light .navbar-nav .show > .nav-link:hover {
-  color: aquamarine;
-}
-
-.sidebar-font a:hover {
-  font-style: normal;
-  font-size: 14px;
-  text-transform: uppercase;
-  color: black;
-}
-
-.nav-link .navbar-light .navbar-nav a {
-  color: white;
-}
-
-.navbar-nav {
-  color: white;
-}
-
-.dropdown-menu .dropdown-item {
-  background-color: #343a40;
-  color: lightgrey;
-}
-
-.dropdown-menu .dropdown-item:hover {
-  background-color: #343a40;
-  color: aquamarine;
-  font-weight: bold;
-}
-
-.imagewidth {
-  width: 200px;
-  height: auto;
-}
-
-p {
-  margin-top: 0;
-}
-
-.note {
-  font-size: 30px;
-  color: black;
-  font-family: cursive;
-  font-style: italic;
-}
-
-#mc_embed_signup {
-  background-color: #fff;
-  clear: left;
-  font: 14px Helvetica, Arial, sans-serif;
-}
-
-#side {
-  flex-basis: 0;
-  margin-right: 5%;
-}
-
-#side .greenc {
-  color: #2fa99a;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-h1 {
-  color: #000;
-  text-align: center;
-  font-weight: bold;
-}
-
-.sidecol {
-  display: flex;
-  letter-spacing: 0.3pt;
-  text-align: left;
-  flex-direction: column;
-}
-
-.title2 {
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 0.8pt;
-  line-height: 18px;
-  font-size: 18px;
-  color: black;
-  margin-bottom: 20px;
-}
-
-.titlenext {
-  text-transform: uppercase;
-  font-weight: bold;
-  letter-spacing: 0.9pt;
-  line-height: 24px;
-  font-size: 16px;
-  color: black;
-  margin-bottom: 20px;
-}
-
-.nobold {
-  text-transform: uppercase;
-  font-weight: normal;
-  letter-spacing: 0.9pt;
-  font-size: 14px;
-  color: black;
-  margin-bottom: 20px;
-}
-
-.verticalgap {
-  padding-top: 5%;
-  padding-bottom: 5%;
-}
-
-#App .submit {
-  background-color: #2fa99a;
-  padding: 2%;
-  color: white;
-  border-radius: 0;
-  cursor: pointer;
-}
-
-#whatwe .signup {
-  background-color: #2fa99a;
-  padding: 3%;
-  color: white;
-  border-radius: 0;
-  cursor: pointer;
-}
-
-h2 {
-  color: black;
-  text-align: center;
-  letter-spacing: 0.8pt;
-}
-
-p.text {
-  font-size: 14px;
-  line-height: 26px;
-  letter-spacing: 0.8pt;
-}
-
-.bodytext {
-  color: grey;
-  width: 900px;
-}
-
-.email-contact {
-  text-transform: uppercase;
-  font-size: 16px;
-  line-height: 26px;
-  color: black;
-  font-weight: bold;
-  letter-spacing: 0.5pt;
-}
-
-/* Style the tab */
-.tab {
-  overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
-}
-
-/* Style the buttons inside the tab */
-.tab button {
-  background-color: inherit;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  transition: 0.3s;
-  font-size: 17px;
-}
-
-/* Change background color of buttons on hover */
-.tab button:hover {
-  background-color: #ddd;
-}
-
-/* Create an active/current tablink class */
-.tab button.active {
-  background-color: #ccc;
-}
-
-/* Style the tab content */
-.tabcontent {
-  display: none;
-  padding: 6px 12px;
-  border: 1px solid #ccc;
-  border-top: none;
-}
-
-.rowflex {
-  display: flex;
-  flex-direction: row;
-  margin: 1%;
-  padding: 2%;
-  margin-bottom: 2%;
-  flex-wrap: wrap;
-}
-
-.supportdiv {
-  width: 20%;
-  padding-top: 1%;
-}
-
-.smalltxt {
-  font-size: 12px;
-}
-
-@media (max-width: 500px) {
+@media screen and (max-width: 576px) {
+  .link {
+    color: white;
+    width: 130px;
+    font-size: 13px;
+    text-align: center;
+    font-weight: bold;
+
+    /* padding: 10px 5px 5px 0; */
+    transition-property: color, background-color;
+    transition-duration: 5s;
+    transition-timing-function: ease-out;
+  }
+
+  .link :hover,
+  link:focus {
+    color: aquamarine;
+    border: 0 solid grey;
+
+    /* border-radius: 25px; */
+  }
+
+  .carousel {
+    height: 200px;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  .text-wedo {
+    line-height: 1.9;
+    font-size: 14px;
+    text-align: justify;
+  }
+
+  .about a {
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 12px;
+    padding-top: 8px;
+  }
+
+  .title {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .support:hover {
+    color: black;
+    background-color: white;
+  }
   .img-responsive {
     max-width: 100%;
     height: 200px;
