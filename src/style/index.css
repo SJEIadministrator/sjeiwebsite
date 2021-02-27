@@ -625,22 +625,6 @@ a:hover {
   color: #00a0bc;
 }
 
-/* .title2 {
-  animation-duration: 0.7s;
-  font-size: 20px;
-  animation-name: fadein;
-}
-
-@keyframes fadein {
-  from {
-    width: 300%;
-  }
-
-  to {
-    width: 100%;
-  }
-} */
-
 /* home */
 .text-donate {
   color: #616161;

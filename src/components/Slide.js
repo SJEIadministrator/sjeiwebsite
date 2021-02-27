@@ -1,6 +1,5 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-// import tower1 from '../img/tower1.jpg';
 
 const Slide = () => (
   <Carousel className="carou  ">

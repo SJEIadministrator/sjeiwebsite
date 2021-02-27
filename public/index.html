@@ -37,25 +37,7 @@
        We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
     </style>
 
-    <script
-      type="text/javascript"
-      src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"
-    ></script>
-    <script type="text/javascript">
-      (function($) {
-        window.fnames = new Array();
-        window.ftypes = new Array();
-        fnames[0] = "EMAIL";
-        ftypes[0] = "email";
-        fnames[1] = "FNAME";
-        ftypes[1] = "text";
-        fnames[2] = "LNAME";
-        ftypes[2] = "text";
-      
-      })(jQuery);
-      var $mcj = jQuery.noConflict(true);
-    </script>
-
+   
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
@@ -81,16 +63,23 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+    <script
+      type="text/javascript"
+      src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"
+    ></script>
+    <script type="text/javascript">
+      (function($) {
+        window.fnames = new Array();
+        window.ftypes = new Array();
+        fnames[0] = "EMAIL";
+        ftypes[0] = "email";
+        fnames[1] = "FNAME";
+        ftypes[1] = "text";
+        fnames[2] = "LNAME";
+        ftypes[2] = "text";
+      })(jQuery);
+      var $mcj = jQuery.noConflict(true);
+    </script>
     <script src="https://polyfill.mailchimp.com/v3/polyfill.min.js?features=Array.prototype.flat%2Cfetch%2CElement.prototype.inert%2CResizeObserver%2CIntersectionObserver%2Ces2018%2Ces2017%2Ces2016%2Ces2015"></script>
     <script src="/release/1.1.13017841fdcfdf2b27aca9874597e3c97c29ded0d/js-src/vendor.1c23797a.js"></script>
     <script src="/release/1.1.13017841fdcfdf2b27aca9874597e3c97c29ded0d/js-src/hosted-contact-form.acbcbd82.js"></script>
@@ -110,32 +99,7 @@
         new_style_element.textContent = ".my-class { backgroundColor:'red' }";
         ev.target.contentDocument.head.appendChild(new_style_element);
       });
-      // document.getElementById("ifram").onload = function() {
-      //   // using reference to iframe (ifrm) obtained above
-      //   var rootc = document.getElementById("ifram");
-
-      //   var doc = rootc.contentDocument
-      //     ? rootc.contentDocument
-      //     : rootc.contentWindow.document;
-
-      //   var c = doc.getElementById("root").getElementByClassName("root-3uY95");
-
-      //   // .getElementByClassName("wink");
-
-      //   c.style.backgroundColor = "red";
-
-      // ------
-      // var fld = doc.div["iframeDemoForm"].elements["greeting"];
-      //   document.getElementById("ifram").onload = function() {
-      //   // using reference to iframe (ifrm) obtained above
-      //   var doc = ifrm.contentDocument
-      //     ? ifrm.contentDocument
-      //     : ifrm.contentWindow.document;
-
-      //   ifrm.style.backgroundColor = "#cccccc";
-      //   // var fld = doc.div["iframeDemoForm"].elements["greeting"];
-      // };
-      // };
+     
     </script>
   </body>
 </html>

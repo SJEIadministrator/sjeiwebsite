@@ -2,12 +2,11 @@ import React from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import About from './About';
-import CorpTransparency from '../img/corporate-transparency.jpg';
 
 const CorporateTransparency = () => (
   <div style={{ position: 'relative' }}>
     <img
-      src={CorpTransparency}
+      src="https://sjeiwebsitemedia.blob.core.windows.net/photos/Window.jpg"
       className="headersub img-responsive  w3-animate-opacity"
       alt="Corporate Transparency"
     />

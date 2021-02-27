@@ -1,15 +1,14 @@
 import React from 'react';
 import Row from 'react-bootstrap/Row';
-// eslint-disable-next-line import/no-duplicates
-import { FaFacebookF } from 'react-icons/fa';
-// eslint-disable-next-line import/no-duplicates
-import { FaTwitter } from 'react-icons/fa';
-// eslint-disable-next-line import/no-duplicates
-import { FaInstagram } from 'react-icons/fa';
-// eslint-disable-next-line import/no-duplicates
-import { FaLinkedinIn } from 'react-icons/fa';
-// eslint-disable-next-line import/no-duplicates
-import { FaMediumM } from 'react-icons/fa';
+
+import {
+  FaFacebookF,
+  FaTwitter,
+  FaInstagram,
+  FaLinkedinIn,
+  FaMediumM,
+} from 'react-icons/fa';
+
 import { IconContext } from 'react-icons';
 
 const Footer = () => (
