@@ -1,4 +1,3 @@
-// eslint-disable-next-line import/prefer-default-export
 export const VolunteerTeam = [
   {
     id: 0,
@@ -396,3 +395,7 @@ export const VolunteerTeam = [
     Post: 'Lead Writer + Blogger ',
   },
 ];
+
+export default {
+  VolunteerTeam,
+};

@@ -73,18 +73,6 @@ const NavBar = () => (
         <NavLink to="/take-action" className="mr-2 link">
           TAKE ACTION
         </NavLink>
-        <a
-          href="https://medium.com/sjei"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="link"
-        >
-          BLOG
-        </a>
-        <NavLink to="/pressrelease" className="mr-2 link ">
-          PRESS RELEASE
-          {' '}
-        </NavLink>
         <div className="supportdiv">
           <NavLink to="/donation" className="mr-2 link support">
             SUPPORT
