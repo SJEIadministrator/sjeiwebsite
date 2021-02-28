@@ -1,7 +1,6 @@
-/* eslint-disable quotes */
-import React from "react";
-import Col from "react-bootstrap/Col";
-import { NavLink } from "react-router-dom";
+import React from 'react';
+import Col from 'react-bootstrap/Col';
+import { NavLink } from 'react-router-dom';
 
 export default class About extends React.Component {
   constructor(props) {
@@ -29,8 +28,8 @@ export default class About extends React.Component {
 
   render() {
     const { animate, handleone } = this.state;
-    const animationClasses = animate ? " navlink-listactive" : "";
-    const handleoneclasses = handleone ? " navlink-listactive" : "";
+    const animationClasses = animate ? ' navlink-listactive' : '';
+    const handleoneclasses = handleone ? ' navlink-listactive' : '';
 
     return (
       <Col md={4}>
