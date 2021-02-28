@@ -64,22 +64,23 @@
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <script
-      type="text/javascript"
-      src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"
-    ></script>
-    <script type="text/javascript">
-      (function($) {
-        window.fnames = new Array();
-        window.ftypes = new Array();
-        fnames[0] = "EMAIL";
-        ftypes[0] = "email";
-        fnames[1] = "FNAME";
-        ftypes[1] = "text";
-        fnames[2] = "LNAME";
-        ftypes[2] = "text";
-      })(jQuery);
-      var $mcj = jQuery.noConflict(true);
-    </script>
+    type="text/javascript"
+    src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"
+  ></script>
+  <script type="text/javascript">
+    (function($) {
+      window.fnames = new Array();
+      window.ftypes = new Array();
+      fnames[0] = "EMAIL";
+      ftypes[0] = "email";
+      fnames[1] = "FNAME";
+      ftypes[1] = "text";
+      fnames[2] = "LNAME";
+      ftypes[2] = "text";
+    })(jQuery);
+    var $mcj = jQuery.noConflict(true);
+  </script>
+
     <script src="https://polyfill.mailchimp.com/v3/polyfill.min.js?features=Array.prototype.flat%2Cfetch%2CElement.prototype.inert%2CResizeObserver%2CIntersectionObserver%2Ces2018%2Ces2017%2Ces2016%2Ces2015"></script>
     <script src="/release/1.1.13017841fdcfdf2b27aca9874597e3c97c29ded0d/js-src/vendor.1c23797a.js"></script>
     <script src="/release/1.1.13017841fdcfdf2b27aca9874597e3c97c29ded0d/js-src/hosted-contact-form.acbcbd82.js"></script>
