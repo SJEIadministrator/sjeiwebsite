@@ -15,7 +15,6 @@ import Donation from './Donation';
 import Footer from './Footer';
 import CorporateTransparency from './corporatetransparency';
 import Contact from './Contact';
-import PressRelease from './pressrelease';
 
 function App() {
   return (
@@ -26,14 +25,11 @@ function App() {
           <Route exact path="/" component={Home} />
           <Route path="/Whatwedo" component={Whatwedo} />
           <Route path="/team" component={Team} />
-          <Route path="/pressrelease" component={PressRelease} />
-
           <Route
             path="/corporatetransparency"
             component={CorporateTransparency}
           />
           <Route path="/Contact" component={Contact} />
-
           <Route path="/board" component={Board} />
           <Route path="/volunteer" component={Volunteer} />
           <Route path="/William-G-Bentz" component={William} />
