@@ -5,7 +5,7 @@ const Slide = () => (
   <Carousel className="carou  ">
     <Carousel.Item interval={8000}>
       <img
-        className="d-block photo-carousel img-responsive "
+        className="w-100 photo-carousel img-responsive "
         src="https://sjeiwebsitemedia.blob.core.windows.net/photos/train.jpg"
         alt="First slide"
       />
@@ -17,7 +17,7 @@ const Slide = () => (
     </Carousel.Item>
     <Carousel.Item interval={8000}>
       <img
-        className="d-block w-100 photo-carousel img-responsive  "
+        className="w-100 photo-carousel img-responsive  "
         src="https://sjeiwebsitemedia.blob.core.windows.net/photos/FullSizeRenderBenFranklinBridge.jpg"
         alt="Third slide"
       />
@@ -27,7 +27,7 @@ const Slide = () => (
     </Carousel.Item>
     <Carousel.Item>
       <img
-        className="d-block w-100 photo-carousel img-responsive"
+        className="w-100 photo-carousel img-responsive"
         src="https://sjeiwebsitemedia.blob.core.windows.net/photos/riverfoliage.jpg"
         alt="Third slide"
       />
