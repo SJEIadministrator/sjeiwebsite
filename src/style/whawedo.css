@@ -43,10 +43,6 @@
     line-height: 18px;
   }
 
-  .support:hover {
-    color: black;
-    background-color: white;
-  }
   .img-responsive {
     max-width: 100%;
     height: 200px;
@@ -173,19 +169,6 @@
 
   ul {
     padding: 0;
-  }
-
-  .supportdiv {
-    width: 20%;
-    padding-top: 5%;
-    padding-bottom: 5%;
-  }
-
-  .supportdiv:hover {
-    width: 20%;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    background-color: #ccc;
   }
 
   h3 {

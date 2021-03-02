@@ -6,10 +6,19 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.container {
-  max-width: 100%;
+.container1 {
+  max-width: 95%;
 }
-
+.row {
+  margin-left: 0;
+}
+a {
+  color: dimgray;
+}
+a:hover {
+  color: black;
+  font-weight: bold;
+}
 .card1 {
   max-width: 230px;
 }
@@ -50,6 +59,7 @@ ul {
 
 li {
   list-style: none;
+  padding: 2%;
 }
 
 .headersub {
@@ -164,10 +174,11 @@ h3 {
   padding-top: 12px;
 }
 
-.dropdown-menu {
+.navbar-nav .dropdown-menu {
   background-color: #343a40;
   color: white;
   width: 230px;
+  float: right;
 }
 
 .toggle-d {
@@ -193,9 +204,9 @@ h5 {
 }
 
 .btn-info {
-  padding: 5%;
-  padding-left: 15%;
-  padding-right: 15%;
+  padding: 4%;
+  padding-left: 10%;
+  padding-right: 10%;
   text-transform: uppercase;
   font-size: 18px;
   color: white;
@@ -537,7 +548,7 @@ code {
   font-size: 13px;
   text-align: center;
   font-weight: bold;
-  padding: 10px 5px 5px 0;
+  padding: 10px 5px 15px 0;
   transition-property: color, border, background-color;
   transition-duration: 3s;
   transition-timing-function: ease-out;
@@ -688,6 +699,16 @@ a:hover {
   padding: 20%;
   height: 50px;
 }
+.social-icon:hover {
+  width: 50px;
+  color: black;
+  opacity: 1;
+  border-radius: 25px;
+  background-color: white;
+  padding: 20%;
+  height: 50px;
+  opacity: 1;
+}
 .centertext {
   justify-content: center;
 }
@@ -709,6 +730,34 @@ a:hover {
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
+  .social-media a {
+    height: 100px;
+    color: #333;
+    opacity: 0.7;
+    margin-right: 12px;
+    transition-property: color, background-color;
+    transition-duration: 5s;
+    transition-timing-function: ease-out;
+  }
+
+  .social-media a:hover {
+    opacity: 1;
+  }
+  .navbar-nav {
+    padding-left: 85%;
+  }
+
+  .supportdiv {
+    width: 20%;
+    padding-top: 5%;
+    padding-bottom: 15%;
+  }
+  .dropdown-item {
+    text-align: right;
+  }
+  .dropdown-menu {
+    float: right;
+  }
   .container {
     max-width: 99%;
   }
@@ -719,6 +768,12 @@ a:hover {
   .social-icon {
     width: 40px;
     height: 40px;
+    opacity: 0.5;
+  }
+  .social-icon:hover {
+    width: 40px;
+    height: 40px;
+    opacity: 1;
   }
   .photo-at {
     height: 400px;
@@ -788,19 +843,26 @@ a:hover {
     padding-right: 15%;
     opacity: 0.8;
   }
-  .btn-info:hover {
-    text-transform: uppercase;
-    font-size: 18px;
-    color: white;
-    background-color: #2fa99a;
 
+  .btn-info :hover {
+    padding: 5%;
+    padding-left: 15%;
+    padding-right: 15%;
     opacity: 1;
-    cursor: pointer;
   }
   .social-icon {
     width: 40px;
     color: black;
     opacity: 0.5;
+    border-radius: 25px;
+    background-color: white;
+    padding: 20%;
+    height: 40px;
+  }
+  .social-icon:hover {
+    width: 40px;
+    color: black;
+    opacity: 1;
     border-radius: 25px;
     background-color: white;
     padding: 20%;
@@ -834,11 +896,15 @@ a:hover {
     margin-right: 2%;
     opacity: 1;
   }
+  .navbar-nav {
+    padding-left: 85%;
+  }
 }
 @media (min-width: 576px) and (max-width: 767.98px) {
   .container {
     max-width: 99%;
   }
+
   .photo-carousel {
     display: block;
     width: 100%;
@@ -848,6 +914,9 @@ a:hover {
     object-fit: cover;
     object-position: bottom;
   }
+  .dropdown-item {
+    text-align: right;
+  }
   .form-group {
     text-align: center;
   }
@@ -855,10 +924,17 @@ a:hover {
     padding: 2%;
     padding-left: 10%;
     padding-right: 10%;
+    opacity: 0.8;
+  }
+  .btn-info:hover {
+    padding: 2%;
+    padding-left: 10%;
+    padding-right: 10%;
+    opacity: 1;
   }
   .headingtxt {
     position: absolute;
-    top: 200px;
+    top: 250px;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
@@ -878,6 +954,15 @@ a:hover {
     padding: 15%;
     height: 35px;
   }
+  .social-icon:hover {
+    width: 35px;
+    color: black;
+    opacity: 1;
+    border-radius: 20px;
+    background-color: white;
+    padding: 15%;
+    height: 35px;
+  }
   .centertext {
     justify-content: center;
   }
@@ -891,7 +976,7 @@ a:hover {
   .headersub {
     width: 100%;
     margin-bottom: 10px;
-    height: 400px;
+    height: 300px;
     object-fit: cover;
   }
   .title {
@@ -921,10 +1006,65 @@ a:hover {
     margin-top: 60px;
     margin-bottom: 90px;
     align-items: center;
+    margin-left: 30%;
+  }
+  .navbar-nav {
+    padding-left: 80%;
+  }
+  .supportdiv {
+    width: 20%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+  .support {
+    padding: 15px;
+    margin-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 25px;
+    border: 2px solid white;
+  }
+
+  .support:hover {
+    padding: 15px;
+    margin-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 25px;
+    border: 2px solid white;
+    color: black;
+    background-color: white;
   }
 }
 
 @media screen and (max-width: 575.98px) {
+  .navbar-nav {
+    padding-left: 78%;
+  }
+  .support {
+    padding: 15px;
+    margin-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 25px;
+    border: 2px solid white;
+  }
+
+  .support:hover {
+    padding: 15px;
+    margin-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 25px;
+    border: 2px solid white;
+    color: black;
+    background-color: white;
+  }
+  .supportdiv {
+    width: 20%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
   .photo-carousel {
     display: block;
     width: 100%;
@@ -941,10 +1081,17 @@ a:hover {
     padding: 2%;
     padding-left: 10%;
     padding-right: 10%;
+    opacity: 0.8;
+  }
+  .btn-info:hover {
+    padding: 2%;
+    padding-left: 10%;
+    padding-right: 10%;
+    opacity: 1;
   }
   .headingtxt {
     position: absolute;
-    top: 200px;
+    top: 150px;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
@@ -959,6 +1106,15 @@ a:hover {
     width: 25px;
     color: black;
     opacity: 0.5;
+    border-radius: 20px;
+    background-color: white;
+    padding: 10%;
+    height: 25px;
+  }
+  .social-icon:hover {
+    width: 25px;
+    color: black;
+    opacity: 1;
     border-radius: 20px;
     background-color: white;
     padding: 10%;
@@ -998,5 +1154,8 @@ a:hover {
   }
   .carousel-indicators {
     bottom: -25px;
+  }
+  .dropdown-item {
+    text-align: right;
   }
 }

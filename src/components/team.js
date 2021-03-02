@@ -6,16 +6,16 @@ import SimpleCard from './card';
 import About from './About';
 
 const Team = () => (
-  <div className="container">
+  <div className="container1">
     <br />
     {' '}
     <br />
-    <Row>
+    <Row style={{ paddingLeft: '9%' }}>
       <About />
       <br />
       <br />
       <br />
-      <Col md={8} sm={12} xs={12} lg={8} className="container">
+      <Col md={8} sm={12} xs={12} lg={8}>
         <div>
           <div className="title2">Our team</div>
 
