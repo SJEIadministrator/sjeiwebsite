@@ -88,7 +88,15 @@ const About = () => (
         </NavLink>
       </li>
       <li>
-        <NavLink to="/contact" className="navlink-list">
+        <NavLink
+          to="/contact"
+          exact
+          activeClassName="active"
+          activeStyle={{
+            fontWeight: 'bold',
+            color: 'black',
+          }}
+        >
           CONTACT US
         </NavLink>
       </li>

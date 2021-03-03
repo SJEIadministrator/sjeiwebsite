@@ -23,14 +23,13 @@ const Contact = () => (
               <div>
                 <iframe
                   src="https://us16.list-manage.com/contact-form?u=19a446bd18d53c058ccc12686&form_id=110158f4b9ffba567e5fd7c8e01c272f"
-                  width="600"
+                  width="100%"
                   height="850"
                   frameBorder="0"
-                  style={{ border: 0 }}
                   allowFullScreen=""
                   id="ifram"
                   aria-hidden="false"
-                  // className="new"
+                  // className="newiframe"
                   title="contact"
                 />
               </div>

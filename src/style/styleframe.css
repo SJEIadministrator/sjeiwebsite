@@ -1,0 +1,16 @@
+.newiframe {
+  font-size: 12px;
+  padding: 1%;
+}
+.form-g9xcb input {
+  font-size: 12px;
+  line-height: 0.8em;
+}
+@media screen and (max-width: 575.98px) {
+  .ifram input {
+    font-size: 10px;
+  }
+  .wink h2 {
+    font-size: 12px;
+  }
+}

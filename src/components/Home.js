@@ -68,7 +68,7 @@ const Home = () => (
         <Col />
       </Row>
       <Row className="mt-3">
-        <Col>
+        <Col sm={{ span: 12 }}>
           <div
             style={{
               textAlign: 'center',

@@ -24,12 +24,6 @@
     text-decoration: none;
   }
 
-  .text-wedo {
-    line-height: 1.9;
-    font-size: 14px;
-    text-align: justify;
-  }
-
   .about a {
     color: white;
     font-size: 13px;
@@ -181,35 +175,8 @@
     margin-top: 2rem;
   }
 
-  .mailchimpclass {
-    margin: 0;
-    text-align: center;
-    padding: 1px;
-  }
-
-  .mailchimpclass input {
-    padding: 2.5%;
-    margin-left: 0.7%;
-    margin-top: 5%;
-    margin-right: 0.7%;
-    border: 1px solid lightgrey;
-  }
-
   p {
     margin-bottom: 0;
-  }
-
-  .mailchimpclass button {
-    padding: 1.8%;
-    padding-left: 19%;
-    padding-right: 19%;
-    text-transform: uppercase;
-    font-size: 14px;
-    color: white;
-    background-color: #2fa99a;
-    margin: 2%;
-    border: 0;
-    cursor: pointer;
   }
 
   .socialicon2 {
