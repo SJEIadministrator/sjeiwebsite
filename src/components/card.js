@@ -45,7 +45,7 @@ export default function SimpleCard() {
                 <img
                   className="imagewidth w3-container w3-center w3-animate-opacity"
                   src={postdetail.Img}
-                  Alt="volunteer"
+                  alt="volunteer"
                 />
                 <br />
                 {postdetail.Name}

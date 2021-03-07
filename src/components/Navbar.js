@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
 const NavBar = () => (
@@ -33,41 +33,27 @@ const NavBar = () => (
           className="mr-0 aboutlink  link "
           id="basic-nav-dropdown "
         >
-          <NavDropdown.Item>
-            <NavLink className="nav-link" to="/Whatwedo">
-              {' '}
-              What We Do
-            </NavLink>
+          <NavDropdown.Item className="nav-link" as={Link} to="/Whatwedo">
+            {' '}
+            What We Do
           </NavDropdown.Item>
-          <NavDropdown.Item>
-            <NavLink className="nav-link" to="/corporatetransparency">
-              Corporate Transparency
-            </NavLink>
+          <NavDropdown.Item className="nav-link" as={Link} to="/corporatetransparency">
+            Corporate Transparency
           </NavDropdown.Item>
-          <NavDropdown.Item>
-            <NavLink className="nav-link" to="/board">
-              Board
-            </NavLink>
+          <NavDropdown.Item className="nav-link" as={Link} to="/board">
+            Board
           </NavDropdown.Item>
-          <NavDropdown.Item>
-            <NavLink className="nav-link" to="/volunteer">
-              Volunteer
-            </NavLink>
+          <NavDropdown.Item className="nav-link" as={Link} to="/volunteer">
+            Volunteer
           </NavDropdown.Item>
-          <NavDropdown.Item>
-            <NavLink className="nav-link" to="/william-G-Bentz">
-              William G Bentz
-            </NavLink>
+          <NavDropdown.Item className="nav-link" as={Link} to="/william-G-Bentz">
+            William G Bentz
           </NavDropdown.Item>
-          <NavDropdown.Item>
-            <NavLink className="nav-link" to="/team">
-              Our Team
-            </NavLink>
+          <NavDropdown.Item className="nav-link" as={Link} to="/team">
+            Our Team
           </NavDropdown.Item>
-          <NavDropdown.Item>
-            <NavLink className="nav-link" to="/Contact">
-              Contact
-            </NavLink>
+          <NavDropdown.Item className="nav-link" as={Link} to="/Contact">
+            Contact
           </NavDropdown.Item>
         </NavDropdown>
         <NavLink to="/take-action" className="mr-2 link">
