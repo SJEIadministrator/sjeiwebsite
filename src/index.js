@@ -7,6 +7,7 @@ import App from './components/App';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './style/whawedo.css';
 import './style/index.css';
+import './style/navbar.css';
 
 ReactDOM.render(
   <BrowserRouter>

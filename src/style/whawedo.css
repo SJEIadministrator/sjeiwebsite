@@ -1,21 +1,4 @@
 @media screen and (max-width: 576px) {
-  .link {
-    color: white;
-    width: 130px;
-    font-size: 13px;
-    text-align: center;
-    font-weight: bold;
-    transition-property: color, background-color;
-    transition-duration: 5s;
-    transition-timing-function: ease-out;
-  }
-
-  .link :hover,
-  link:focus {
-    color: aquamarine;
-    border: 0 solid grey;
-  }
-
   .carousel {
     height: 200px;
   }
