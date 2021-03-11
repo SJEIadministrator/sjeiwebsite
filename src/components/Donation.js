@@ -7,11 +7,11 @@ import Button from 'react-bootstrap/Button';
 const Donation = () => (
   <div className="container">
     <Row>
-      <Col md={{ span: 10, offset: 1 }}>
+      <Col className="mt-5" md={{ span: 10, offset: 1 }}>
         <h4 className="text-center">
           SUPPORT THE SOCIAL JUSTICE + ENGINEERING INITIATIVE
         </h4>
-        <p>
+        <p className="main-content">
           All donations are used to support research, sustainable development
           and engineering practices, designs, and methods that promote social
           and environmental justice, and operating costs associated with those
