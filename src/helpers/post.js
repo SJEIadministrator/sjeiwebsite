@@ -199,196 +199,196 @@ export const VolunteerTeam = [
     Post: 'Civil Engineer',
   },
   {
-    id: 30,
+    id: 31,
     Img:
       'https://sjeiwebsitemedia.blob.core.windows.net/photos/Our%20Team/avatar.jpg',
     Name: 'Kelli Shipley',
     Post: 'General Volunteer',
   },
   {
-    id: 31,
+    id: 32,
     Img:
       'https://sjeiwebsitemedia.blob.core.windows.net/photos/Our Team/kyle.bouchet.Jpg',
     Name: 'Kyle Bouchet',
     Post: 'Project Engineering Technician',
   },
   {
-    id: 32,
+    id: 33,
     Img:
       'https://sjeiwebsitemedia.blob.core.windows.net/photos/Our Team/mariana.pedroza.Jpg',
     Name: 'Mariana Pedroza',
     Post: 'Mechanical Engineer',
   },
   {
-    id: 33,
+    id: 34,
     Img:
     'https://sjeiwebsitemedia.blob.core.windows.net/photos/Our%20Team/MaryhelenDiehl.jpg',
     Name: 'Maryhelen Diehl',
     Post: 'Graphic Designer',
   },
   {
-    id: 34,
+    id: 35,
     Img:
     'https://sjeiwebsitemedia.blob.core.windows.net/photos/Our Team/Masi.Thomason.Jpg',
     Name: 'Masi Thomason',
     Post: 'Writer + Blogger ',
   },
   {
-    id: 35,
+    id: 36,
     Img:
     'https://sjeiwebsitemedia.blob.core.windows.net/photos/Our Team/Matt.Depasquale.Jpg',
     Name: 'Matt Depasquale',
     Post: 'GeneralCounsel',
   },
   {
-    id: 36,
+    id: 37,
     Img:
     'https://sjeiwebsitemedia.blob.core.windows.net/photos/Our Team/melody.tsoi.Jpg',
     Name: 'Melody Tsoi',
     Post: 'Strategic  Advisor to the CEO/Board',
   },
   {
-    id: 37,
+    id: 38,
     Img:
     'https://sjeiwebsitemedia.blob.core.windows.net/photos/Our Team/maya.coyle.Jpg',
     Name: 'Maya Coyle',
     Post: 'Electrical Engineer',
   },
   {
-    id: 38,
+    id: 39,
     Img:
     'https://sjeiwebsitemedia.blob.core.windows.net/photos/Our Team/michelle.welk.Jpg',
     Name: 'Michelle Welk ',
     Post: 'Lead Content Creator',
   },
   {
-    id: 39,
+    id: 40,
     Img:
     'https://sjeiwebsitemedia.blob.core.windows.net/photos/Our%20Team/avatar.jpg',
     Name: 'Nada Baydoun ',
     Post: 'Administrative Assistant',
   },
   {
-    id: 40,
+    id: 41,
     Img:
       'https://sjeiwebsitemedia.blob.core.windows.net/photos/Our%20Team/NickLozier.jpeg',
     Name: 'Nick Lozier',
     Post: '   Blogger / Writer',
   },
   {
-    id: 41,
+    id: 42,
     Img:
       'https://sjeiwebsitemedia.blob.core.windows.net/photos/Our Team/nicole.stevens-murphy.Jpg',
     Name: 'Nicole Stevens-Murphy',
     Post: ' Project Manager',
   },
   {
-    id: 42,
+    id: 43,
     Img:
       'https://sjeiwebsitemedia.blob.core.windows.net/photos/Our%20Team/avatar.jpg',
     Name: 'Pallavi Mehra',
     Post: ' Organization Coordinator',
   },
   {
-    id: 43,
+    id: 44,
     Img:
       'https://sjeiwebsitemedia.blob.core.windows.net/photos/Our Team/paul.coble.Jpg',
     Name: 'Paul Coble',
     Post: ' General Counsel',
   },
   {
-    id: 44,
+    id: 45,
     Img:
       'https://sjeiwebsitemedia.blob.core.windows.net/photos/Our%20Team/avatar.jpg',
     Name: 'Peter Chu ',
     Post: ' Full Stack engineer',
   },
   {
-    id: 45,
+    id: 46,
     Img:
       'https://sjeiwebsitemedia.blob.core.windows.net/photos/Our Team/peter.viverito.Jpg',
     Name: 'Peter Viverto ',
     Post: ' Project Grant Writer + Grant Researcher',
   },
   {
-    id: 46,
+    id: 47,
     Img:
       'https://sjeiwebsitemedia.blob.core.windows.net/photos/Our Team/priya.ray.Jpg',
     Name: 'Priya Ray',
     Post: 'Project Grant Writer + Grant Researcher Volunteer',
   },
   {
-    id: 47,
+    id: 48,
     Img:
       'https://sjeiwebsitemedia.blob.core.windows.net/photos/Our%20Team/avatar.jpg',
     Name: 'Priyanka Barua',
     Post: 'Marketing + Communications ',
   },
   {
-    id: 48,
+    id: 49,
     Img:
       'https://sjeiwebsitemedia.blob.core.windows.net/photos/rohith.malatkar.Jpg',
     Name: 'Rohith Malatkar',
     Post: 'Data Engineer ',
   },
   {
-    id: 49,
+    id: 50,
     Img:
       'https://sjeiwebsitemedia.blob.core.windows.net/photos/saara.korpela.Jpg',
     Name: 'Saara Korpela',
     Post: 'Project Coordinator',
   },
   {
-    id: 50,
+    id: 51,
     Img:
     'https://sjeiwebsitemedia.blob.core.windows.net/photos/Our%20Team/avatar.jpg',
     Name: 'Samuel Effiong',
     Post: 'Writer + Blogger',
   },
   {
-    id: 51,
+    id: 52,
     Img:
     'https://sjeiwebsitemedia.blob.core.windows.net/photos/sara.boscacci.Jpg',
     Name: 'Sara Boscacci',
     Post: 'Program Manager',
   },
   {
-    id: 52,
+    id: 53,
     Img:
     'https://sjeiwebsitemedia.blob.core.windows.net/photos/Our Team/shruti.gupta.jpg',
     Name: 'Shruti gupta',
     Post: 'Website Developer - Information Technology',
   },
   {
-    id: 53,
+    id: 54,
     Img:
     'https://sjeiwebsitemedia.blob.core.windows.net/photos/Our Team/ShruthiRamesh.jpg',
     Name: 'Shruti Ramesh',
     Post: 'Organization Coordinator Volunteer',
   },
   {
-    id: 54,
+    id: 55,
     Img:
     'https://sjeiwebsitemedia.blob.core.windows.net/photos/Our Team/suzy.godber.Jpg',
     Name: 'Suzy Godber',
     Post: 'Marketing + Communications Coordinator - Information Technology ',
   },
   {
-    id: 55,
+    id: 56,
     Img:
     'https://sjeiwebsitemedia.blob.core.windows.net/photos/Our%20Team/avatar.jpg',
     Name: 'Tewodros Tilaye',
     Post: 'Data Engineer ',
   },
   {
-    id: 55,
+    id: 57,
     Img:
     'https://sjeiwebsitemedia.blob.core.windows.net/photos/Our Team/timo.stander.Jpg',
     Name: 'Timo Stander',
     Post: 'Microsoft 365 Success Manager ',
   },
   {
-    id: 56,
+    id: 58,
     Img:
     'https://sjeiwebsitemedia.blob.core.windows.net/photos/valenttina.cardozo.Jpg',
     Name: 'Valentina Cardozo',
