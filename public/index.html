@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-
     <meta charset="utf-8" />
- 
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
 
@@ -12,26 +10,38 @@
       name="description"
       content="Web site created using create-react-app"
     />
-
-
+   
     <!-- Begin Mailchimp Signup Form -->
     <link
       href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css"
       rel="stylesheet"
       type="text/css"
     />
-    <style type="text/css">
-      #mc_embed_signup {
-        background: #fff;
-        clear: left;
-        font: 18px Helvetica, Arial, sans-serif;
-      }
-     
-      /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-       We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-    </style>
+    
+    <script
+      type="text/javascript"
+      src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"
+    ></script>
+    <script type="text/javascript">
+      (function($) {
+        window.fnames = new Array();
+        window.ftypes = new Array();
+        fnames[0] = "EMAIL";
+        ftypes[0] = "email";
+        fnames[1] = "FNAME";
+        ftypes[1] = "text";
+        fnames[2] = "LNAME";
+        ftypes[2] = "text";
+        fnames[3] = "ADDRESS";
+        ftypes[3] = "address";
+        fnames[4] = "PHONE";
+        ftypes[4] = "phone";
+        fnames[5] = "BIRTHDAY";
+        ftypes[5] = "birthday";
+      })(jQuery);
+      var $mcj = jQuery.noConflict(true);
+    </script>
 
-   
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
@@ -42,23 +52,39 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
     <title>The Social Justice + Engineering Initiative</title>
   </head>
-
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-   
-
-    
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+    <script src="https://polyfill.mailchimp.com/v3/polyfill.min.js?features=Array.prototype.flat%2Cfetch%2CElement.prototype.inert%2CResizeObserver%2CIntersectionObserver%2Ces2018%2Ces2017%2Ces2016%2Ces2015"></script>
+    <script src="/release/1.1.13017841fdcfdf2b27aca9874597e3c97c29ded0d/js-src/vendor.1c23797a.js"></script>
+    <script src="/release/1.1.13017841fdcfdf2b27aca9874597e3c97c29ded0d/js-src/hosted-contact-form.acbcbd82.js"></script>
+    <script type="text/javascript">
+      var _cf = _cf || [];
+      _cf.push(["_setFsp", true]);
+      _cf.push(["_setBm", true]);
+      _cf.push(["_setAu", "/assets/3e0a7afeui19027c00e3e4fedc48aa"]);
+    </script>
+    <script
+      type="text/javascript"
+      src="/assets/3e0a7afeui19027c00e3e4fedc48aa"
+    ></script>
+    <script>
+      frame.addEventListener("load", ev => {
+        const new_style_element = document.createElement("style");
+        new_style_element.textContent = ".my-class { backgroundColor:'red' }";
+        ev.target.contentDocument.head.appendChild(new_style_element);
+      });
+      
+    </script>
   </body>
 </html>
