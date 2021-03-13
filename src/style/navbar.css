@@ -155,7 +155,7 @@
 
 @media screen and (max-width: 576px) {
   .navbar-nav {
-    padding-left: 80%;
+    padding-left: 78%;
   }
   .link {
     color: white;
@@ -203,7 +203,7 @@
 
 @media screen and (max-width: 500px) {
   .navbar-nav {
-    padding-left: 75%;
+    padding-left: 71%;
   }
   .link {
     color: white;
@@ -250,7 +250,27 @@
 
 @media screen and (max-width: 400px) {
   .navbar-nav {
-    padding-left: 67%;
+    position: relative;
+    padding-left: 64%;
   }
-  
+
+  .logo {
+    width: 110px;
+    height: 45px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .navbar-nav {
+    position: relative;
+    padding-left: 56%;
+  }
+  .link .active {
+    padding-left: 56%;
+  }
+
+  .logo {
+    width: 100px;
+    height: 40px;
+  }
 }
