@@ -1,9 +1,9 @@
 import React from 'react';
-import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import logoBottom from '../img/guidestart.svg';
+import { Link } from 'react-router-dom';
 
 const Donation = () => (
   <div className="container">
@@ -22,11 +22,11 @@ const Donation = () => (
     </Row>
     <Row>
       <Col className="mt-5">
-        <a href="https://secure.squarespace.com/checkout/donate?donatePageId=5939bc3c6b8f5b104ec81d05&ss_cid=2ea6d8f1-68d4-4e98-bb79-41a3aa154623&ss_cvisit=1603147929481&ss_cvr=70c8a24a-78b2-412a-9e20-ded2c0bc7d21%7C1602109525332%7C1603131768961%7C1603147929308%7C24" target="blank">
-          <Form.Group as={Col} md={{ span: 3, offset: 5 }}>
-            <Button type="submit" variant="info" className="signup text-center">Donate</Button>
-          </Form.Group>
-        </a>
+        <Link to="/donation-form1" md={{ span: 3, offset: 5 }}>
+          <Button variant="info" className="text-center">
+            Donate
+          </Button>
+        </Link>
       </Col>
     </Row>
     <Row>
@@ -44,7 +44,6 @@ const Donation = () => (
         </div>
       </Col>
     </Row>
-
   </div>
 );
 export default Donation;
