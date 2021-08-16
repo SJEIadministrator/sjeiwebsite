@@ -5,16 +5,21 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import about from '../img/stanislav-kondratiev-6pO3QFkk7hQ-unsplash.jpg';
 import action from '../img/jakob-owens-CiUR8zISX60-unsplash.jpg';
+import { Link } from 'react-router-dom';
 
 const Home = () => (
   <div className="container">
+    <Row className="justify-content-md-center">
+      <Col md="auto">
+      <Link to="/donation-form1">
+        <Button variant="info" className="text-center">
+          Donate
+        </Button>
+      </Link>
+      </Col>
+    </Row>
     <Row>
       <Col>
-        <a href="https://secure.squarespace.com/checkout/donate?donatePageId=5939bc3c6b8f5b104ec81d05&ss_cid=2ea6d8f1-68d4-4e98-bb79-41a3aa154623&ss_cvisit=1603147929481&ss_cvr=70c8a24a-78b2-412a-9e20-ded2c0bc7d21%7C1602109525332%7C1603131768961%7C1603147929308%7C24" target="blank">
-          <Form.Group as={Col} md={{ span: 3, offset: 5 }}>
-            <Button type="submit" variant="info" className="signup text-center">Donate</Button>
-          </Form.Group>
-        </a>
         <p className="text-center text-donate first-p mt-5">We need diverse individuals with backgrounds in engineering, environmental justice, and social justice to volunteer.</p>
         <p className="text-center text-donate">Help lay the foundation of this organization!</p>
         <p className="text-center text-donate last mb-4">

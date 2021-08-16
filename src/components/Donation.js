@@ -20,7 +20,7 @@ const Donation = () => (
         </p>
       </Col>
     </Row>
-    <Row>
+    <Row className="text-center">
       <Col className="mt-5">
         <Link to="/donation-form1" md={{ span: 3, offset: 5 }}>
           <Button variant="info" className="text-center">

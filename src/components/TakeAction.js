@@ -22,9 +22,7 @@ const TakeAction = () => (
           social and environmental justice. Help us get off the ground!
         </p>
         <p className="text-center">
-          <a className="anchor-t" href="https://secure.squarespace.com/checkout/donate?donatePageId=5939bc3c6b8f5b104ec81d05&ss_cid=fdc436da-1cc7-4cb0-aed5-3a5742cfec1f&ss_cvisit=1596857972140&ss_cvr=9d5e9807-f2ec-48d4-971c-e23d41f91dd9%7C1596832794660%7C1596848334690%7C1596857972833%7C3">
-            Make a donation
-          </a>
+          <NavLink to="/donation-form1" className="mr-4 anchor-t">Make a donation</NavLink>
         </p>
       </Col>
       <Col>

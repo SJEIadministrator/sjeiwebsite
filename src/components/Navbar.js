@@ -23,7 +23,6 @@ const NavBar = () => (
       <NavLink to="/take-action" className="mr-3 link">TAKE ACTION</NavLink>
       <a href="https://medium.com/sjei" target="blank" className="anchor mr-3">BLOG</a>
       <NavLink to="/donation" className="mr-2 link support">SUPPORT</NavLink>
-      <NavLink to="/donation-form1" className="mr-3 link">TEST</NavLink>
     </Nav>
   </Navbar>
 );
